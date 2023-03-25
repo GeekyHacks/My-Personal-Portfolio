@@ -1,0 +1,288 @@
+* {
+ 
+    box-sizing: border-box;
+    outline: none;
+    background: none repeat scroll 0 0 transparent;
+    border: 0;
+    border-spacing: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+  
+  .menu-button {
+    margin-right: 20px;
+  }
+  
+  .mylogo {
+    font-family: "Inter";
+    font-style: normal;
+    font-size: large;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  
+  .mylogo,
+  .menu-button,
+  .icon-menu,
+  .btn-twitter,
+  .btn-github,
+  .btn-medium,
+  .btn-angellist,
+  .btn-linkedin,
+  .btn-downarrow {
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #172b4d;
+  }
+  
+  .headlines {
+    background-image: url(assests/images/header-illsutration-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 70px;
+  }
+  
+  .headlines-container {
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .headlines-container div {
+    color: #172b4d;
+    font-family: "Inter";
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .primary {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  .dev-span {
+    color: #36b37e;
+  }
+  .supporting-content {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  .contact-icons i {
+    color: #505f79;
+  }
+  
+  .downarrow {
+    color: #505f79;
+  }
+  .downarrow-div {
+    margin-top: 60px;
+  }
+  
+  /* my work section*/
+  .my-work {
+    display: grid;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 5px 0px;
+  }
+  .aboutme-header {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+  
+  .aboutme-header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto 20px auto;
+    padding: 0px 0px 5px 0px;
+  }
+  
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid grey;
+    border-radius: 16px;
+    width: 95vw;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  /* images styling */
+  .project1-img,
+  .project2-img,
+  .project3-img,
+  .project4-img,
+  .about-me-0 {
+    height: 32vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .project1-img {
+    background-image: url(assests/images/project1-img.svg);
+  }
+  
+  .project2-img {
+    background-image: url(assests/images/project2-img.svg);
+  }
+  
+  .project3-img {
+    background-image: url(assests/images/project3-img.svg);
+  }
+  .project4-img {
+    background-image: url(assests/images/project4-img.svg);
+  }
+  .about-me-0 {
+    background-image: url(assests/images/aboutme.svg);
+  }
+  
+  /*projects content stying*/
+  .project1-conetent,
+  .project2-conetent,
+  .project3-conetent,
+  .project4-conetent {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    border: 5px solid gainsboro;
+    border-radius: 4px;
+  }
+  
+  .project1-content-sec1,
+  .project2-content-sec1,
+  .project3-content-sec1,
+  .project4-content-sec1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    background: #ffffff;
+    padding: 12px;
+  }
+  .project1-content-sec2,
+  .project2-content-sec2,
+  .project3-content-sec2,
+  .project4-content-sec2 {
+    width: 92vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .project1-content-sec2 label,
+  .project2-content-sec2 label,
+  .project3-content-sec2 label,
+  .project4-content-sec2 label,
+  .about-me-2 label {
+    margin: 0 auto;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3a4a42;
+    letter-spacing: 0.03em;
+    background: #ebf0ee;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 11px;
+  }
+  .project1-content-sec3,
+  .project2-content-sec3,
+  .project3-content-sec3,
+  .project4-content-sec3 {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 20px 10px 10px 10px;
+  }
+  .project1-content-sec3 button,
+  .project2-content-sec3 button,
+  .project3-content-sec3 button,
+  .project4-content-sec3 button,
+  .about-me-4 button {
+    background: #36b37f;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 5px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background-color: whitesmoke;
+    color: #36b37f;
+  }
+  
+  /*about me section*/
+  
+  .about-me {
+    text-align: left;
+    margin-top: 35px;
+  }
+  .about-me div {
+    color: #172b4d;
+    font-family: "Inter";
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .about-me-1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+  
+  .about-me-3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+  
