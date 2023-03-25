@@ -3,7 +3,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="assests/images/project1-img.png"  alt="project1">
   <br/>
 
   <h3><b> Personal Portfolio!</b></h3>
