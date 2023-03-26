@@ -85,10 +85,6 @@
   font-size: 20px;
 }
 
-.contact-icons i {
-  color: #505f79;
-}
-
 .downarrow {
   color: #505f79;
 }
@@ -255,7 +251,7 @@
 }
 
 button:hover {
-  background-color: whitesmoke;
+  background-color: transparent;
   color: #36b37f;
 }
 
