@@ -1,4 +1,6 @@
 /* stylelint-disable no-missing-end-of-source-newline */
+
+/* general resets */
 * {
   box-sizing: border-box;
   outline: none;
@@ -8,12 +10,15 @@
   list-style-type: none;
 }
 
+/* main styling */
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: clip margin 0;
 }
 
+/* header styling */
 .toolbar {
   display: flex;
   justify-content: space-between;
@@ -35,6 +40,7 @@
   margin-left: 10px;
 }
 
+/* buttons styling */
 .mylogo,
 .menu-button,
 .icon-menu,
@@ -50,6 +56,35 @@
   color: #172b4d;
 }
 
+.project1-content-sec3 button,
+.project2-content-sec3 button,
+.project3-content-sec3 button,
+.project4-content-sec3 button,
+.popuppage-4 button,
+.about-me-2 button {
+  background: #36b37f;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 5px;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #36b37f;
+}
+
+/* headlines styling */
 .headlines {
   background-image: url(assests/images/header-illsutration-mobile.svg);
   background-repeat: no-repeat;
@@ -72,7 +107,8 @@
   margin-bottom: 10px;
 }
 
-.primary {
+.primary,
+.about-me-0 {
   font-family: "poppins", sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -109,9 +145,13 @@
 
 .my-work {
   display: grid;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 0 5px 0;
+}
+
+/* works styling */
+.my-work div {
+  margin: 20px auto 10px auto;
+  width: 100%;
+  height: auto;
 }
 
 .aboutme-header {
@@ -131,49 +171,40 @@
   padding: 0 0 5px 0;
 }
 
+.indicator img {
+  width: 10%;
+  height: 25%;
+}
+
 .project1,
 .project2,
 .project3,
 .project4,
-.about-me {
+.popuppage,
+.languages,
+.framworks,
+.skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: 1px solid grey;
   border-radius: 16px;
-  width: 95vw;
   padding: 10px;
-  margin-top: 20px;
 }
 
-.project1-img,
-.project2-img,
-.project3-img,
-.project4-img,
-.about-me-0 {
-  height: 32vh;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.project1-img {
-  background-image: url(assests/images/project1-img.svg);
-}
-
-.project2-img {
-  background-image: url(assests/images/project2-img.svg);
-}
-
-.project3-img {
-  background-image: url(assests/images/project3-img.svg);
-}
-
-.project4-img {
-  background-image: url(assests/images/project4-img.svg);
-}
-
-.about-me-0 {
-  background-image: url(assests/images/aboutme.svg);
+.project1-img img,
+.project2-img img,
+.project3-img img,
+.project4-img img,
+.popuppage-0 img,
+.languages-img img,
+.framworks-img img,
+.skills-img img {
+  max-width: inherit;
+  max-height: inherit;
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
 }
 
 .project1-conetent,
@@ -206,7 +237,7 @@
 .project2-content-sec2,
 .project3-content-sec2,
 .project4-content-sec2 {
-  width: 92vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -217,7 +248,7 @@
 .project2-content-sec2 label,
 .project3-content-sec2 label,
 .project4-content-sec2 label,
-.about-me-2 label {
+.popuppage-2 label {
   margin: 0 auto;
   font-family: "poppins", sans-serif;
   font-style: normal;
@@ -235,53 +266,32 @@
 .project1-content-sec3,
 .project2-content-sec3,
 .project3-content-sec3,
-.project4-content-sec3 {
+.project4-content-sec3,
+.about-me-2 {
   text-align: center;
   background: #fff;
   border-radius: 4px;
   padding: 20px 10px 10px 10px;
 }
 
-.project1-content-sec3 button,
-.project2-content-sec3 button,
-.project3-content-sec3 button,
-.project4-content-sec3 button,
-.about-me-4 button {
-  background: #36b37f;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  padding: 10px;
-  margin: 10px 5px;
-  font-family: "poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #fff;
-  cursor: pointer;
-  transition-duration: 0.4s;
-}
-
-button:hover {
-  background-color: transparent;
-  color: #36b37f;
-}
-
-.about-me {
+/* popuppage styling */
+.popuppage {
   text-align: left;
   margin-top: 35px;
 }
 
-.about-me div {
+.popuppage div {
   color: #172b4d;
   font-family: "poppins", sans-serif;
   text-align: left;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-.about-me-1 {
+.popuppage-1 {
   font-family: "poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -290,7 +300,7 @@ button:hover {
   color: #172b4d;
 }
 
-.about-me-3 {
+.popuppage-3 {
   font-family: "poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -298,3 +308,102 @@ button:hover {
   line-height: 24px;
   color: #344563;
 }
+
+/* about me */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 45px;
+  border: 0;
+}
+
+.about-me div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px auto 20px auto;
+  padding: 0 0 5px 0;
+  width: 100%;
+  height: auto;
+}
+
+.about-me-1 {
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.languages,
+.framworks,
+.skills {
+  background: #ebf0ee;
+}
+
+.languages div,
+.framworks div,
+.skills div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  height: auto;
+  background: #ebf0ee;
+  margin: 5px auto 10px auto;
+  padding: 0 0 15px 0;
+}
+
+.languages-img,
+.framworks-img,
+.skills-img {
+  padding: 0;
+  margin: 0;
+}
+
+.languages-text,
+.framworks-text,
+.skills-text {
+  align-self: center;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.framworks-labels,
+.skills-labels {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: none;
+  flex-grow: 0;
+}
+
+.languages-labels label,
+.framworks-labels label,
+.skills-labels label {
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 11px;
+  background: #fff;
+  color: #36b37e;
+  margin: 2px 3px;
+}
+
+/* end    */
