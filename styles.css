@@ -26,7 +26,7 @@
 }
 
 .mylogo {
-  font-family: "Inter";
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-size: large;
   font-weight: 700;
@@ -62,14 +62,16 @@
   align-items: center;
   padding-top: 10px;
 }
+
 .headlines-container div {
   color: #172b4d;
-  font-family: "Inter";
+  font-family: 'Lato', sans-serif;
   text-align: center;
   margin-bottom: 10px;
 }
+
 .primary {
-  font-family: "Inter";
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 40px;
 }
@@ -77,6 +79,7 @@
 .dev-span {
   color: #36b37e;
 }
+
 .supporting-content {
   font-weight: 400;
   font-size: 20px;
@@ -89,19 +92,20 @@
 .downarrow {
   color: #505f79;
 }
+
 .downarrow-div {
   margin-top: 60px;
 }
 
-/* my work section*/
 .my-work {
   display: grid;
   height: 100%;
   margin: 0 auto;
-  padding: 0px 0px 5px 0px;
+  padding: 0 0 5px 0;
 }
+
 .aboutme-header {
-  font-family: "Inter";
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -114,7 +118,7 @@
   align-items: center;
   text-align: center;
   margin: 10px auto 20px auto;
-  padding: 0px 0px 5px 0px;
+  padding: 0 0 5px 0;
 }
 
 .project1,
@@ -154,14 +158,15 @@
 .project3-img {
   background-image: url(assests/images/project3-img.svg);
 }
+
 .project4-img {
   background-image: url(assests/images/project4-img.svg);
 }
+
 .about-me-0 {
   background-image: url(assests/images/aboutme.svg);
 }
 
-/*projects content stying*/
 .project1-conetent,
 .project2-conetent,
 .project3-conetent,
@@ -170,7 +175,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   border: 5px solid gainsboro;
   border-radius: 4px;
 }
@@ -179,15 +183,16 @@
 .project2-content-sec1,
 .project3-content-sec1,
 .project4-content-sec1 {
-  font-family: "Inter";
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  background: #ffffff;
+  background: #fff;
   padding: 12px;
 }
+
 .project1-content-sec2,
 .project2-content-sec2,
 .project3-content-sec2,
@@ -198,13 +203,14 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .project1-content-sec2 label,
 .project2-content-sec2 label,
 .project3-content-sec2 label,
 .project4-content-sec2 label,
 .about-me-2 label {
   margin: 0 auto;
-  font-family: "Inter";
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -216,15 +222,17 @@
   border-radius: 4px;
   padding: 11px;
 }
+
 .project1-content-sec3,
 .project2-content-sec3,
 .project3-content-sec3,
 .project4-content-sec3 {
   text-align: center;
-  background: #ffffff;
+  background: #fff;
   border-radius: 4px;
   padding: 20px 10px 10px 10px;
 }
+
 .project1-content-sec3 button,
 .project2-content-sec3 button,
 .project3-content-sec3 button,
@@ -235,14 +243,14 @@
   border-radius: 4px;
   padding: 10px;
   margin: 10px 5px;
-  font-family: "Inter";
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   transition-duration: 0.4s;
 }
@@ -252,21 +260,20 @@ button:hover {
   color: #36b37f;
 }
 
-/*about me section*/
-
 .about-me {
   text-align: left;
   margin-top: 35px;
 }
+
 .about-me div {
   color: #172b4d;
-  font-family: "Inter";
+  font-family: 'Lato', sans-serif;
   text-align: left;
   margin-bottom: 20px;
 }
 
 .about-me-1 {
-  font-family: "Inter";
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -275,7 +282,7 @@ button:hover {
 }
 
 .about-me-3 {
-  font-family: "Inter";
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
