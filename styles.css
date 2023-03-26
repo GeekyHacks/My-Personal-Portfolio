@@ -5,6 +5,7 @@
   background: none repeat scroll 0 0 transparent;
   border: 0;
   border-spacing: 0;
+  list-style-type: none;
 }
 
 .container {
@@ -84,6 +85,18 @@
 .supporting-content {
   font-weight: 400;
   font-size: 20px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  padding: 0;
+}
+
+.contact-list li {
+  display: inline;
 }
 
 .downarrow {
