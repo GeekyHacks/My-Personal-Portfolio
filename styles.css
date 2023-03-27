@@ -89,7 +89,9 @@ button:hover {
   background-image: url(assests/images/header-illsutration-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-origin: border-box;
   padding-top: 70px;
+  background-clip: border-box;
 }
 
 .headlines-container {
@@ -172,8 +174,8 @@ button:hover {
 }
 
 .indicator img {
-  width: 10%;
-  height: 25%;
+  width: 7%;
+  height: 20%;
 }
 
 .project1,
@@ -322,8 +324,8 @@ button:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 1rem auto 0.3rem auto;
-  padding: 0 0 4px 0;
+  margin: 1rem auto 1.2rem auto;
+  padding: 20px 0 5px 0;
   width: 100%;
   height: auto;
 }
@@ -343,7 +345,11 @@ button:hover {
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
-  background-size: 21% 171%, 180% 30%;
+  background-size: 20% 173%, 173% 23%;
+  background-clip: border-box;
+  background-origin: content-box;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .about-me-2 {
