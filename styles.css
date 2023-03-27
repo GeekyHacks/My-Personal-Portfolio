@@ -266,8 +266,7 @@ button:hover {
 .project1-content-sec3,
 .project2-content-sec3,
 .project3-content-sec3,
-.project4-content-sec3,
-.about-me-2 {
+.project4-content-sec3 {
   text-align: center;
   background: #fff;
   border-radius: 4px;
@@ -323,8 +322,8 @@ button:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 10px auto 20px auto;
-  padding: 0 0 5px 0;
+  margin: 1rem auto 0.3rem auto;
+  padding: 0 0 4px 0;
   width: 100%;
   height: auto;
 }
@@ -337,6 +336,20 @@ button:hover {
   line-height: 32px;
   text-align: center;
   color: #344563;
+}
+
+.aboutme1 {
+  background-image: url(assests/images/aboutme2.svg), url(assests/images/about-me22.svg);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-position: revert;
+  background-size: 21% 171%, 180% 30%;
+}
+
+.about-me-2 {
+  text-align: center;
+  border-radius: 4px;
+  padding: 20px 10px 10px 10px;
 }
 
 .languages,
@@ -406,4 +419,4 @@ button:hover {
   margin: 2px 3px;
 }
 
-/* end    */
+/* end */

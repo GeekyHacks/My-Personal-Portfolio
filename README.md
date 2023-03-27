@@ -28,12 +28,12 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
+- [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [Personal Portfolio!] <a name="about-project"></a>
+# 📖 Personal Portfolio! <a name="about-project"></a>
 
-**[My Personal Portfolio!]**
+**My Personal Portfolio!**
 This is my second project with Microverse using Github professional flow and it's a porfolio website that is built in html & css, it includes my resume, basic information about me and my career, and projects I have worked on.
 
 ## 🛠 Built With <a name="built-with">HTML, CSS</a>
@@ -42,7 +42,7 @@ This is my second project with Microverse using Github professional flow and it'
 
 </a>
 
-- [Mobile First Styling]
+- Mobile First Styling
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,7 +115,7 @@ Must-Install-Project-with-the-Following-Programmes:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/GeekyHacks/My-Personal-Portfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,15 +136,15 @@ I would like to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ  <a name="faq"></a>
 
-[Can I clone this project ?]\*\*
+Can I clone this project ?\*\*
 
-- [Of course you can as long as you fork it and star it]
+- Of course you can as long as you fork it and star it
 
-[Can I contribute to this project?]\*\*
+Can I contribute to this project?\*\*
 
-- [definitely you can]
+- definitely you can
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
