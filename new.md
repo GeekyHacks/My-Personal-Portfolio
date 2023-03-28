@@ -4,79 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="assests/fontAwesome/css/all.css" />
+  
     <title>Personal Portfolio</title>
   </head>
   <body>
     <main class="container">
-      <header class="header">
-        <nav class="toolbar">
-          <h2><a href="index.html" class="mylogo">GeekyHacks</a></h2>
-          <button class="menu-button" type="button" title="Menu">
-            <img src="assests/images/menubutton.svg" alt="menu-button" />
-          </button>
-        </nav>
-        <section class="headlines">
-          <h3 class="headlines primary">
-            Hey there. I’m Abdullah. <br />
-            <span class="dev-span"> I’m a software developer</span>
-          </h3>
-          <p class="headlines supporting-content">
-            I can help you build a product , feature or website Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don’t hesitate to contact me.
-          </p>
+      <header class="header-div">
+        
+        <header class="header">
+          <section class="toolbar">
+            <a href="index.html" class="mylogo">GeekyHacks</a>
+            <button class="menu-button" type="button" title="Menu">
+              <img src="assests/images/menubutton.svg" alt="menu-button" />
+            </button>
+          </section>
+          <section class="headlines">
+            <div class="headlines-container">
+              <div class="primary">
+                Hey there. I’m Abdullah. <br />
+                <span class="dev-span"> I’m a software developer</span>
+              </div>
+              <div class="supporting-content">
+                I can help you build a product , feature or website Look through
+                some of my work and experience! If you like what you see and
+                have a project you need coded, don’t hesitate to contact me.
+              </div>
 
-          <ul class="headlines contact-icons">
-            <li>
-              <button type="button" title="icon-twitter" class="btn-twitter">
-                <img src="assests/images/twitter.svg" alt="twitter" />
-              </button>
-            </li>
-            <li>
-              <button type="button" title="icon-linkedin" class="btn-linkedin">
-                <img src="assests/images/Linkedin icon.svg" alt="Linkedin" />
-              </button>
-            </li>
-            <li>
-              <button type="button" title="icon-medium" class="btn-medium">
-                <img src="assests/images/medium.svg" alt="medium" />
-              </button>
-            </li>
-            <li>
-              <button type="button" title="icon-github" class="btn-github">
-                <img src="assests/images/github.svg" alt="github" />
-              </button>
-            </li>
-            <li>
-              <button type="button" title="icon-github" class="btn-angellist">
-                <img src="assests/images/angellist.svg" alt="angellist" />
-              </button>
-            </li>
-          </ul>
-
-          <a href="index.html" class="headlines downarrow-div">
-            <button title="btn-downarrow" type="button">
-              <img
-                src="assests/images/Disabled.svg"
-                alt="downarrow"
-                class="downarrow"
-              /></button
-          ></a>
-        </section>
+              <div class="contact-icons">
+                <ul class="contact-list">
+                  <li>
+                    <button
+                      type="button"
+                      title="icon-twitter"
+                      class="btn-twitter"
+                    >
+                      <img src="assests/images/twitter.svg" alt="twitter" />
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      title="icon-linkedin"
+                      class="btn-linkedin"
+                    >
+                      <img
+                        src="assests/images/Linkedin icon.svg"
+                        alt="Linkedin"
+                      />
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      title="icon-medium"
+                      class="btn-medium"
+                    >
+                      <img src="assests/images/medium.svg" alt="medium" />
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      title="icon-github"
+                      class="btn-github"
+                    >
+                      <img src="assests/images/github.svg" alt="github" />
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      title="icon-github"
+                      class="btn-angellist"
+                    >
+                      <img src="assests/images/angellist.svg" alt="angellist" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="downarrow-div">
+                <a href="index.html">
+                  <button title="btn-downarrow" type="button">
+                    <img
+                      src="assests/images/Disabled.svg"
+                      alt="downarrow"
+                      class="downarrow"
+                    /></button
+                ></a>
+              </div>
+            </div>
+          </section>
+        </header>
       </header>
-
-      <section class="mywork">
-        <div class="mywork header">
-          <h2>
+      <section class="my-work">
+        <div class="aboutme-header">
+          <div>
             My Recent <br />
             Works.
-          </h2>
+          </div>
 
-          <img src="assests/images/Indicator.svg" alt="Indicator" />
+          <div><img src="assests/images/Indicator.svg" alt="Indicator" /></div>
         </div>
-        <div class="mywork project">
+        <div class="project1">
           <div class="project1-img"></div>
           <div class="project1-content">
             <div class="project1-content-sec1">
@@ -96,7 +125,7 @@
           </div>
         </div>
 
-        <div class="mywork project">
+        <div class="project2">
           <div class="project2-img"></div>
           <div class="project2-content">
             <div class="project2-content-sec1">
@@ -116,7 +145,7 @@
           </div>
         </div>
 
-        <div class="mywork project">
+        <div class="project3">
           <div class="project3-img"></div>
           <div class="project3-content">
             <div class="project3-content-sec1">
@@ -136,7 +165,7 @@
           </div>
         </div>
 
-        <div class="mywork project">
+        <div class="project4">
           <div class="project4-img"></div>
           <div class="project4-content">
             <div class="project4-content-sec1">
@@ -156,9 +185,7 @@
           </div>
         </div>
       </section>
-
-
-      <section class="aboutme">
+      <section class="about-me">
         <div class="about-me-0"></div>
         <div class="about-me-1">Keeping track of hundreds of components</div>
         <div class="about-me-2">
@@ -189,3 +216,5 @@
     </main>
   </body>
 </html>
+
+

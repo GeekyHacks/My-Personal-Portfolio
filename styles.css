@@ -6,76 +6,55 @@
   border: 0;
   border-spacing: 0;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+body {
+  margin: 0;
+  padding: 1vw;
 }
 
 .toolbar {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  margin: 2vw;
+  padding: 1vw;
   align-items: baseline;
-  margin-bottom: 15px;
-  margin-top: 5px;
-}
-
-.menu-button {
-  margin-right: 20px;
 }
 
 .mylogo {
   font-family: "poppins", sans-serif;
   font-style: normal;
-  font-size: large;
+  font-size: 55%;
   font-weight: 700;
-  margin-left: 10px;
-}
-
-.mylogo,
-.menu-button,
-.icon-menu,
-.btn-twitter,
-.btn-github,
-.btn-medium,
-.btn-angellist,
-.btn-linkedin,
-.btn-downarrow {
+  margin-left: 5%;
   border: none;
   text-decoration: none;
   cursor: pointer;
   color: #172b4d;
 }
 
+.menu-button{
+  margin-right: 5%;
+}
+
 .headlines {
   background-image: url(assests/images/header-illsutration-mobile.svg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding-top: 70px;
-}
-
-.headlines-container {
-  margin: 5px 5px;
+  background-size: 103% 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 10px;
-}
-
-.headlines-container div {
-  color: #172b4d;
-  font-family: "poppins", sans-serif;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .primary {
   font-family: "poppins", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 180%;
+  margin: 7vh 1vw 0.2vh 1vw;
+  padding: 3vw;
 }
 
 .dev-span {
@@ -83,20 +62,25 @@
 }
 
 .supporting-content {
-  font-weight: 400;
-  font-size: 20px;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 100%;
+  line-height: 115%;
+  margin: 1vh 2vw;
+  padding: 1vw;
 }
-
-.contact-list {
+.contact-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
-  padding: 0;
+  margin-bottom: 7vh;
+  margin-top: 1vh;
 }
 
-.contact-list li {
-  display: inline;
+.contact-icons li {
+  margin: 1vh 1vw;
 }
 
 .downarrow {
