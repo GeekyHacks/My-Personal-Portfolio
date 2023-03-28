@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
   padding: 1vw;
@@ -35,7 +36,7 @@ body {
   color: #172b4d;
 }
 
-.menu-button{
+.menu-button {
   margin-right: 5%;
 }
 
@@ -70,6 +71,7 @@ body {
   margin: 1vh 2vw;
   padding: 1vw;
 }
+
 .contact-icons {
   display: flex;
   flex-direction: row;
