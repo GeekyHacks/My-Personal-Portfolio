@@ -56,12 +56,7 @@
   color: #172b4d;
 }
 
-.project1-content-sec3 button,
-.project2-content-sec3 button,
-.project3-content-sec3 button,
-.project4-content-sec3 button,
-.popuppage-4 button,
-.about-me-2 button {
+.green-btn button {
   background: #36b37f;
   border: 2px solid transparent;
   border-radius: 4px;
@@ -352,7 +347,7 @@ button:hover {
   margin-top: 0;
 }
 
-.about-me-2 {
+.green-btn {
   text-align: center;
   border-radius: 4px;
   padding: 20px 10px 10px 10px;
@@ -425,4 +420,48 @@ button:hover {
   margin: 2px 3px;
 }
 
-/* end */
+/* Final section */
+.input-form input,
+textarea {
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  margin: 3px 0 5px 0;
+  padding: 5px;
+  width: 90%;
+}
+
+.details {
+  background: #fff;
+  border: 1px solid #60c095;
+  height: 15vh;
+  word-break: break-all;
+}
+
+.contact-email {
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+}
+
+.final-part div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2px auto;
+  padding: 0 0 5px 0;
+}
+
+.longindicator img {
+  margin-bottom: 15px;
+}
