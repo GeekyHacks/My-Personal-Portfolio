@@ -2,3 +2,7 @@
 node_modules/
 # .gitignore
 new.md
+# .gitignore
+linterstyles.css
+# .gitignore
+newhtm.html
