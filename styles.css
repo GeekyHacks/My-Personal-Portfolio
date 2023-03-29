@@ -10,18 +10,25 @@
   padding: 0;
 }
 
-body {
+html, body {
   margin: 0;
-  padding: 1vw;
+  padding: 0;
 }
 
-.toolbar {
+.container {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  margin: 1%;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  margin: 2vw;
-  padding: 1vw;
+  margin: 1%;
+  padding: 1%;
   align-items: baseline;
+
 }
 
 .mylogo {
@@ -43,19 +50,23 @@ body {
 .headlines {
   background-image: url(assests/images/header-illsutration-mobile.svg);
   background-repeat: no-repeat;
-  background-size: 103% 100%;
+  background-size: 107% 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 100%;
+  padding-bottom: 4%;
 }
 
 .primary {
   font-family: "poppins", sans-serif;
   font-weight: 700;
   font-size: 180%;
-  margin: 7vh 1vw 0.2vh 1vw;
-  padding: 3vw;
+  margin: 6vh 0 0.2vh 0;
+  padding-top: 10vw;
+  width: 100%;
+  text-align: center;
 }
 
 .dev-span {
@@ -68,8 +79,9 @@ body {
   font-weight: 450;
   font-size: 100%;
   line-height: 115%;
-  margin: 1vh 2vw;
-  padding: 1vw;
+  margin: 1.5%;
+  padding: 1%;
+  width: 96%;
 }
 
 .contact-icons {
@@ -77,8 +89,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
-  margin-bottom: 7vh;
-  margin-top: 1vh;
+  margin-bottom: 6vh;
 }
 
 .contact-icons li {
@@ -93,11 +104,30 @@ body {
   margin-top: 60px;
 }
 
+/* my-work section */
 .my-work {
   display: grid;
   height: 100%;
   margin: 0 auto;
   padding: 0 0 5px 0;
+}
+
+.start {
+  width: 100%;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+.project,
+.last-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 16px;
+  width: 100%;
+  padding: 2%;
+  margin-top: 5vh;
 }
 
 .aboutme-header {
@@ -115,51 +145,6 @@ body {
   text-align: center;
   margin: 10px auto 20px auto;
   padding: 0 0 5px 0;
-}
-
-.project1,
-.project2,
-.project3,
-.project4,
-.about-me {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid grey;
-  border-radius: 16px;
-  width: 95vw;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-.project1-img,
-.project2-img,
-.project3-img,
-.project4-img,
-.about-me-0 {
-  height: 32vh;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.project1-img {
-  background-image: url(assests/images/project1-img.svg);
-}
-
-.project2-img {
-  background-image: url(assests/images/project2-img.svg);
-}
-
-.project3-img {
-  background-image: url(assests/images/project3-img.svg);
-}
-
-.project4-img {
-  background-image: url(assests/images/project4-img.svg);
-}
-
-.about-me-0 {
-  background-image: url(assests/images/aboutme.svg);
 }
 
 .project1-conetent,
@@ -228,26 +213,31 @@ body {
   padding: 20px 10px 10px 10px;
 }
 
-.project1-content-sec3 button,
-.project2-content-sec3 button,
-.project3-content-sec3 button,
-.project4-content-sec3 button,
-.about-me-4 button {
+.green-btn button,
+.poppage-4 button {
   background: #36b37f;
   border: 2px solid transparent;
   border-radius: 4px;
-  padding: 10px;
-  margin: 10px 5px;
+  padding: 2%;
+  margin: 2%;
+  width: 35%;
   font-family: "poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 85%;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #fff;
+  letter-spacing: 0.025em;
+  word-spacing: normal;
+  color: white;
   cursor: pointer;
   transition-duration: 0.4s;
+}
+
+.menu-button button,
+li button {
+  cursor: pointer;
+  transition-duration: 0.4s;
+
 }
 
 button:hover {
