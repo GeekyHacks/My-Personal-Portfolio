@@ -10,7 +10,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -28,7 +29,6 @@ html, body {
   margin: 1%;
   padding: 1%;
   align-items: baseline;
-
 }
 
 .mylogo {
@@ -234,13 +234,12 @@ html, body {
 }
 
 .menu-button button,
-li button {
+.contact-icons *li button {
   cursor: pointer;
   transition-duration: 0.4s;
-
 }
 
-button:hover {
+*button:hover {
   background-color: transparent;
   color: #36b37f;
 }
