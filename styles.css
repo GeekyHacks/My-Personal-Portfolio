@@ -242,8 +242,7 @@ body {
 }
 
 .aboutme1 {
-  background-image: url(assests/images/aboutme2.svg),
-    url(assests/images/about-me22.svg);
+  background-image: url(assests/images/aboutme2.svg), url(assests/images/about-me22.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
