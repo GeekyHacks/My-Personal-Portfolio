@@ -10,116 +10,89 @@
 
   <body>
     <main class="container">
-      <section class="header-div">
-        <header class="header">
-          <section class="toolbar">
-            <a href="index.html" class="mylogo">GeekyHacks</a>
-            <button class="menu-button" type="button" title="Menu">
-              <img src="assests/images/menubutton.svg" alt="menu-button" />
-            </button>
-          </section>
-          <section class="headlines">
-            <div class="headlines-container">
-              <div class="primary">
-                Hey there. I’m Abdullah. <br />
-                <span class="dev-span"> I’m a software developer</span>
-              </div>
-              <div class="supporting-content">
-                I can help you build a product , feature or website Look through
-                some of my work and experience! If you like what you see and
-                have a project you need coded, don’t hesitate to contact me.
-              </div>
+      <header class="header">
+        <h2><a href="index.html" class="mylogo">GeekyHacks</a></h2>
+        <nav class="menu-button">
+          <button type="button" title="Menu">
+            <img src="assests/images/menubutton.svg" alt="menu-button" />
+          </button>
+        </nav>
+      </header>
 
-              <div class="contact-icons">
-                <ul class="contact-list">
-                  <li>
-                    <button
-                      type="button"
-                      title="icon-twitter"
-                      class="btn-twitter"
-                    >
-                      <img src="assests/images/twitter.svg" alt="twitter" />
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      type="button"
-                      title="icon-linkedin"
-                      class="btn-linkedin"
-                    >
-                      <img
-                        src="assests/images/Linkedin icon.svg"
-                        alt="Linkedin"
-                      />
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      type="button"
-                      title="icon-medium"
-                      class="btn-medium"
-                    >
-                      <img src="assests/images/medium.svg" alt="medium" />
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      type="button"
-                      title="icon-github"
-                      class="btn-github"
-                    >
-                      <img src="assests/images/github.svg" alt="github" />
-                    </button>
-                  </li>
-                  <li>
-                    <button
-                      type="button"
-                      title="icon-github"
-                      class="btn-angellist"
-                    >
-                      <img src="assests/images/angellist.svg" alt="angellist" />
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <div class="downarrow-div">
-                <a href="about-me.html">
-                  <button title="btn-downarrow" type="button">
-                    <img
-                      src="assests/images/Disabled.svg"
-                      alt="downarrow"
-                      class="downarrow"
-                    /></button
-                ></a>
-              </div>
-            </div>
-          </section>
-        </header>
+      <section class="headlines">
+        <h1 class="primary">
+          Hey there. <br />
+          I’m Abdullah. <br />
+          <span class="dev-span"> I’m a software developer</span>
+        </h1>
+        <p class="supporting-content">
+          I can help you build a product , <br />
+          feature or website Look through <br />
+          some of my work and experience! <br />
+          If you like what you see and have <br />
+          a project you need coded, <br />
+          don’t hesitate to contact me.
+        </p>
+
+        <ul class="contact-icons">
+          <li>
+            <button type="button" title="icon-twitter" class="btn-twitter">
+              <img src="assests/images/twitter.svg" alt="twitter" />
+            </button>
+          </li>
+          <li>
+            <button type="button" title="icon-linkedin" class="btn-linkedin">
+              <img src="assests/images/Linkedin icon.svg" alt="Linkedin" />
+            </button>
+          </li>
+          <li>
+            <button type="button" title="icon-medium" class="btn-medium">
+              <img src="assests/images/medium.svg" alt="medium" />
+            </button>
+          </li>
+          <li>
+            <button type="button" title="icon-github" class="btn-github">
+              <img src="assests/images/github.svg" alt="github" />
+            </button>
+          </li>
+          <li>
+            <button type="button" title="icon-github" class="btn-angellist">
+              <img src="assests/images/angellist.svg" alt="angellist" />
+            </button>
+          </li>
+        </ul>
+
+        <a href="index.html" class="downarrow">
+          <button title="btn-downarrow" type="button">
+            <img
+              src="assests/images/Disabled.svg"
+              alt="downarrow"
+              class="downarrow"
+            /></button
+        ></a>
       </section>
       <section class="my-work">
-        <div class="aboutme-header">
-          <div>
+        <div class="start">
+          <h2>
             My Recent <br />
             Works.
-          </div>
-          <div class="indicator">
-            <img src="assests/images/Indicator.svg" alt="Indicator" />
-          </div>
+          </h2>
+
+          <img src="assests/images/Indicator.svg" alt="Indicator" />
         </div>
-        <div class="project1">
-          <div class="project1-img">
-            <img src="assests/images/project1-img.svg" alt="project1" />
-          </div>
+        <div class="project">
+          <img src="assests/images/project1-img.svg" alt="project1-img" />
           <div class="project1-content">
-            <div class="project1-content-sec1">
+            <h3 class="project1-content-sec1">
               Multi-Post Stories <br />
               Gain+Glory
-            </div>
-            <div class="project1-content-sec2">
-              <label for="html">HTML</label><label for="JS">JS</label
-              ><label for="CSS">CSS</label
-              ><label for="Ruby">Ruby and Rails</label>
-            </div>
+            </h3>
+            <ul class="project1-content-sec2">
+              <li class="small-li" for="html">HTML</li>
+              <li class="small-li" for="JS">JS</li>
+              <li class="small-li" for="CSS">CSS</li>
+              <li class="big-li" for="Ruby">Ruby & Rails</li>
+            </ul>
             <div class="green-btn">
               <a href="index.html">
                 <button type="button" title="see-project">See Project</button>
@@ -128,20 +101,19 @@
           </div>
         </div>
 
-        <div class="project2">
-          <div class="project2-img">
-            <img src="assests/images/project2-img.svg" alt="project1-img" />
-          </div>
+        <div class="project">
+          <img src="assests/images/project2-img.svg" alt="project2-img" />
           <div class="project2-content">
-            <div class="project2-content-sec1">
+            <h3 class="project2-content-sec1">
               Multi-Post Stories <br />
               Gain+Glory
-            </div>
-            <div class="project2-content-sec2">
-              <label for="html">HTML</label><label for="JS">JS</label
-              ><label for="CSS">CSS</label
-              ><label for="Ruby">Ruby and Rails</label>
-            </div>
+            </h3>
+            <ul class="project2-content-sec2">
+              <li class="small-li" for="html">HTML</li>
+              <li class="small-li" for="JS">JS</li>
+              <li class="small-li" for="CSS">CSS</li>
+              <li class="big-li" for="Ruby">Ruby & Rails</li>
+            </ul>
             <div class="green-btn">
               <a href="index.html">
                 <button type="button" title="see-project">See Project</button>
@@ -150,20 +122,19 @@
           </div>
         </div>
 
-        <div class="project3">
-          <div class="project3-img">
-            <img src="assests/images/project3-img.svg" alt="project3-img" />
-          </div>
+        <div class="project">
+          <img src="assests/images/project3-img.svg" alt="project3-img" />
           <div class="project3-content">
-            <div class="project3-content-sec1">
+            <h3 class="project3-content-sec1">
               Multi-Post Stories <br />
               Gain+Glory
-            </div>
-            <div class="project3-content-sec2">
-              <label for="html">HTML</label><label for="JS">JS</label
-              ><label for="CSS">CSS</label
-              ><label for="Ruby">Ruby and Rails</label>
-            </div>
+            </h3>
+            <ul class="project3-content-sec2">
+              <li class="small-li" for="html">HTML</li>
+              <li class="small-li" for="JS">JS</li>
+              <li class="small-li" for="CSS">CSS</li>
+              <li class="big-li" for="Ruby">Ruby & Rails</li>
+            </ul>
             <div class="green-btn">
               <a href="index.html">
                 <button type="button" title="see-project">See Project</button>
@@ -172,20 +143,19 @@
           </div>
         </div>
 
-        <div class="project4">
-          <div class="project4-img">
-            <img src="assests/images/project4-img.svg" alt="project4-img" />
-          </div>
+        <div class="last-project">
+          <img src="assests/images/project4-img.svg" alt="project4-img" />
           <div class="project4-content">
-            <div class="project4-content-sec1">
+            <h3 class="project4-content-sec1">
               Multi-Post Stories <br />
               Gain+Glory
-            </div>
-            <div class="project4-content-sec2">
-              <label for="html">HTML</label><label for="JS">JS</label
-              ><label for="CSS">CSS</label
-              ><label for="Ruby">Ruby and Rails</label>
-            </div>
+            </h3>
+            <ul class="project4-content-sec2">
+              <li class="small-li" for="html">HTML</li>
+              <li class="small-li" for="JS">JS</li>
+              <li class="small-li" for="CSS">CSS</li>
+              <li class="big-li" for="Ruby">Ruby & Rails</li>
+            </ul>
             <div class="green-btn">
               <a href="index.html">
                 <button type="button" title="see-project">See Project</button>
@@ -194,14 +164,15 @@
           </div>
         </div>
       </section>
+
       <section class="about-me">
         <div class="aboutme1">
-          <div class="about-me-0">About me</div>
-          <div class="about-me-1">
+          <h2 class="primary">About me</h2>
+          <p class="about-me-1">
             I can help you build a product , feature or website Look through
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hesitate to contact me.
-          </div>
+          </p>
           <div class="green-btn">
             <a href="index.html">
               <button type="button" title="press">Get my resume</button>
@@ -209,49 +180,66 @@
           </div>
         </div>
         <div class="languages">
-          <div class="languages-img">
-            <img src="assests/images/icon-languages.svg" alt="languages" />
-          </div>
-          <div class="languages-text">Languages</div>
-          <div class="languages-labels">
-            <label for="html">HTML</label><label for="JS">JS</label
-            ><label for="CSS">CSS</label
-            ><label for="Ruby">Ruby and Rails</label>
-          </div>
+          <img
+            class="languages-img"
+            src="assests/images/icon-languages.svg"
+            alt="languages"
+          />
+
+          <h3 class="languages-text">Languages</h3>
+          <ul class="languages-lis">
+            <li class="small-li" for="html">HTML</li>
+            <li class="small-li" for="JS">JS</li>
+            <li class="small-li" for="CSS">CSS</li>
+            <li class="small-li" for="Ruby">Ruby</li>
+          </ul>
         </div>
 
         <div class="framworks">
-          <div class="framworks-img">
-            <img src="assests/images/framworks.svg" alt="framworks" />
-          </div>
-          <div class="framworks-text">Framworks</div>
-          <div class="framworks-labels">
-            <label for="React.js">React.js</label
-            ><label for="Ruby">Ruby and Rails</label>
-            <label for="rspec">RSpec</label>
-            <label for="Capybara">Capybara</label
-            ><label for="Selenium">Selenium</label>
-          </div>
+          <img
+            class="framworks-img"
+            src="assests/images/framworks.svg"
+            alt="framworks"
+          />
+
+          <h3 class="framworks-text">Framworks</h3>
+          <ul class="framworks-lis">
+            <li class="mid-li" for="React.js">React.js</li>
+            <li class="big-li" for="Ruby">Ruby and Rails</li>
+            <li class="small-li" for="rspec">RSpec</li>
+            <li class="mid-li" for="Capybara">Capybara</li>
+            <li class="mid-li" for="Selenium">Selenium</li>
+          </ul>
         </div>
         <div class="skills">
-          <div class="skills-img">
-            <img src="assests/images/skills.svg" alt="skills" />
-          </div>
-          <div class="skills-text">Skills</div>
-          <div class="skills-labels">
-            <label for="Database Management">Database Management</label
-            ><label for="Version Control">Version Control</label>
-            <label for="CLI">CLI</label
-            ><label for="Web Development">Web Development</label>
-            <label for="API Design">API Design</label>
-          </div>
+          <img
+            class="skills-img"
+            src="assests/images/skills.svg"
+            alt="skills"
+          />
+
+          <h3 class="skills-text">Skills</h3>
+          <ul class="skills-lis">
+            <li class="big-li" for="Database Management">
+              Database Management
+            </li>
+            <li class="big-li" for="Version Control">Version Control</li>
+            <li class="small-li" for="CLI">CLI</li>
+            <li class="big-li" for="Web Development">Web Development</li>
+            <li class="mid-li" for="API Design">API Design</li>
+          </ul>
         </div>
       </section>
       <section class="final-part">
-        <div class="primary">
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </div>
+        <h2 class="primary">
+          I'm always <br />
+          interested in <br />
+          hearing about <br />
+          new projects, so <br />
+          if you'd like to <br />
+          chat please get <br />
+          in touch.
+        </h2>
         <div class="input-form">
           <input type="text" placeholder="Full name" /><input
             type="email"
@@ -272,35 +260,34 @@
         </div>
         <div class="contact-email">geekyhacks22@gmail.com</div>
 
-        <div class="contact-icons">
-          <ul class="contact-list">
-            <li>
-              <button type="button" title="icon-twitter" class="btn-twitter">
-                <img src="assests/images/twitter.svg" alt="twitter" />
-              </button>
-            </li>
-            <li>
-              <button type="button" title="icon-linkedin" class="btn-linkedin">
-                <img src="assests/images/Linkedin icon.svg" alt="Linkedin" />
-              </button>
-            </li>
-            <li>
-              <button type="button" title="icon-medium" class="btn-medium">
-                <img src="assests/images/medium.svg" alt="medium" />
-              </button>
-            </li>
-            <li>
-              <button type="button" title="icon-github" class="btn-github">
-                <img src="assests/images/github.svg" alt="github" />
-              </button>
-            </li>
-            <li>
-              <button type="button" title="icon-github" class="btn-angellist">
-                <img src="assests/images/angellist.svg" alt="angellist" />
-              </button>
-            </li>
-          </ul>
-        </div>
+        <ul class="contact-icons">
+          <li>
+            <button type="button" title="icon-twitter" class="btn-twitter">
+              <img src="assests/images/twitter.svg" alt="twitter" />
+            </button>
+          </li>
+          <li>
+            <button type="button" title="icon-linkedin" class="btn-linkedin">
+              <img src="assests/images/Linkedin icon.svg" alt="Linkedin" />
+            </button>
+          </li>
+          <li>
+            <button type="button" title="icon-medium" class="btn-medium">
+              <img src="assests/images/medium.svg" alt="medium" />
+            </button>
+          </li>
+          <li>
+            <button type="button" title="icon-github" class="btn-github">
+              <img src="assests/images/github.svg" alt="github" />
+            </button>
+          </li>
+          <li>
+            <button type="button" title="icon-github" class="btn-angellist">
+              <img src="assests/images/angellist.svg" alt="angellist" />
+            </button>
+          </li>
+        </ul>
+
         <div class="longindicator">
           <img src="assests/images/longindicator.svg" alt="Indicator" />
         </div>
