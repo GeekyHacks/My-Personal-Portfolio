@@ -202,8 +202,7 @@ body {
   white-space: nowrap;
 }
 
-.green-btn button,
-.poppage-4 button {
+.green-btn button {
   background: #36b37f;
   border: 2px solid transparent;
   border-radius: 6px;
@@ -423,5 +422,44 @@ textarea {
 .footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+/* poppage */
+.poppage-img{
+width: 100%;
+
+}
+
+.poppage-4 li{
+  width: 100%;
+  background: #36b37f;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 3%;
+  margin: 1%;
+  width: auto;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-size: 100%;
+  letter-spacing: 0.001em;
+  word-spacing: normal;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.4s;
+} 
+
+
+
+.poppage-4 button {
+
+}
+
+
+
+footer .poppage-4{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
