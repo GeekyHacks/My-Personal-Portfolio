@@ -311,13 +311,13 @@ body {
 .skills-lis,
 .framworks-lis,
 .languages-lis {
-  gap: 10px;
-  margin: 7% 2% 5% 2%;
+  /*gap: 10px;*/
+  margin: 7% 2% 5% 13%;
   width: 97%;
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
 }
 
 .framworks-lis li,
@@ -325,14 +325,16 @@ body {
 .skills-lis li {
   font-family: "poppins", sans-serif;
   font-weight: 550;
-  font-size: 80%;
+  font-size: 90%;
   color: #36b37e;
   letter-spacing: 0.01em;
   background: #fff;
   border: 1px solid transparent;
   border-radius: 5px;
-  padding: 2%;
+  padding: 4%;
   white-space: nowrap;
+  float: left;
+  margin: 2%;
 }
 
 .small-li {
