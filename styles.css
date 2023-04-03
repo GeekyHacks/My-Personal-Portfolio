@@ -351,6 +351,9 @@ body {
 
 /* contact me section */
 .contact-me {
+  background-image: url(assests/images/contactbottom.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -393,7 +396,7 @@ textarea {
 }
 
 .contact-email {
-  font-family: "poppins", sans-serif;
+  font-family: "poppins", sans-s  erif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
