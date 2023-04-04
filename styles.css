@@ -379,7 +379,7 @@ body {
 .input-form input,
 textarea {
   font-family: "poppins", sans-serif;
-  font-style: normal;
+  font-style: italic;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -389,6 +389,7 @@ textarea {
   margin: 3px 0 5px 0;
   padding: 5px;
   width: 90%;
+  text-align: left;
 }
 
 .details {
