@@ -94,11 +94,9 @@
               <li class="small-li" for="CSS">CSS</li>
               <li class="big-li" for="Ruby">Ruby & Rails</li>
             </ul>
-            <div class="green-btn">
-              <a href="popuppage.html">
-                <button type="button" title="see-project">See Project</button>
-              </a>
-            </div>
+            <button class="green-btn" type="button" title="see-project">
+              <span> <a href="popuppage.html"> See Project </a></span>
+            </button>
           </div>
         </div>
 
@@ -115,11 +113,9 @@
               <li class="small-li" for="CSS">CSS</li>
               <li class="big-li" for="Ruby">Ruby & Rails</li>
             </ul>
-            <div class="green-btn">
-              <a href="index.html">
-                <button type="button" title="see-project">See Project</button>
-              </a>
-            </div>
+            <button class="green-btn" type="button" title="see-project">
+              <span> <a href="popuppage.html"> See Project </a></span>
+            </button>
           </div>
         </div>
 
@@ -136,11 +132,9 @@
               <li class="small-li" for="CSS">CSS</li>
               <li class="big-li" for="Ruby">Ruby & Rails</li>
             </ul>
-            <div class="green-btn">
-              <a href="index.html">
-                <button type="button" title="see-project">See Project</button>
-              </a>
-            </div>
+            <button class="green-btn" type="button" title="see-project">
+              <span><a href="popuppage.html"> See Project </a></span>
+            </button>
           </div>
         </div>
 
@@ -157,11 +151,9 @@
               <li class="small-li" for="CSS">CSS</li>
               <li class="big-li" for="Ruby">Ruby & Rails</li>
             </ul>
-            <div class="green-btn">
-              <a href="index.html">
-                <button type="button" title="see-project">See Project</button>
-              </a>
-            </div>
+            <button class="green-btn" type="button" title="see-project">
+              <span> <a href="popuppage.html"> See Project </a></span>
+            </button>
           </div>
         </div>
       </section>
@@ -174,11 +166,9 @@
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hesitate to contact me.
           </p>
-          <div class="green-btn">
-            <a href="index.html">
-              <button type="button" title="press">Get my resume</button>
-            </a>
-          </div>
+          <button class="green-btn" type="button" title="see-project">
+            <span><a href="index.html"> Get my resume </a></span>
+          </button>
         </div>
 
         <ul class="aboutme2">
@@ -244,9 +234,26 @@
           chat please get <br />
           in touch.
         </h2>
-        <form class="input-form">
-          <input type="text" placeholder="Full name" maxlength="30" required />
-          <input required type="email" placeholder="Email address" />
+        <form
+          autocomplete="off"
+          action="https://formspree.io/f/xdovwjar"
+          method="post"
+          class="input-form"
+        >
+          <input
+            co
+            type="text"
+            placeholder="Full name"
+            maxlength="30"
+            name="full-name"
+            required
+          />
+          <input
+            required
+            type="email"
+            placeholder="Email address"
+            name="email"
+          />
           <textarea
             class="details"
             id="details"
@@ -255,9 +262,10 @@
             placeholder="Hey I’d like to connect to..."
             maxlength="500"
             required
+            name="message"
           ></textarea>
-          <button class="green-btn" type="button" title="press">
-            <a href="https://github.com/GeekyHacks">Get in touch </a>
+          <button name="submit" class="green-btn" type="submit" title="press">
+            <span>Get in touch </span>
           </button>
           <p class="contact-email">geekyhacks22@gmail.com</p>
         </form>
