@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -94,11 +97,9 @@
               <li class="small-li" for="CSS">CSS</li>
               <li class="big-li" for="Ruby">Ruby & Rails</li>
             </ul>
-            <div class="green-btn">
-              <a href="index.html">
-                <button type="button" title="see-project">See Project</button>
-              </a>
-            </div>
+            <button class="green-btn" type="button" title="see-project">
+              <a href="popuppage.html"> See Project </a>
+            </button>
           </div>
         </div>
 
@@ -115,11 +116,9 @@
               <li class="small-li" for="CSS">CSS</li>
               <li class="big-li" for="Ruby">Ruby & Rails</li>
             </ul>
-            <div class="green-btn">
-              <a href="index.html">
-                <button type="button" title="see-project">See Project</button>
-              </a>
-            </div>
+            <button class="green-btn" type="button" title="see-project">
+              <a href="popuppage.html"> See Project </a>
+            </button>
           </div>
         </div>
 
@@ -136,11 +135,9 @@
               <li class="small-li" for="CSS">CSS</li>
               <li class="big-li" for="Ruby">Ruby & Rails</li>
             </ul>
-            <div class="green-btn">
-              <a href="index.html">
-                <button type="button" title="see-project">See Project</button>
-              </a>
-            </div>
+            <button class="green-btn" type="button" title="see-project">
+              <a href="popuppage.html"> See Project </a>
+            </button>
           </div>
         </div>
 
@@ -157,11 +154,9 @@
               <li class="small-li" for="CSS">CSS</li>
               <li class="big-li" for="Ruby">Ruby & Rails</li>
             </ul>
-            <div class="green-btn">
-              <a href="index.html">
-                <button type="button" title="see-project">See Project</button>
-              </a>
-            </div>
+            <button class="green-btn" type="button" title="see-project">
+              <a href="popuppage.html"> See Project </a>
+            </button>
           </div>
         </div>
       </section>
@@ -174,11 +169,9 @@
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hesitate to contact me.
           </p>
-          <div class="green-btn">
-            <a href="index.html">
-              <button type="button" title="press">Get my resume</button>
-            </a>
-          </div>
+          <button class="green-btn" type="button" title="see-project">
+            <a href="index.html"> Get my resume </a>
+          </button>
         </div>
 
         <ul class="aboutme2">
@@ -244,10 +237,25 @@
           chat please get <br />
           in touch.
         </h2>
-        <div class="input-form">
-          <input type="text" placeholder="Full name" /><input
+        <form
+          autocomplete="off"
+          action="https://formspree.io/f/xdovwjar"
+          method="post"
+          class="input-form"
+        >
+          <input
+            co
+            type="text"
+            placeholder="Full name"
+            maxlength="30"
+            name="full-name"
+            required
+          />
+          <input
+            required
             type="email"
             placeholder="Email address"
+            name="email"
           />
           <textarea
             class="details"
@@ -255,14 +263,15 @@
             cols="20"
             rows="30"
             placeholder="Hey I’d like to connect to..."
+            maxlength="500"
+            required
+            name="message"
           ></textarea>
-        </div>
-        <div class="green-btn">
-          <a href="https://github.com/GeekyHacks">
-            <button type="button" title="press">Get in touch</button>
-          </a>
-        </div>
-        <div class="contact-email">geekyhacks22@gmail.com</div>
+          <button name="submit" class="green-btn" type="submit" title="press">
+            Get in touch 
+          </button>
+          <p class="contact-email">geekyhacks22@gmail.com</p>
+        </form>
       </section>
     </main>
 
