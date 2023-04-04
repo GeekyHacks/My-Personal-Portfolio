@@ -1,5 +1,7 @@
 * {
+  text-decoration: none;
   box-sizing: border-box;
+  color: #fff;
   outline: none;
   background: none repeat scroll 0 0 transparent;
   border: 0;
@@ -7,6 +9,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 html,
@@ -242,7 +245,8 @@ body {
 }
 
 .aboutme1 {
-  background-image: url(assests/images/aboutme2.svg), url(assests/images/about-me22.svg);
+  background-image: url(assests/images/aboutme2.svg),
+    url(assests/images/about-me22.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
@@ -395,7 +399,7 @@ textarea {
 }
 
 .contact-email {
-  font-family: "poppins", sans-s  erif;
+  font-family: "poppins", sans-s erif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -419,26 +423,69 @@ textarea {
 }
 
 /* footer section */
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 /* poppage */
-.poppage-img{
-width: 100%;
+
+.poppage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.poppage> * {
+margin: 3% auto;
 
 }
 
-.poppage-4 li{
+.poppage-img {
+  flex: 1;
   width: 100%;
+
+}
+
+.poppage-2 li {
+  color: #3a4a42;
+  background: #ebf0ee;
+  font-family: "poppins", sans-serif;
+  font-weight: 550;
+  font-size: 80%;
+  letter-spacing: 0.01em;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 2%;
+  white-space: nowrap;
+}
+
+.poppage-3 {
+  color: #344563;
+}
+.poppage-1 {
+  color: #172b4d; 
+}
+
+.poppage-4 {
+  display: flex;
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin: 27% auto 5% auto;
+  width: 96%;
+}
+
+.poppage-4 li {
+  flex: 1;
+  /* flex-wrap: nowrap; */
+  width: 96%;
+  margin: 0 auto;
+}
+
+.poppage-4 button {
   background: #36b37f;
   border: 2px solid transparent;
   border-radius: 6px;
-  padding: 3%;
-  margin: 1%;
-  width: auto;
+  padding: 6%;
+
   font-family: "poppins", sans-serif;
   font-weight: 500;
   font-size: 100%;
@@ -447,19 +494,4 @@ width: 100%;
   color: white;
   cursor: pointer;
   transition-duration: 0.4s;
-} 
-
-
-
-.poppage-4 button {
-
-}
-
-
-
-footer .poppage-4{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
