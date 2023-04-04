@@ -408,6 +408,8 @@ textarea {
   line-height: 32px;
   text-align: center;
   color: #42526e;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .contact-me-contact-icons {
@@ -416,7 +418,6 @@ textarea {
   justify-content: center;
   align-items: baseline;
   width: 100%;
-  margin-top: 10%;
   margin-bottom: 5%;
 }
 
