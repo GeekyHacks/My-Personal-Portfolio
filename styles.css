@@ -39,7 +39,7 @@ body {
 }
 
 .mylogo {
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 55%;
   font-weight: 700;
@@ -68,7 +68,7 @@ body {
 
 .primary {
   color: #172b4d;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 180%;
   margin: 16% 1% 5% 2%;
@@ -83,7 +83,7 @@ body {
 
 .supporting-content {
   color: #172b4d;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 100%;
@@ -123,7 +123,7 @@ body {
 
 .my-work-header {
   color: #172b4d;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 180%;
   margin: 16% 1% 5% 2%;
@@ -169,7 +169,7 @@ body {
 .project3-content-sec1,
 .project4-content-sec1 {
   color: #3a4a42;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 115%;
@@ -197,7 +197,7 @@ body {
 .about-me-2 li {
   color: #3a4a42;
   background: #ebf0ee;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 550;
   font-size: 80%;
   letter-spacing: 0.01em;
@@ -214,7 +214,7 @@ body {
   border: 2px solid transparent;
   border-radius: 6px;
   width: auto;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 100%;
   letter-spacing: 0.001em;
@@ -232,43 +232,22 @@ body {
   transition-duration: 0.4s;
 }
 
-button span {
+button {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-button span::after {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
 button:hover {
   background: #36b37f;
-  color: #abe3cc;
-}
-
-button:hover span {
-  padding-top: 2%;
-}
-
-button:hover span::after {
-  opacity: 1;
-  right: 0;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 button:active {
   transition: all 0.15s;
   background: #008552;
-}
-
-button:active::after span {
-  opacity: 1;
-  transition: 0s;
+  box-shadow: none;
 }
 
 /* about me */
@@ -282,7 +261,8 @@ button:active::after span {
 }
 
 .aboutme1 {
-  background-image: url(assests/images/aboutme2.svg), url(assests/images/about-me22.svg);
+  background-image: url(assests/images/aboutme2.svg),
+    url(assests/images/about-me22.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
@@ -294,7 +274,7 @@ button:active::after span {
 
 .about-me-header {
   color: #172b4d;
-  font-family: "poppins", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 180%;
   margin: 16% 1% 5% 2%;
@@ -305,7 +285,7 @@ button:active::after span {
 
 .about-me-1 {
   color: #42526e;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 100%;
@@ -336,7 +316,7 @@ button:active::after span {
   margin-bottom: 5%;
   color: #344563;
   align-self: center;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 150%;
@@ -358,7 +338,7 @@ button:active::after span {
 .framworks-lis li,
 .languages-lis li,
 .skills-lis li {
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 550;
   font-size: 80%;
   color: #36b37e;
@@ -397,7 +377,7 @@ button:active::after span {
 
 .contact-me-header {
   color: #172b4d;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 180%;
   margin: 16% 1% 5% 1%;
@@ -414,7 +394,7 @@ button:active::after span {
 
 .input-form input,
 textarea {
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
@@ -423,7 +403,7 @@ textarea {
   background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
-  margin: 3px 0 5px 0;
+  margin: 12px 0 12px 0;
   padding: 5px;
   width: 90%;
   text-align: left;
@@ -438,7 +418,7 @@ textarea {
 }
 
 .contact-email {
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -482,7 +462,7 @@ textarea {
 .poppage-2 li {
   color: #3a4a42;
   background: #ebf0ee;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 550;
   font-size: 80%;
   letter-spacing: 0.01em;
@@ -517,7 +497,7 @@ textarea {
   border: 2px solid transparent;
   border-radius: 6px;
   padding: 6%;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 100%;
   letter-spacing: 0.001em;
