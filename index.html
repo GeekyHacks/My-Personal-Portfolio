@@ -245,24 +245,22 @@
           in touch.
         </h2>
         <form class="input-form">
-          <input type="text" placeholder="Full name" /><input
-            type="email"
-            placeholder="Email address"
-          />
+          <input type="text" placeholder="Full name" maxlength="30" required />
+          <input required type="email" placeholder="Email address" />
           <textarea
             class="details"
             id="details"
             cols="20"
             rows="30"
             placeholder="Hey I’d like to connect to..."
+            maxlength="500"
+            required
           ></textarea>
+          <button class="green-btn" type="button" title="press">
+            <a href="https://github.com/GeekyHacks">Get in touch </a>
+          </button>
+          <p class="contact-email">geekyhacks22@gmail.com</p>
         </form>
-        <div class="green-btn">
-          <a href="https://github.com/GeekyHacks">
-            <button type="button" title="press">Get in touch</button>
-          </a>
-        </div>
-        <div class="contact-email">geekyhacks22@gmail.com</div>
       </section>
     </main>
 
