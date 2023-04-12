@@ -30,7 +30,7 @@ body {
   justify-content: center;
 }
 
-.header h2,
+.header .logo,
 nav {
   display: none;
 }
@@ -44,10 +44,16 @@ nav {
   margin: 1% auto;
 }
 
+.green-btn a,
+.resume-btn a {
+  padding: 4%;
+  white-space: nowrap;
+}
+
 .desktop-header li a {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-size: 60%;
+  font-size: 85%;
   font-weight: 700;
   cursor: pointer;
   color: #172b4d;
@@ -71,6 +77,7 @@ nav {
 .supporting-content-mobile {
   display: none;
 }
+
 .dev-span-mobile {
   display: none;
 }
@@ -81,7 +88,7 @@ nav {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 143%;
+  font-size: 165%;
   line-height: 32px;
   letter-spacing: 0.25px;
   color: #172b4d;
@@ -96,7 +103,7 @@ nav {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 54%;
+  font-size: 85%;
   line-height: 136%;
   width: 100%;
   margin-top: 2.5%;
@@ -110,12 +117,11 @@ nav {
   margin: 0 auto;
   margin-bottom: 10%;
   margin-top: 2.5%;
-  /* width: 9%; */
   padding: -1%;
   gap: 10px;
 }
 
-.down-arrow-btn{
+.down-arrow-btn {
   margin-top: 5%;
 }
 
@@ -150,6 +156,7 @@ nav {
 .small-indcator {
   display: none;
 }
+
 .projects {
   display: grid;
   justify-items: center;
@@ -157,8 +164,6 @@ nav {
   grid-template-columns: repeat(3, 25%);
   grid-template-rows: 1fr 1fr;
   gap: 3%;
-  /* align-items: center; */
-  /* align-content: stretch; */
   justify-content: center;
 }
 
@@ -170,7 +175,7 @@ nav {
   justify-content: center;
   border: 1px solid grey;
   border-radius: 12px;
-width: 100%;
+  width: 100%;
   padding: 2%;
   align-items: stretch;
   justify-self: center;
@@ -206,7 +211,6 @@ width: 100%;
   font-weight: 600;
   font-size: 85%;
   background: #fff;
-  /* padding: 1%; */
   margin-top: 4%;
 }
 
@@ -222,9 +226,7 @@ width: 100%;
   padding: 2%;
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   justify-content: center;
-  /* flex-wrap: wrap; */
   align-items: center;
 }
 
@@ -240,28 +242,25 @@ width: 100%;
   font-family: "Inter", sans-serif;
   font-weight: 450;
   font-size: 62%;
-  /* letter-spacing: 0.01em; */
   border: 1px solid transparent;
   border-radius: 5px;
   padding: 2%;
   white-space: nowrap;
 }
 
-.green-btn, .resume-btn {
+.green-btn,
+.resume-btn {
   transition: all 0.5s;
   cursor: pointer;
   background: #36b37f;
   border: 2px solid transparent;
   border-radius: 6px;
-  /* width: 50%; */
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 70%;
-  /* letter-spacing: 0.001em; */
-  /* word-spacing: normal; */
+  font-size: 85%;
   color: white;
   transition-duration: 0.4s;
-  padding: 4%;
+  padding: 2.5%;
   margin-top: 3%;
   margin-bottom: 5%;
 }
@@ -291,7 +290,6 @@ button:active {
   box-shadow: none;
 }
 
-
 /* about me section */
 .about-me {
   display: flex;
@@ -307,7 +305,7 @@ button:active {
   flex-direction: column;
   display: flex;
   align-items: center;
-  background-image: url(assests/images/about-me-background-desktop.svg);
+  background-image: url(assests/images/aboutbackground-desktop.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
@@ -323,7 +321,6 @@ button:active {
   font-size: 180%;
   margin: 4% 1% 1% 1%;
   padding-top: 4%;
-  /* width: 100%; */
 }
 
 .about-me-1 {
@@ -331,26 +328,24 @@ button:active {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 73%;
+  font-size: 85%;
   line-height: 122%;
-  /* margin-top: 5%; */
-  /* margin-bottom: 7%; */
   margin: 1% 9%;
 }
 
-.resume-btn{
+.resume-btn {
   padding: 1.5%;
   margin-top: 2%;
   margin-bottom: 4%;
 }
 
-.aboutme2{
+.aboutme2 {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   align-items: inherit;
   gap: 5%;
 }
+
 .skills,
 .framworks,
 .languages {
@@ -416,4 +411,108 @@ button:active {
 
 .big-li {
   flex: 1;
+}
+
+/* contact me section */
+.contact-me {
+  background-image: url(assests/images/contactbackground-desktop.svg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 7%;
+}
+
+.contact-me-header-mobile {
+  display: none;
+}
+
+.contact-me-header-desktop {
+  color: #172b4d;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 140%;
+  margin-left: 7%;
+  padding-top: 4%;
+  letter-spacing: 0.01rem;
+  width: 50%;
+  text-align: left;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input-form input,
+textarea {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #172b4d;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  margin: 12px 0 12px 0;
+  padding: 5px;
+  width: 90%;
+  text-align: left;
+}
+
+.green-btn-submit {
+  transition: all 0.5s;
+  cursor: pointer;
+  background: #36b37f;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 85%;
+  color: white;
+  transition-duration: 0.4s;
+  padding: 1.5%;
+  margin-top: 1%;
+  align-self: self-start;
+  margin-bottom: 4%;
+  margin-left: 5%;
+}
+
+.details {
+  background: #fff;
+  border: 1px solid #60c095;
+  height: 15vh;
+  word-break: break-all;
+  font-style: normal;
+}
+
+.contact-email {
+  display: none;
+}
+
+.contact-me-contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  margin-top: 1%;
+}
+
+.longendingline {
+  margin-top: 5%;
+}
+
+.contact-me-contact-icons li {
+  margin: 1%;
+}
+
+.longindicator {
+  display: none;
 }
