@@ -349,7 +349,7 @@ button:active {
 .skills,
 .framworks,
 .languages {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   border: 1px solid grey;
@@ -362,7 +362,7 @@ button:active {
 
 .languages-img,
 .framworks-img,
-.skills-img{
+.skills-img {
   margin-bottom: 5%;
 }
 
@@ -371,14 +371,12 @@ button:active {
 .skills-text {
   flex: 0.5;
   margin-top: 5%;
-
   color: #344563;
   align-self: center;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 150%;
-
 }
 
 .skills-lis,
@@ -395,7 +393,6 @@ button:active {
   flex-wrap: wrap;
   padding: 2%;
   align-content: inherit;
-  
 }
 
 .framworks-lis li,
