@@ -17,6 +17,22 @@ body {
   padding: 0;
 }
 
+img {
+  opacity: 1;
+}
+
+img:hover {
+  opacity: .9;
+  background: transparent;
+  color: transparent;
+  border-style: none;
+  border: none;
+  background-color: none;
+  background-origin: border-box;
+  background-blend-mode: soft-light;
+  contain: content;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -274,6 +290,23 @@ button:active {
   box-shadow: none;
 }
 
+.downarrow-btn:hover, 
+.socialbtn:hover {
+  transition: all 0.15s;
+  box-sizing: content-box;
+  background-clip: content-box;
+  background: transparent;
+  box-shadow: transparent;
+ 
+}
+
+.downarrow-btn:active,
+.socialbtn:active  {
+  transition: all 0.15s;
+  background: transparent;
+  background-clip: content-box;
+  box-shadow: transparent;
+}
 /* about me */
 .about-me {
   display: flex;

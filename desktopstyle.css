@@ -20,6 +20,30 @@ body {
   padding: 0;
 }
 
+img {
+  opacity: 1;
+}
+
+svg:hover {
+  fill: none;
+  background: transparent;
+  outline: transparent;
+  color: transparent;
+  background-color: transparent;
+
+}
+img:hover {
+  opacity: .5;
+
+}
+
+img:focus{
+  background-color: transparent;
+outline-style: none;
+outline-color: 0; 
+outline: 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -269,6 +293,8 @@ nav {
 .headlines-contact-icons li button img,
 .contact-me-contact-icons li button img {
   cursor: pointer;
+  background: transparent;
+  color: transparent;
   transition-duration: 0.4s;
 }
 
@@ -281,13 +307,31 @@ button {
 
 button:hover {
   background: #36b37f;
+  color: transparent;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 button:active {
   transition: all 0.15s;
   background: #008552;
-  box-shadow: none;
+}
+
+.downarrow-btn:hover, 
+.socialbtn:hover {
+  transition: all 0.15s;
+  box-sizing: content-box;
+  background-clip: content-box;
+  background: transparent;
+  box-shadow: transparent;
+ 
+}
+
+.downarrow-btn:active,
+.socialbtn:active  {
+  transition: all 0.15s;
+  background: transparent;
+  background-clip: content-box;
+  box-shadow: transparent;
 }
 
 /* about me section */
