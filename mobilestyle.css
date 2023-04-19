@@ -17,21 +17,6 @@ body {
   padding: 0;
 }
 
-img {
-  opacity: 1;
-}
-
-img:hover {
-  opacity: 0.9;
-  background: transparent;
-  color: transparent;
-  border-style: none;
-  border: none;
-  background-color: none;
-  background-origin: border-box;
-  background-blend-mode: soft-light;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -63,6 +48,11 @@ img:hover {
   text-decoration: none;
   cursor: pointer;
   color: #172b4d;
+  opacity: 1;
+}
+
+.mylogo:hover {
+  opacity: 0.8;
 }
 
 .menu-button {
@@ -290,12 +280,13 @@ button:active {
 }
 
 .downarrow-btn:hover,
-.socialbtn:hover {
+.socialbtn:hover,
+.menu-button:hover,
+.logo:hover {
+  opacity: 0.8;
   transition: all 0.15s;
-  box-sizing: content-box;
-  background-clip: content-box;
   background: transparent;
-  box-shadow: transparent;
+  box-shadow: none;
 }
 
 .downarrow-btn:active,
@@ -305,6 +296,7 @@ button:active {
   background-clip: content-box;
   box-shadow: transparent;
 }
+
 /* about me */
 .about-me {
   display: flex;
@@ -316,8 +308,7 @@ button:active {
 }
 
 .aboutme1 {
-  background-image: url(assests/images/aboutme2.svg),
-    url(assests/images/about-me22.svg);
+  background-image: url(assests/images/aboutme2.svg), url(assests/images/about-me22.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
