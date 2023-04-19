@@ -30,18 +30,16 @@ svg:hover {
   outline: transparent;
   color: transparent;
   background-color: transparent;
-
 }
 img:hover {
-  opacity: .5;
-
+  opacity: 0.5;
 }
 
-img:focus{
+img:focus {
   background-color: transparent;
-outline-style: none;
-outline-color: 0; 
-outline: 0;
+  outline-style: none;
+  outline-color: 0;
+  outline: 0;
 }
 
 .container {
@@ -316,18 +314,17 @@ button:active {
   background: #008552;
 }
 
-.downarrow-btn:hover, 
+.downarrow-btn:hover,
 .socialbtn:hover {
   transition: all 0.15s;
   box-sizing: content-box;
   background-clip: content-box;
   background: transparent;
   box-shadow: transparent;
- 
 }
 
 .downarrow-btn:active,
-.socialbtn:active  {
+.socialbtn:active {
   transition: all 0.15s;
   background: transparent;
   background-clip: content-box;

@@ -22,7 +22,7 @@ img {
 }
 
 img:hover {
-  opacity: .9;
+  opacity: 0.9;
   background: transparent;
   color: transparent;
   border-style: none;
@@ -30,7 +30,6 @@ img:hover {
   background-color: none;
   background-origin: border-box;
   background-blend-mode: soft-light;
-  contain: content;
 }
 
 .container {
@@ -290,18 +289,17 @@ button:active {
   box-shadow: none;
 }
 
-.downarrow-btn:hover, 
+.downarrow-btn:hover,
 .socialbtn:hover {
   transition: all 0.15s;
   box-sizing: content-box;
   background-clip: content-box;
   background: transparent;
   box-shadow: transparent;
- 
 }
 
 .downarrow-btn:active,
-.socialbtn:active  {
+.socialbtn:active {
   transition: all 0.15s;
   background: transparent;
   background-clip: content-box;
@@ -318,7 +316,8 @@ button:active {
 }
 
 .aboutme1 {
-  background-image: url(assests/images/aboutme2.svg), url(assests/images/about-me22.svg);
+  background-image: url(assests/images/aboutme2.svg),
+    url(assests/images/about-me22.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
