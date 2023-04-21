@@ -64,7 +64,7 @@ nav {
 }
 
 .header-1:hover {
-opacity: .8;
+  opacity: 0.8;
 }
 
 /* headlines section */
@@ -301,7 +301,6 @@ button:active {
   box-shadow: none;
 }
 
-
 .downarrow-btn:hover,
 .socialbtn:hover,
 .menu-button:hover,
@@ -312,14 +311,13 @@ button:active {
   box-shadow: none;
 }
 
-.downarrow-btn:active ,
+.downarrow-btn:active,
 .socialbtn:active {
   transition: all 0.15s;
   background: transparent;
   background-clip: content-box;
   box-shadow: none;
 }
-
 
 /* about me section */
 .about-me {
