@@ -10,6 +10,25 @@
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:hover,
+button:focus {
+  background: #172b4d;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+button:active {
+  transition: all 0.15s;
+  background: #172b4d;
+  box-shadow: none;
+}
+
 .poppage-buttons {
   display: flex;
   flex-direction: row;
@@ -24,13 +43,13 @@
 .poppage-buttons li a button {
   align-content: baseline;
   align-self: baseline;
-  background: #172B4D;
+  background: #172b4d;
   border: 2px solid transparent;
   border-radius: 4px;
   padding: 3%;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  font-size: 14pt;  
+  font-size: 14pt;
   letter-spacing: 0.001em;
   word-spacing: normal;
   color: #fff;
@@ -102,9 +121,13 @@
     text-align: left;
   }
 
+  .poppage-buttons {
+    flex: 1;
+    margin-right: 1%;
+  }
   .poppage-buttons li {
     margin: 0 2%;
-    width: 100%;
+    flex: 1;
   }
 
   .poppage-buttons li a button {
@@ -189,11 +212,12 @@
 
   .poppage-buttons {
     flex: 1;
+    margin-right: 1%;
   }
 
   .poppage-buttons li {
     margin: 0 1.5%;
-    width: 100%;
+    flex: 1;
   }
 
   .poppage-buttons li a button {
