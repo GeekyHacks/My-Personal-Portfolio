@@ -24,16 +24,16 @@
 .poppage-buttons li a button {
   align-content: baseline;
   align-self: baseline;
-  background: #36b37f;
+  background: #172B4D;
   border: 2px solid transparent;
   border-radius: 4px;
   padding: 3%;
   font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 100%;
+  font-weight: bold;
+  font-size: 14pt;  
   letter-spacing: 0.001em;
   word-spacing: normal;
-  color: white;
+  color: #fff;
   cursor: pointer;
   white-space: nowrap;
   justify-content: center;
