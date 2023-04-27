@@ -43,7 +43,7 @@ body {
   font-style: normal;
   font-size: 55%;
   font-weight: 700;
-  margin-left: 5%;
+  margin-left: 10%;
   border: none;
   text-decoration: none;
   cursor: pointer;
@@ -51,12 +51,13 @@ body {
   opacity: 1;
 }
 
-.mylogo:hover {
+.mylogo:hover,#menuBtn:hover  {
   opacity: 0.8;
 }
 
-.menu-button {
-  margin-right: 5%;
+.menuNav {
+  margin-right: 4%;
+  margin-top: 1%;
 }
 
 /* headlines section */

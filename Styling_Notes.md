@@ -7,4 +7,5 @@
   to avoid those rules being canceled out
 - you use :focus styling proprety for keyboard accessibility 
 - use the tabindex:"0" attribute for the element you want to start the tab interaction with
+- to style injected code by javascript use className to class that code and use classname for styling
 
