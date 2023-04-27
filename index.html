@@ -4,18 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Personal Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="mobilestyle.css"
+      media="(max-device-width: 768px)"
+      rel="stylesheet"
+    />
+    <link
+      href="desktopstyle.css"
+      media="(min-device-width: 768px)"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header class="header">
-      <h2><a href="index.html" class="mylogo">GeekyHacks</a></h2>
-      <nav class="menu-button">
-        <button type="button" title="Menu">
+      <ul class="desktop-header">
+        <li class="header-1"><a href="popuppage.html"> Portfolio </a></li>
+        <li class="header-1"><a href="index.html"> About </a></li>
+        <li class="header-1"><a href="Contact"> Contact </a></li>
+      </ul>
+      <h2 class="logo"><a href="index.html" class="mylogo">GeekyHacks</a></h2>
+      <nav>
+        <button type="button" title="Menu" class="menu-button">
           <img src="assests/images/menubutton.svg" alt="menu-button" />
         </button>
       </nav>
@@ -23,12 +40,17 @@
 
     <main class="container">
       <section class="headlines">
-        <h1 class="primary">
+        <h1 class="primary-mobile">
           Hey there. <br />
           I’m Abdullah. <br />
-          <span class="dev-span"> I’m a software developer</span>
+          <span class="dev-span-mobile"> I’m a software developer</span>
         </h1>
-        <p class="supporting-content">
+        <h1 class="primary-desktop">
+          Hey there. I’m Abdullah. <br />
+          <span class="dev-span-desktop"> I’m a software developer</span>
+        </h1>
+
+        <p class="supporting-content-mobile">
           I can help you build a product , <br />
           feature or website Look through <br />
           some of my work and experience! <br />
@@ -36,129 +58,196 @@
           a project you need coded, <br />
           don’t hesitate to contact me.
         </p>
-
+        <p class="supporting-content-desktop">
+          I can help you build a product , feature or website Look through some
+          of my work and<br />
+          experience! If you like what you see and have a project you need
+          coded, <br />
+          don’t hesitate to contact me.
+        </p>
         <ul class="headlines-contact-icons">
           <li>
-            <button type="button" title="icon-twitter" class="btn-twitter">
+            <button type="button" title="icon-github" class="socialbtn">
+              <img src="assests/images/github.svg" alt="github" />
+            </button>
+          </li>
+
+          <li>
+            <button type="button" title="icon-linkedin" class="socialbtn">
+              <img src="assests/images/Linkedin icon.svg" alt="Linkedin" />
+            </button>
+          </li>
+
+          <li>
+            <button type="button" title="icon-angellist" class="socialbtn">
+              <img src="assests/images/angellist.svg" alt="angellist" />
+            </button>
+          </li>
+          <li>
+            <button type="button" title="icon-twitter" class="socialbtn">
               <img src="assests/images/twitter.svg" alt="twitter" />
             </button>
           </li>
           <li>
-            <button type="button" title="icon-linkedin" class="btn-linkedin">
-              <img src="assests/images/Linkedin icon.svg" alt="Linkedin" />
-            </button>
-          </li>
-          <li>
-            <button type="button" title="icon-medium" class="btn-medium">
+            <button type="button" title="icon-medium" class="socialbtn">
               <img src="assests/images/medium.svg" alt="medium" />
-            </button>
-          </li>
-          <li>
-            <button type="button" title="icon-github" class="btn-github">
-              <img src="assests/images/github.svg" alt="github" />
-            </button>
-          </li>
-          <li>
-            <button type="button" title="icon-github" class="btn-angellist">
-              <img src="assests/images/angellist.svg" alt="angellist" />
             </button>
           </li>
         </ul>
 
-        <a href="index.html" class="downarrow">
-          <button title="btn-downarrow" type="button">
-            <img
-              src="assests/images/Disabled.svg"
-              alt="downarrow"
-              class="downarrow"
-            /></button
-        ></a>
+        <a href="index.html" class="down-arrow-btn" >
+          <button type="button" class="downarrow-btn">
+            <img src="assests/images/Disabled.svg" alt="downarrow-btn"/>
+          </button>
+        </a>
       </section>
 
       <section class="my-work">
         <div class="start">
-          <h2 class="my-work-header">
+          <h2 class="my-work-header-mobile">
             My Recent <br />
             Works.
           </h2>
+          <h2 class="my-work-header-desktop">My Recent Works.</h2>
+          <img
+            class="small-indcator"
+            src="assests/images/Indicator.svg"
+            alt="Indicator"
+          />
+        </div>
+        <ul class="projects">
+          <li class="project">
+            <img src="assests/images/project1-img.svg" alt="project1-img" />
+            <div class="project1-content">
+              <h3 class="project1-content-sec1">
+                Multi-Post Stories <br />
+                Gain+Glory
+              </h3>
+              <ul class="project1-content-sec2">
+                <li class="small-li" for="html">HTML</li>
+                <li class="small-li" for="JS">JS</li>
+                <li class="small-li" for="CSS">CSS</li>
+                <li class="big-li" for="Ruby">Ruby & Rails</li>
+              </ul>
 
-          <img src="assests/images/Indicator.svg" alt="Indicator" />
-        </div>
-        <div class="project">
-          <img src="assests/images/project1-img.svg" alt="project1-img" />
-          <div class="project1-content">
-            <h3 class="project1-content-sec1">
-              Multi-Post Stories <br />
-              Gain+Glory
-            </h3>
-            <ul class="project1-content-sec2">
-              <li class="small-li" for="html">HTML</li>
-              <li class="small-li" for="JS">JS</li>
-              <li class="small-li" for="CSS">CSS</li>
-              <li class="big-li" for="Ruby">Ruby & Rails</li>
-            </ul>
-            <button class="green-btn" type="button" title="see-project">
-              <a href="popuppage.html"> See Project </a>
-            </button>
-          </div>
-        </div>
+              <a href="popuppage.html">
+                <button class="green-btn" type="button" title="see-project">
+                  See Project
+                </button></a
+              >
+            </div>
+          </li>
 
-        <div class="project">
-          <img src="assests/images/project2-img.svg" alt="project2-img" />
-          <div class="project2-content">
-            <h3 class="project2-content-sec1">
-              Multi-Post Stories <br />
-              Gain+Glory
-            </h3>
-            <ul class="project2-content-sec2">
-              <li class="small-li" for="html">HTML</li>
-              <li class="small-li" for="JS">JS</li>
-              <li class="small-li" for="CSS">CSS</li>
-              <li class="big-li" for="Ruby">Ruby & Rails</li>
-            </ul>
-            <button class="green-btn" type="button" title="see-project">
-              <a href="popuppage.html"> See Project </a>
-            </button>
-          </div>
-        </div>
+          <li class="project">
+            <img src="assests/images/project2-img.svg" alt="project2-img" />
+            <div class="project2-content">
+              <h3 class="project2-content-sec1">
+                Multi-Post Stories <br />
+                Gain+Glory
+              </h3>
+              <ul class="project2-content-sec2">
+                <li class="small-li" for="html">HTML</li>
+                <li class="small-li" for="JS">JS</li>
+                <li class="small-li" for="CSS">CSS</li>
+                <li class="big-li" for="Ruby">Ruby & Rails</li>
+              </ul>
 
-        <div class="project">
-          <img src="assests/images/project3-img.svg" alt="project3-img" />
-          <div class="project3-content">
-            <h3 class="project3-content-sec1">
-              Multi-Post Stories <br />
-              Gain+Glory
-            </h3>
-            <ul class="project3-content-sec2">
-              <li class="small-li" for="html">HTML</li>
-              <li class="small-li" for="JS">JS</li>
-              <li class="small-li" for="CSS">CSS</li>
-              <li class="big-li" for="Ruby">Ruby & Rails</li>
-            </ul>
-            <button class="green-btn" type="button" title="see-project">
-              <a href="popuppage.html"> See Project </a>
-            </button>
-          </div>
-        </div>
+              <a href="popuppage.html"
+                ><button class="green-btn" type="button" title="see-project">
+                  See Project
+                </button></a
+              >
+            </div>
+          </li>
 
-        <div class="last-project">
-          <img src="assests/images/project4-img.svg" alt="project4-img" />
-          <div class="project4-content">
-            <h3 class="project4-content-sec1">
-              Multi-Post Stories <br />
-              Gain+Glory
-            </h3>
-            <ul class="project4-content-sec2">
-              <li class="small-li" for="html">HTML</li>
-              <li class="small-li" for="JS">JS</li>
-              <li class="small-li" for="CSS">CSS</li>
-              <li class="big-li" for="Ruby">Ruby & Rails</li>
-            </ul>
-            <button class="green-btn" type="button" title="see-project">
-              <a href="popuppage.html"> See Project </a>
-            </button>
-          </div>
-        </div>
+          <li class="project">
+            <img src="assests/images/project3-img.svg" alt="project3-img" />
+            <div class="project3-content">
+              <h3 class="project3-content-sec1">
+                Multi-Post Stories <br />
+                Gain+Glory
+              </h3>
+              <ul class="project3-content-sec2">
+                <li class="small-li" for="html">HTML</li>
+                <li class="small-li" for="JS">JS</li>
+                <li class="small-li" for="CSS">CSS</li>
+                <li class="big-li" for="Ruby">Ruby & Rails</li>
+              </ul>
+
+              <a href="popuppage.html"
+                ><button class="green-btn" type="button" title="see-project">
+                  See Project
+                </button></a
+              >
+            </div>
+          </li>
+
+          <li class="project">
+            <img src="assests/images/project3-img.svg" alt="project4-img" />
+            <div class="project4-content">
+              <h3 class="project4-content-sec1">
+                Multi-Post Stories <br />
+                Gain+Glory
+              </h3>
+              <ul class="project3-content-sec2">
+                <li class="small-li" for="html">HTML</li>
+                <li class="small-li" for="JS">JS</li>
+                <li class="small-li" for="CSS">CSS</li>
+                <li class="big-li" for="Ruby">Ruby & Rails</li>
+              </ul>
+
+              <a href="popuppage.html"
+                ><button class="green-btn" type="button" title="see-project">
+                  See Project
+                </button></a
+              >
+            </div>
+          </li>
+
+          <li class="project">
+            <img src="assests/images/project3-img.svg" alt="project5-img" />
+            <div class="project5-content">
+              <h3 class="project5-content-sec1">
+                Multi-Post Stories <br />
+                Gain+Glory
+              </h3>
+              <ul class="project5-content-sec2">
+                <li class="small-li" for="html">HTML</li>
+                <li class="small-li" for="JS">JS</li>
+                <li class="small-li" for="CSS">CSS</li>
+                <li class="big-li" for="Ruby">Ruby & Rails</li>
+              </ul>
+
+              <a href="popuppage.html"
+                ><button class="green-btn" type="button" title="see-project">
+                  See Project
+                </button></a
+              >
+            </div>
+          </li>
+
+          <li class="last-project">
+            <img src="assests/images/project4-img.svg" alt="project6-img" />
+            <div class="project6-content">
+              <h3 class="project6-content-sec1">
+                Multi-Post Stories <br />
+                Gain+Glory
+              </h3>
+              <ul class="project6-content-sec2">
+                <li class="small-li" for="html">HTML</li>
+                <li class="small-li" for="JS">JS</li>
+                <li class="small-li" for="CSS">CSS</li>
+                <li class="big-li" for="Ruby">Ruby & Rails</li>
+              </ul>
+
+              <a href="popuppage.html"
+                ><button class="green-btn" type="button" title="see-project">
+                  See Project
+                </button></a
+              >
+            </div>
+          </li>
+        </ul>
       </section>
 
       <section class="about-me">
@@ -169,9 +258,12 @@
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hesitate to contact me.
           </p>
-          <button class="green-btn" type="button" title="see-project">
-            <a href="index.html"> Get my resume </a>
-          </button>
+
+          <a href="index.html">
+            <button class="resume-btn" type="button" title="see-project">
+              Get my resume
+            </button></a
+          >
         </div>
 
         <ul class="aboutme2">
@@ -228,7 +320,7 @@
       </section>
 
       <section class="contact-me">
-        <h2 class="contact-me-header">
+        <h2 class="contact-me-header-mobile">
           I'm always <br />
           interested in <br />
           hearing about <br />
@@ -236,6 +328,10 @@
           if you'd like to <br />
           chat please get <br />
           in touch.
+        </h2>
+        <h2 class="contact-me-header-desktop">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
         </h2>
         <form
           autocomplete="off"
@@ -267,8 +363,13 @@
             required
             name="message"
           ></textarea>
-          <button name="submit" class="green-btn" type="submit" title="press">
-            Get in touch 
+          <button
+            name="submit"
+            class="green-btn-submit"
+            type="submit"
+            title="press"
+          >
+            Get in touch
           </button>
           <p class="contact-email">geekyhacks22@gmail.com</p>
         </form>
@@ -276,29 +377,34 @@
     </main>
 
     <footer class="footer">
+      <img
+        src="assests/images/longendingline.svg"
+        alt="longendingline"
+        class="longendingline"
+      />
       <ul class="contact-me-contact-icons">
         <li>
-          <button type="button" title="icon-twitter" class="btn-twitter">
+          <button type="button" title="icon-twitter" class="socialbtn">
             <img src="assests/images/twitter.svg" alt="twitter" />
           </button>
         </li>
         <li>
-          <button type="button" title="icon-linkedin" class="btn-linkedin">
+          <button type="button" title="icon-linkedin" class="socialbtn">
             <img src="assests/images/Linkedin icon.svg" alt="Linkedin" />
           </button>
         </li>
         <li>
-          <button type="button" title="icon-medium" class="btn-medium">
+          <button type="button" title="icon-medium" class="socialbtn">
             <img src="assests/images/medium.svg" alt="medium" />
           </button>
         </li>
         <li>
-          <button type="button" title="icon-github" class="btn-github">
+          <button type="button" title="icon-github" class="socialbtn">
             <img src="assests/images/github.svg" alt="github" />
           </button>
         </li>
         <li>
-          <button type="button" title="icon-github" class="btn-angellist">
+          <button type="button" title="icon-github" class="socialbtn">
             <img src="assests/images/angellist.svg" alt="angellist" />
           </button>
         </li>

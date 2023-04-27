@@ -5,50 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pop up page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="popupstyle.css" rel="stylesheet" />
+    <title>Project page</title>
   </head>
   <body>
-    <header class="poppage-img">
-      <img src="assests/images/Snapshoot Portfolio.svg" alt="project1-img" />
+    <header>
+      <img
+        src="assests/images/Snapshoot-Portfolio.svg"
+        alt="project image"
+        class="poppage-mobile-img"
+      />
+      <img
+        src="assests/images/Snapshoot-portfolio-desktop.svg"
+        alt="Medical Illustration Sets"
+        class="poppage-desktop-img"
+      />
     </header>
 
     <main class="poppage">
-      <h3 class="poppage-1">Keeping track of hundreds of components</h3>
-      <ul class="poppage-2">
-        <li>CSS</li>
-        <li>Ruby and Rails</li>
-        <li>JS</li>
-        <li>HTML</li>
-      </ul>
-      <p class="poppage-3">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry. Lorem Ipsum has been the industry's standard dummy
-        text ever since the 1500s, when an unknown printer took a galley of type
-        and scrambled it 1960s.
-      </p>
+      <div class="desktop-content">
+        <div class="first-section">
+          <h1 class="title-desktop">
+            Keeping track of hundreds of <br />
+            components
+          </h1>
+          <ul class="poppage-buttons">
+            <li>
+              <a href="index.html"
+                ><button title="live" type="button">
+                  See live
+                  <img
+                    src="assests/images/see live icon.svg"
+                    alt="see live"
+                  /></button
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/GeekyHacks/Personal-Portfolio-Microverse"
+              >
+                <button title="git" type="button">
+                  See Source
+                  <img src="assests/images/git.svg" alt="project source code" />
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="labels">
+          <li>Codekit</li>
+          <li>GitHub</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>Terminal</li>
+          <li>Codepen</li>
+        </ul>
+        <p class="p-1">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it 1960s.
+        </p>
+      </div>
+
+      <div class="mobile-content">
+        <h1 class="title-mobile">
+          Keeping track of <br />
+          hundreds of <br />
+          components
+        </h1>
+        <ul class="labels">
+          <li>Ruby and Rails</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <p class="p-1">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it 1960s.
+        </p>
+        <p class="p-2">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it 1960s.
+        </p>
+      </div>
     </main>
 
     <footer>
-      <ul class="poppage-4">
+      <ul class="poppage-buttons">
         <li>
           <a href="index.html"
             ><button title="live" type="button">
-              See Live
-              <img src="assests/images/see live icon.svg" alt="live" /></button
+              See live
+              <img
+                src="assests/images/see live icon.svg"
+                alt="see live"
+              /></button
           ></a>
         </li>
         <li>
-          <button title="git" type="button">
-            <a
-              href="https://github.com/GeekyHacks/Personal-Portfolio-Microverse"
-            >
+          <a href="https://github.com/GeekyHacks/Personal-Portfolio-Microverse">
+            <button title="git" type="button">
               See Source
-              <img src="assests/images/git.svg" alt="git" />
-            </a>
-          </button>
+              <img src="assests/images/git.svg" alt="project source code" />
+            </button>
+          </a>
         </li>
       </ul>
     </footer>
