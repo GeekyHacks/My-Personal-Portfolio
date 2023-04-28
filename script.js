@@ -1,27 +1,28 @@
-const menuBtn = document.querySelector("#menu-button");
-const menuImg = document.querySelector("#menuBtn");
-const menuPage = document.createElement("div");
+// Get the modal
+var modal = document.getElementById("menuPage");
 
-// Injecting menuPage into document
-menuPage.className = "menuPage";
-menuPage.innerHTML = (
-  <ul class="desktop-header">
-    <li class="header-1">
-      <a href="popuppage.html"> Portfolio </a>
-    </li>
-    <li class="header-1">
-      <a href="index.html"> About </a>
-    </li>
-    <li class="header-1">
-      <a href="Contact"> Contact </a>
-    </li>
-  </ul>
-);
+var menuContent = document.getElementById("menuPageContent");
 
-document.body.appendChild(menuPage);
+var bodyContent = document.getElementById("bodyContent");
 
-function menuDisplay() {
-  console.log("been clicked");
+// Get the button that opens the modal
+var menubtn = document.getElementById("menuBtn");
+
+// Get the x element that closes the modal
+var xclose = document.getElementsByClassName("xclose")[0];
+
+// When the user clicks on the button, open the modal
+menubtn.onclick = function () {
+  modal.style.display = "block";
+  modal.style.animation = "fadeIn 1s";
+};
+
+// When the user clicks on  (x), close the modal
+function fadeOut() {
+  modal.style.animation = "fadeOut 1s";
+
 }
-
-menuBtn.addEventListener("click", menuDisplay);
+xclose.onclick = function () {
+  fadeOut();
+  modal.style.display = "none";
+};

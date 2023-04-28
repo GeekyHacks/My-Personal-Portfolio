@@ -12,6 +12,24 @@
   text-align: center;
 }
 
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
 body {
   background-image: url(assests/images/Header-llustration-desktop.svg);
   background-repeat: no-repeat;
@@ -52,6 +70,9 @@ nav {
 
 .header-1 {
   opacity: 1;
+}
+.header .menuPage {
+  display: none;
 }
 
 .desktop-header li a {

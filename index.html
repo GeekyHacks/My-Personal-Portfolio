@@ -23,18 +23,36 @@
     />
   </head>
 
-  <body>
+  <body id="bodyContent">
     <header class="header">
-     
+      <!-- menupage -->
+      <div id="menuPage" class="menuPage" onclick="display()">
+        <!-- content of popup menu -->
+        <div class="menuPageContent" id="menuPageContent">
+          <img class="xclose" src="assests/images/x.svg" alt="close" />
+          <ul class="menuPageList">
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <ul class="desktop-header">
-        <li class="header-1"><a href="popuppage.html"> Portfolio </a></li>
+        <li class="header-1"><a href=".my-work"> Portfolio </a></li>
         <li class="header-1"><a href="index.html"> About </a></li>
         <li class="header-1"><a href="Contact"> Contact </a></li>
       </ul>
       <h2 class="logo"><a href="index.html" class="mylogo">GeekyHacks</a></h2>
       <nav class="menuNav">
-        <button  id="menu-button" type="button" title="Menu" class="menu-button">
-          <img id="menuBtn" src="assests/images/menubutton.svg" alt="menu-button" />
+        <button id="menuBtn" type="button" title="Menu" class="menu-button">
+          <img src="assests/images/menubutton.svg" alt="menu-button" />
         </button>
       </nav>
     </header>
@@ -96,14 +114,14 @@
           </li>
         </ul>
 
-        <a href="index.html" class="down-arrow-btn" >
+        <a href="index.html" class="down-arrow-btn">
           <button type="button" class="downarrow-btn">
-            <img src="assests/images/Disabled.svg" alt="downarrow-btn"/>
+            <img src="assests/images/Disabled.svg" alt="downarrow-btn" />
           </button>
         </a>
       </section>
 
-      <section class="my-work">
+      <section class="my-work" id="portfolio">
         <div class="start">
           <h2 class="my-work-header-mobile">
             My Recent <br />
@@ -251,7 +269,7 @@
         </ul>
       </section>
 
-      <section class="about-me">
+      <section class="about-me" id="about">
         <div class="aboutme1">
           <h2 class="about-me-header">About me</h2>
           <p class="about-me-1">
@@ -320,7 +338,7 @@
         </ul>
       </section>
 
-      <section class="contact-me">
+      <section class="contact-me" id="contact">
         <h2 class="contact-me-header-mobile">
           I'm always <br />
           interested in <br />
@@ -417,6 +435,6 @@
         alt="Indicator"
       />
     </footer>
-    <script src="script.js" ></script>
+    <script src="script.js"></script>
   </body>
 </html>
