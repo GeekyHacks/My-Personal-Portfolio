@@ -16,7 +16,6 @@ body {
   margin: 0;
   padding: 0;
   animation: fadeIn 1s;
-  animation: fadeOut 1s;
 }
 
 .container {
