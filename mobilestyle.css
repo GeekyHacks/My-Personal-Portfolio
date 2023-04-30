@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   animation: fadeIn 1s;
+  animation: fadeOut 1s;
 }
 
 .container {
@@ -26,7 +27,6 @@ body {
   width: 98%;
   align-items: center;
   justify-content: center;
-  
 }
 
 /* to hide desktop and menu btn content */
@@ -66,18 +66,17 @@ body {
 }
 
 /* The Modal (background)  */
-.modal {
+.menuPage {
   background-color: #fff;
-  position: relative;
-  padding: 10px;
-  width: 100%;
-  
-
+  padding: 8px;
+  width: 100vw;
+  z-index: 1;
+  transition-property: display;
+  transition-duration: 3s;
 }
 
 /* Modal Content  */
 .menuPageContent {
-  display: flex;
   flex-direction: column;
   justify-content: stretch;
   background-color: #fff;
@@ -87,7 +86,6 @@ body {
   height: 100vh;
   overflow: auto;
   animation: fadeIn 1s;
-
 }
 
 /* The Close Button  */
@@ -95,7 +93,6 @@ body {
   color: #67798e;
   margin-left: 95%;
   margin-bottom: 0;
- 
 }
 
 .xclose:hover,
@@ -139,6 +136,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -148,6 +146,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -157,6 +156,7 @@ body {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -166,6 +166,7 @@ body {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -225,7 +226,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
-  margin-bottom: 14%;
+  margin-top: 4%;
+  margin-bottom: 13%;
   width: 100%;
 }
 
@@ -420,8 +422,7 @@ button:active {
 }
 
 .aboutme1 {
-  background-image: url(assests/images/aboutme2.svg),
-    url(assests/images/about-me22.svg);
+  background-image: url(assests/images/aboutme2.svg), url(assests/images/about-me22.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
