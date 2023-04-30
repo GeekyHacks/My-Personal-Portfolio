@@ -29,15 +29,13 @@ body {
 }
 
 /* to hide desktop and menu btn content */
-.desktop-header,
-.header #menuPage {
+.desktop-header {
   display: none;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 1%;
   align-items: baseline;
 }
 
@@ -66,31 +64,31 @@ body {
 
 /* The Modal (background)  */
 .menuPage {
+  display: none;
+  position: fixed;
   background-color: #fff;
-  padding: 8px;
   width: 100vw;
+  height: 100vh;
   z-index: 1;
-  transition-property: display;
-  transition-duration: 3s;
 }
 
 /* Modal Content  */
 .menuPageContent {
+  display: flex;
   flex-direction: column;
   justify-content: stretch;
   background-color: #fff;
   color: #344563;
-  padding: 20px;
+  padding: 6%;
   width: 100vw;
   height: 100vh;
-  overflow: auto;
   animation: fadeIn 1s;
 }
 
 /* The Close Button  */
 .xclose {
   color: #67798e;
-  margin-left: 95%;
+  margin-left: 93%;
   margin-bottom: 0;
 }
 
@@ -110,7 +108,6 @@ body {
   margin-top: 10%;
   width: 100%;
   line-height: 54px;
-  letter-spacing: 40%;
 }
 
 .menuPageList li a {
@@ -123,11 +120,16 @@ body {
   width: 100%;
   align-self: center;
   transition: all 0.5s;
+  letter-spacing: 0.15rem;
 }
 
 .menuPageList li a:hover {
   color: #36b37f;
   transition: all 0.3s;
+}
+
+.show {
+  display: block;
 }
 
 /* Add animation (fade in the popup) */
