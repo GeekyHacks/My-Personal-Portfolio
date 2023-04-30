@@ -16,13 +16,10 @@ menuItems.onclick = function () {
 };
 
 function hideMenu() {
-  
   modal.style.position = "fixed";
   modal.style.background = "transparent";
- 
- modal.style.animation = "fadeOut 4s";
- modal.style.display = "none";
-
+  modal.style.animation = "fadeOut 4s";
+  modal.style.display = "none";
 }
 
 // Get the x element that closes the modal
@@ -39,6 +36,7 @@ function fadeOut() {
   modal.style.animation = "fadeOut 3s";
   modal.style.display = "none";
 }
+
 xclose.onclick = function () {
   fadeOut();
 };
