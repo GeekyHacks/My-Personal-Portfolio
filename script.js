@@ -1,19 +1,15 @@
 // Get the modal
-var modal = document.getElementById('menuPage');
+const modal = document.getElementById('menuPage');
 
-var menuContent = document.getElementById('menuPageContent');
+// const menuContent = document.getElementById('menuPageContent');
 
-var bodyContent = document.getElementById('bodyContent');
+// const bodyContent = document.getElementById('bodyContent');
 
 // Get the button that opens the modal
-var menubtn = document.getElementById('menuBtn');
+const menubtn = document.getElementById('menuBtn');
 
-//get menu options to use it for hidemenu function
-let menuItems = document.getElementsByClassName('.menuPageList > li a');
-
-menuItems.onclick = function () {
-  hideMenu();
-};
+// get menu options to use it for hidemenu function
+const menuItems = document.getElementsByClassName('.menuPageList > li a');
 
 function hideMenu() {
   modal.style.position = 'fixed';
@@ -22,19 +18,18 @@ function hideMenu() {
   modal.style.display = 'none';
 }
 
+menuItems.onclick = hideMenu();
+
 // Get the x element that closes the modal
-var xclose = document.getElementsByClassName('xclose')[0];
+const xclose = document.getElementsByClassName('xclose')[0];
 
 // When the user clicks on the button, open the modal
-
 function displayMenu() {
   modal.style.display = 'block';
   modal.style.animation = 'fadeIn 1s';
 }
 
-menubtn.onclick = function () {
-displayMenu();
-};
+menubtn.onclick = displayMenu();
 
 // When the user clicks on  (x), close the modal
 function fadeOut() {
@@ -42,6 +37,4 @@ function fadeOut() {
   modal.style.display = 'none';
 }
 
-xclose.onclick = function () {
-  fadeOut();
-};
+xclose.onclick = fadeOut();
