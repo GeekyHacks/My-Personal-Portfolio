@@ -1,6 +1,6 @@
 * {
   text-decoration: none;
-  box-sizing: border-box;
+  box-sizing: content-box;
   color: #fff;
   outline: none;
   background: none repeat scroll 0 0 transparent;
@@ -86,14 +86,14 @@ body {
 }
 
 /* The Close Button  */
-.xclose {
+.menuX {
   color: #67798e;
   margin-left: 93%;
   margin-bottom: 0;
 }
 
-.xclose:hover,
-.xclose:focus {
+.menuX:hover,
+.menuX:focus {
   opacity: 0.7;
   cursor: pointer;
   transition: all 0.3s;

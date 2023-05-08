@@ -8,6 +8,26 @@
   padding: 0;
 }
 
+.projectPopup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* The Close Button  */
+.pageX {
+  color: #67798e;
+  margin-left: 93%;
+  margin-bottom: 0;
+}
+
+.pageX:hover,
+.pageX:focus {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
 button {
   cursor: pointer;
   display: inline-block;
@@ -78,12 +98,19 @@ button:active {
 /* mobile version */
 @media (max-width: 768px) {
   /* header section */
+
+  .popuppage-header {
+    display: flex;
+    flex-direction: column;
+  }
+
   .poppage-mobile-img {
     margin: 0 auto;
     padding: 2%;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     align-self: center;
+    z-index: 1;
   }
 
   .poppage-desktop-img {
