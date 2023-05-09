@@ -6,6 +6,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 .projectPopup {
@@ -15,12 +16,6 @@
 }
 
 /* The Close Button  */
-.pageX {
-  color: #67798e;
-  margin-left: 93%;
-  margin-bottom: 0;
-}
-
 .pageX:hover,
 .pageX:focus {
   opacity: 0.7;
@@ -28,20 +23,20 @@
   transition: all 0.3s;
 }
 
-button {
+a {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-button:hover,
-button:focus {
+a:hover,
+a:focus {
   background: #172b4d;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
-button:active {
+a:active {
   transition: all 0.15s;
   background: #172b4d;
   box-shadow: none;
@@ -58,7 +53,7 @@ button:active {
   width: 100%;
 }
 
-.poppage-buttons li a button {
+.poppage-buttons li a {
   align-content: baseline;
   align-self: baseline;
   background: #172b4d;
@@ -98,23 +93,26 @@ button:active {
 /* mobile version */
 @media (max-width: 768px) {
   /* header section */
-
-  .popuppage-header {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .poppage-mobile-img {
-    margin: 0 auto;
-    padding: 2%;
-    justify-content: center;
-    width: 100vw;
-    align-self: center;
-    z-index: 1;
-  }
-
   .poppage-desktop-img {
     display: none;
+  }
+
+  .popuppage-header {
+    background-image: url(assests/images/Snapshoot-Portfolio.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    height: 50vh;
+    margin-bottom: 4%;
+    border-radius: 8px;
+    margin: 2%;
+  }
+
+  .pageX {
+    color: #67798e;
+    margin-left: 93%;
+    margin-bottom: 0;
+    margin-top: 3%;
   }
 
   .desktop-content {
@@ -156,7 +154,7 @@ button:active {
     flex: 1;
   }
 
-  .poppage-buttons li a button {
+  .poppage-buttons li a {
     width: 100%;
   }
 
@@ -185,9 +183,19 @@ button:active {
 
 /* desktop version */
 @media (min-width: 768px) {
+  .pageX {
+    background-color: #ebecf0;
+    padding: 0.5%;
+    color: #67798e;
+    margin-left: 96%;
+    margin-bottom: 0;
+    margin-top: 1%;
+    border-radius: 4px;
+  }
+
   .poppage-desktop-img {
     margin: 0 auto;
-    padding: 2%;
+    padding: 1%;
     justify-content: center;
     width: 100%;
     align-self: center;
@@ -242,14 +250,22 @@ button:active {
   }
 
   .poppage-buttons li {
-    margin: 0 1.5%;
+    margin: 0 2.5%;
     flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
   }
 
-  .poppage-buttons li a button {
-    width: 100%;
+  .poppage-buttons li a {
     border-radius: 5px;
     padding: 5%;
+    flex: 1;
+    height: 40px;
+    align-self: center;
   }
 
   .labels {
