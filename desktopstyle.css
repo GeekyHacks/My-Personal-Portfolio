@@ -325,19 +325,19 @@ gap: 2%;
   transition-duration: 0.4s;
 }
 
-button {
+button, a {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-button:hover {
+a:hover, button:hover {
   background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
-button:active {
+button:active, a:active {
   transition: all 0.15s;
   background: #008552;
   box-shadow: none;
