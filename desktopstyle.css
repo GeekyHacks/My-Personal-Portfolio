@@ -591,3 +591,194 @@ textarea {
 .longindicator {
   display: none;
 }
+
+
+/* popup page section */
+
+
+.projectPopup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* The Close Button  */
+.pageX:hover,
+.pageX:focus {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.poppage a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.poppage a:hover,
+.poppage a:focus {
+  background: #172b4d;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.poppage a:active {
+  transition: all 0.15s;
+  background: #172b4d;
+  box-shadow: none;
+}
+
+.poppage-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 3%;
+  width: 100%;
+}
+
+.poppage-buttons li a {
+  align-content: baseline;
+  align-self: baseline;
+  background: #172b4d;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 3%;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+  letter-spacing: 0.001em;
+  word-spacing: normal;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  flex-wrap: wrap;
+}
+
+.labels li {
+  color: #3a4a42;
+  background: #ebf0ee;
+  font-family: "Inter", sans-serif;
+  font-weight: 550;
+  font-size: 80%;
+  letter-spacing: 0.01em;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.pageX {
+  background-color: #ebecf0;
+  padding: 0.5%;
+  color: #67798e;
+  margin-left: 96%;
+  margin-bottom: 0;
+  margin-top: 1%;
+  border-radius: 4px;
+}
+
+.poppage-desktop-img {
+  margin: 0 auto;
+  padding: 1%;
+  justify-content: center;
+  width: 100%;
+  align-self: center;
+}
+
+.poppage-mobile-img {
+  display: none;
+}
+
+.mobile-content {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
+/* main section */
+.poppage {
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+/* all elements in .poppage */
+.poppage > * {
+  margin-left: 1%;
+  padding: 2%;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-desktop {
+  flex: 2;
+  width: 50%;
+  color: #172b4d;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180%;
+  letter-spacing: 0.03rem;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.poppage-buttons {
+  flex: 1;
+  margin-right: 1%;
+}
+
+.poppage-buttons li {
+  margin: 0 2.5%;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.poppage-buttons li a {
+  border-radius: 5px;
+  padding: 5%;
+  flex: 1;
+  height: 40px;
+  align-self: center;
+}
+
+.labels {
+  gap: 1%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.labels li {
+  border-radius: 8px;
+  padding: 1%;
+}
+
+.p-1 {
+  color: #344563;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 2%;
+}
