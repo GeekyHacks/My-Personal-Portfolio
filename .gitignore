@@ -1,10 +1,10 @@
 # .gitignore
 node_modules/
 # .gitignore
-new.md/
+new.md
 # .gitignore
-Styling_Notes.md/
+Styling_Notes.md
 # .gitignore
-popuppage.html/
+popuppage.html
 # .gitignore
-popupstyle.css/
+popupstyle.css
