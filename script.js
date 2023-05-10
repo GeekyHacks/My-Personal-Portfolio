@@ -30,29 +30,15 @@ menuItems.forEach((element) => {
   });
 });
 
-//popup page
 
+//popup page
 //get the popup page
 const projectPopup = document.querySelector("#popupPage");
 
-
-function popupPage() {
-  let newWindow = open('/', 'example', 'width=300,height=300')
-  newWindow.focus();
-  
-  alert(newWindow.location.href); // (*) about:blank, loading hasn't started yet
-  
-  newWindow.onload = function() {
-    let html = `<div style="font-size:30px">Welcome!</div>`;
-    newWindow.document.body.insertAdjacentHTML('afterbegin', html);
-  };
-}
-
-function mainPage() {
-  location.reload("index.html");
-}
+// get the div that includes the popup page
+const popupPage= document.querySelector("#popupPage")
 // Get the button that open popup page
-const projectBtn = document.querySelectorAll("#projectBtn");
+const projectBtn = document.querySelectorAll(".projectBtn");
 
 // Get the x element that closes the modal
 const pageX = document.querySelector(".pageX");
@@ -65,15 +51,13 @@ const pageX = document.querySelector(".pageX");
 
 projectBtn.forEach((element) => {
   element.addEventListener("click", () => {
-    const projectPopup = popupPage();
-    projectPopup.style.animation = "fadeIn 5s";
+    projectPopup.classList.toggle('showPage')
+    projectPopup.style.animation = "fadeIn 1s";
   
   });
 });
 
 pageX.addEventListener("click", () => {
-  const mainPage = mainPage();
-  mainPage.style.animation = "fadeIn 1s";
-  mainPage.classList.toggle("showProject");
-
+  projectPopup.style.animation = "fadeIn 1s";
+  projectPopup.classList.toggle("showPage");
 });
