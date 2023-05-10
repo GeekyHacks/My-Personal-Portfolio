@@ -128,9 +128,10 @@ body {
   transition: all 0.3s;
 }
 
-.show {
+.showMenu {
   display: block;
 }
+
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
@@ -237,6 +238,21 @@ body {
 }
 
 /* my-work section */
+
+#popupPage {
+  display: none;
+  position: fixed;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.showProject{
+  display: block;
+
+}
+
 .my-work {
   display: grid;
   justify-items: center;
@@ -270,7 +286,7 @@ body {
 .projects {
   display: grid;
   justify-items: center;
-  width: 100%;
+  width: 95%;
 }
 
 .project,
@@ -279,9 +295,10 @@ body {
   background: #fff;
   flex-direction: column;
   justify-content: center;
+  justify-items: center;
   border: 1px solid grey;
   border-radius: 16px;
-  width: 96%;
+  width: 85%;
   padding: 2%;
   margin-top: 8%;
 }
@@ -417,7 +434,7 @@ button:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 85%;
   padding: 2%;
   margin-top: 8%;
 }

@@ -9,6 +9,8 @@
   text-decoration: none;
 }
 
+
+
 .projectPopup {
   display: flex;
   flex-direction: column;
@@ -287,5 +289,48 @@ a:active {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 2%;
+  }
+}
+
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
