@@ -434,7 +434,7 @@
           class="input-form"
         >
           <input
-            co
+            class="full-name"
             type="text"
             placeholder="Full name"
             maxlength="30"
@@ -442,10 +442,13 @@
             required
           />
           <input
-            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             type="email"
             placeholder="Email address"
             name="email"
+            oninvalid="InvalidMsg(this);"
+            oninput="InvalidMsg(this);"
+            required="required"
           />
           <textarea
             class="details"

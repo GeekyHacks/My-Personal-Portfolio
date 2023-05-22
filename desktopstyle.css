@@ -62,6 +62,14 @@ nav {
   margin: 1% auto;
 }
 
+button,
+a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
 .green-btn a,
 .projectBtn a,
 .resume-btn a {
@@ -75,6 +83,11 @@ nav {
 
 .header .menuPage {
   display: none;
+}
+
+.poppage a {
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .desktop-header li a {
@@ -157,6 +170,7 @@ nav {
 }
 
 /* work section */
+
 /* popup page section */
 .popupPage {
   display: none;
@@ -196,9 +210,23 @@ nav {
   transition: all 0.3s;
 }
 
-.poppage a {
+.poppage-buttons li a {
+  text-align: center;
+  border-radius: 5px;
+  padding: 4%;
+  flex: 1;
+  height: 30px;
+  align-content: center;
+  background: #172b4d;
+  border: 2px solid transparent;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+  letter-spacing: 0.001em;
+  word-spacing: normal;
+  color: #fff;
   cursor: pointer;
-  transition: 0.5s;
+  white-space: nowrap;
 }
 
 .poppage a:hover,
@@ -232,26 +260,6 @@ nav {
   justify-content: center;
   align-items: center;
   justify-items: center;
-}
-
-.poppage-buttons li a {
-  text-align: center;
-  border-radius: 5px;
-  padding: 4%;
-  flex: 1;
-  height: 30px;
-  align-content: center;
-  background: #172b4d;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
-  font-size: 14pt;
-  letter-spacing: 0.001em;
-  word-spacing: normal;
-  color: #fff;
-  cursor: pointer;
-  white-space: nowrap;
 }
 
 .labels {
@@ -340,7 +348,7 @@ footer {
   margin-bottom: 2%;
 }
 
-/*work section*/
+/* work section */
 .my-work {
   display: grid;
   justify-items: center;
@@ -384,7 +392,6 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center;
-  justify-items: center;
 }
 
 .project,
@@ -496,14 +503,6 @@ footer {
   transition-duration: 0.4s;
 }
 
-button,
-a {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
 button:hover {
   background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
@@ -539,7 +538,6 @@ button:active {
   flex-direction: column;
   justify-content: center;
   width: 95%;
-
   padding: 2%;
   margin-top: 8%;
 }
@@ -557,6 +555,7 @@ button:active {
   background-clip: border-box;
   background-origin: content-box;
 }
+
 .aboutme1 > * {
   padding: 1.3%;
 }
