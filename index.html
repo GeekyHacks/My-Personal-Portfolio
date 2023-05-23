@@ -430,10 +430,12 @@
         <form
           autocomplete="off"
           action="https://formspree.io/f/xdovwjar"
-          method="post"
           class="input-form"
         >
           <input
+
+          id="name-input"
+          onchange="saveValue(this);"
             class="full-name"
             type="text"
             placeholder="Full name"
@@ -442,6 +444,9 @@
             required
           />
           <input
+          id="email-input"
+
+          onchange="saveValue(this);"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             type="email"
             placeholder="Email address"
@@ -451,6 +456,9 @@
             required="required"
           />
           <textarea
+          id="textarea-input"
+
+          onchange="saveValue(this);"
             class="details"
             id="details"
             cols="20"
