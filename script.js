@@ -4,6 +4,8 @@ const modal = document.querySelector('#menuPage');
 // Get the button that opens the modal
 const menubtn = document.querySelector('#menuBtn');
 
+const submitBtn = document.querySelector('#submitBtn');
+
 // Get the x element that closes the modal
 const menuX = document.querySelector('.menuX');
 
@@ -84,3 +86,9 @@ function saveValue(e) {
   // Every time user writing something, the localStorage's value will override .
   localStorage.setItem(id, val);
 }
+
+submitBtn.addEventListener('click', () => {
+ getSavedValue();
+ saveValue();
+});
+
