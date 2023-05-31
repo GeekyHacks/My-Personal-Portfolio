@@ -42,7 +42,7 @@ body {
 .mylogo {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-size: 55%;
+  font-size: 65%;
   font-weight: 700;
   margin-left: 20%;
   border: none;
@@ -52,14 +52,18 @@ body {
   opacity: 1;
 }
 
+.menuNav {
+  margin-right: 4%;
+  margin-top: 2%;
+}
+
+.menuImg {
+  width: 30px;
+}
+
 .mylogo:hover,
 #menuBtn:hover {
   opacity: 0.8;
-}
-
-.menuNav {
-  margin-right: 4%;
-  margin-top: 1%;
 }
 
 /* The Modal (background)  */

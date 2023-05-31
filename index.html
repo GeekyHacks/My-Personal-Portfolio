@@ -33,20 +33,22 @@
           </ul>
         </div>
       </div>
-
       <ul class="desktop-header">
-        <li class="header-1"><a href=".my-work"> Portfolio </a></li>
-        <li class="header-1"><a href="index.html"> About </a></li>
-        <li class="header-1"><a href="Contact"> Contact </a></li>
+        <li><a href="#portfolio"> Portfolio </a></li>
+        <li><a href="#about"> About </a></li>
+        <li><a href="#contact"> Contact </a></li>
       </ul>
       <h2 class="logo"><a href="index.html" class="mylogo">GeekyHacks</a></h2>
       <nav class="menuNav">
         <button id="menuBtn" type="button" title="Menu" class="menu-button">
-          <img src="assests/images/menubutton.svg" alt="menu-button" />
+          <img
+            src="assests/images/menubutton.svg"
+            alt="menu-button"
+            class="menuImg"
+          />
         </button>
       </nav>
     </header>
-
     <main class="container">
       <section class="headlines">
         <h1 class="primary-mobile">
@@ -110,7 +112,6 @@
           </button>
         </a>
       </section>
-
       <section class="my-work" id="portfolio">
         <div class="start">
           <h2 class="my-work-header-mobile">
@@ -347,7 +348,6 @@
           </li>
         </ul>
       </section>
-
       <section class="about-me" id="about">
         <div class="aboutme1">
           <h2 class="about-me-header">About me</h2>
@@ -412,7 +412,6 @@
           </li>
         </ul>
       </section>
-
       <section class="contact-me" id="contact">
         <h2 class="contact-me-header-mobile">
           I'm always <br />
@@ -433,9 +432,8 @@
           class="input-form"
         >
           <input
-
-          id="name-input"
-          onchange="saveValue(this);"
+            id="name-input"
+            onchange="saveValue(this);"
             class="full-name"
             type="text"
             placeholder="Full name"
@@ -444,9 +442,8 @@
             required
           />
           <input
-          id="email-input"
-
-          onchange="saveValue(this);"
+            id="email-input"
+            onchange="saveValue(this);"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             type="email"
             placeholder="Email address"
@@ -456,9 +453,8 @@
             required="required"
           />
           <textarea
-          id="textarea-input"
-
-          onchange="saveValue(this);"
+            id="textarea-input"
+            onchange="saveValue(this);"
             class="details"
             id="details"
             cols="20"
@@ -480,7 +476,6 @@
         </form>
       </section>
     </main>
-
     <footer class="footer">
       <img
         src="assests/images/longendingline.svg"
