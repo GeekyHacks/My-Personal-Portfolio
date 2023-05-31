@@ -64,24 +64,24 @@ function InvalidMsg(input) {
   return true;
 }
 
-// // save input values to localstorage
-// document.getElementById('name-input').value = getSavedValue('name-input'); // set the value to this input
-// document.getElementById('email-input').value = getSavedValue('email-input');
-document.getElementById('textarea-input').value =
-  getSavedValue('textarea-input'); // set the value to this input
-
-// Save the value function - save it to localStorage as (ID, VALUE)
-function saveValue(e) {
-  let id = e.id; // get the sender's id to save it .
-  let val = e.value; // get the value.
-  // Every time user writing something, the localStorage's value will override .
-  localStorage.setItem(id, val);
-}
-
 // get the saved value function - return the value of 'v' from localStorage.
 function getSavedValue(v) {
   if (!localStorage.getItem(v)) {
     return ''; // You can change this to your defualt value.
   }
   return localStorage.getItem(v);
+}
+
+//  save input values to localstorage
+document.getElementById('name-input').value = getSavedValue('name-input'); // set the value to this input
+document.getElementById('email-input').value = getSavedValue('email-input');
+document.getElementById('textarea-input').value =
+  getSavedValue('textarea-input'); // set the value to this input
+
+// Save the value function - save it to localStorage as (ID, VALUE)
+function saveValue(e) {
+  const id = e.id; // get the sender's id to save it .
+  const val = e.value; // get the value.
+  // Every time user writing something, the localStorage's value will override .
+  localStorage.setItem(id, val);
 }
