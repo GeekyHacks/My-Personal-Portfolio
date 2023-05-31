@@ -1,4 +1,4 @@
-//menu popup
+// menu popup
 // Get the modal
 const modal = document.querySelector('#menuPage');
 // Get the button that opens the modal
@@ -26,12 +26,13 @@ menuItems.forEach((element) => {
   });
 });
 
-//popup page
-//get the popup page
+// popup page
+// get the popup page
 const projectPopup = document.querySelector('#popupPage');
 
 // get the div that includes the popup page
-const popupPage = document.querySelector('#popupPage');
+// const popupPage = document.querySelector('#popupPage');
+
 // Get the button that open popup page
 const projectBtn = document.querySelectorAll('.projectBtn');
 
@@ -63,21 +64,21 @@ function InvalidMsg(input) {
   return true;
 }
 
-// save input values to localstorage
-
-document.getElementById('name-input').value = getSavedValue('name-input'); // set the value to this input
-document.getElementById('email-input').value = getSavedValue('email-input');
+// // save input values to localstorage
+// document.getElementById('name-input').value = getSavedValue('name-input'); // set the value to this input
+// document.getElementById('email-input').value = getSavedValue('email-input');
 document.getElementById('textarea-input').value =
   getSavedValue('textarea-input'); // set the value to this input
 
-//Save the value function - save it to localStorage as (ID, VALUE)
+// Save the value function - save it to localStorage as (ID, VALUE)
 function saveValue(e) {
-  var id = e.id; // get the sender's id to save it .
-  var val = e.value; // get the value.
-  localStorage.setItem(id, val); // Every time user writing something, the localStorage's value will override .
+  let id = e.id; // get the sender's id to save it .
+  let val = e.value; // get the value.
+  // Every time user writing something, the localStorage's value will override .
+  localStorage.setItem(id, val);
 }
 
-//get the saved value function - return the value of 'v' from localStorage.
+// get the saved value function - return the value of 'v' from localStorage.
 function getSavedValue(v) {
   if (!localStorage.getItem(v)) {
     return ''; // You can change this to your defualt value.
