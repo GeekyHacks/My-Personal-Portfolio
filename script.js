@@ -77,8 +77,7 @@ function getSavedValue(v) {
 //  save input values to localstorage
 document.getElementById('name-input').value = getSavedValue('name-input'); // set the value to this input
 document.getElementById('email-input').value = getSavedValue('email-input');
-document.getElementById('textarea-input').value =
-  getSavedValue('textarea-input');
+document.getElementById('textarea-input').value = getSavedValue('textarea-input');
 
 // Save the value function - save it to localStorage as (ID, VALUE)
 function saveValue(e) {
