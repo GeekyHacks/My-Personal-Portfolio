@@ -77,18 +77,21 @@ function getSavedValue(v) {
 //  save input values to localstorage
 document.getElementById('name-input').value = getSavedValue('name-input'); // set the value to this input
 document.getElementById('email-input').value = getSavedValue('email-input');
-document.getElementById('textarea-input').value = getSavedValue('textarea-input');
+document.getElementById('textarea-input').value =
+  getSavedValue('textarea-input');
 
 // Save the value function - save it to localStorage as (ID, VALUE)
 function saveValue(e) {
-  const id = e.id; // get the sender's id to save it .
-  const val = e.value; // get the value.
+  const { id, val } = e; //  destructure
+
+  // const id = e.id; // get the sender's id to save it .
+  // const val = e.value; // get the value.
   // Every time user writing something, the localStorage's value will override .
   localStorage.setItem(id, val);
 }
 
 submitBtn.addEventListener('click', () => {
- getSavedValue();
- saveValue();
+  getSavedValue();
+  InvalidMsg();
+  saveValue();
 });
-
