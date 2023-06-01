@@ -18,12 +18,19 @@ body {
   animation: fadeIn 1s;
 }
 
+button,
+a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 1%;
-  width: 98%;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -93,6 +100,11 @@ body {
   display: block;
 }
 
+.aboutme1 a {
+  margin: 0 auto;
+  padding: 3%;
+}
+
 /* The Close Button  */
 .menuX {
   position: absolute;
@@ -117,14 +129,6 @@ body {
   margin-top: 10%;
   width: 100%;
   line-height: 54px;
-}
-
-button,
-a {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
 }
 
 .popPage a {
@@ -202,7 +206,7 @@ a {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 15%;
 }
 
 .primary-mobile {
@@ -210,9 +214,9 @@ a {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 250%;
-  margin: 16% 1% 5% 2%;
+  margin: 16% 1% 5% 1%;
   padding-top: 5%;
-  width: 95%;
+  width: 98%;
   text-align: center;
   letter-spacing: 0.03rem;
 }
@@ -228,17 +232,22 @@ a {
   font-weight: 300;
   font-size: 123%;
   line-height: 125%;
-  width: 100%;
+  width: 98%;
+  margin: 0 1%;
 }
 
 .headlines-contact-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: baseline;
-  margin-top: 4%;
-  margin-bottom: 13%;
-  width: 100%;
+  align-items: center;
+  margin-top: 1%;
+  margin-bottom: 12%;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-bottom: 3%;
+  padding-top: 7%;
 }
 
 .headlines-contact-icons li {
@@ -391,8 +400,6 @@ a {
 .my-work {
   display: grid;
   justify-items: center;
-  padding: 0 0 7% 0;
-  margin: 0 5%;
   width: 100%;
 }
 
@@ -400,22 +407,22 @@ a {
   display: none;
 }
 
+.start {
+  color: #172b4d;
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
 .my-work-header-mobile {
   color: #172b4d;
   font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 180%;
-  margin: 16% 1% 5% 2%;
-  padding-top: 5%;
-  width: 95%;
-  text-align: center;
-}
-
-.start {
-  color: #172b4d;
+  font-weight: 800;
+  font-size: 250%;
+  margin: 1%;
+  padding-top: 0%;
   width: 98%;
-  margin-top: 8%;
-  margin-bottom: 2%;
+  text-align: center;
 }
 
 .projects {
@@ -504,7 +511,6 @@ a {
 
 .green-btn,
 .projectBtn,
-.resume-btn,
 .green-btn-submit {
   transition: all 0.5s;
   cursor: pointer;
@@ -514,12 +520,12 @@ a {
   width: auto;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 100%;
+  font-size: 125%;
   letter-spacing: 0.001em;
   word-spacing: normal;
   color: white;
   transition-duration: 0.4s;
-  padding: 2%;
+  padding: 3.5%;
   margin: 2%;
 }
 
@@ -530,12 +536,14 @@ a {
   transition-duration: 0.4s;
 }
 
-button:hover {
+.green-btn:hover,
+.projectBtn:hover {
   background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
-button:active {
+.green-btn:active,
+.projectBtn:active {
   transition: all 0.15s;
   background: #008552;
   box-shadow: none;
@@ -561,33 +569,34 @@ button:active {
 
 /* about me */
 .about-me {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  width: 85%;
-  padding: 2%;
-  margin-top: 8%;
+  display: grid;
+  justify-items: center;
+  width: 100%;
 }
 
 .aboutme1 {
-  background-image: url(assests/images/aboutme2.svg), url(assests/images/about-me22.svg);
+  background-image: url(assests/images/aboutme2.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
-  background-size: 22% 179%, 183% 31%;
+  background-size: 23% 183%;
   background-clip: border-box;
   background-origin: content-box;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-me-header {
   color: #172b4d;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 180%;
-  margin: 16% 1% 5% 2%;
-  padding-top: 5%;
-  width: 95%;
+  font-size: 270%;
+  margin: 10% 1% 3% 2%;
+  padding-top: 2%;
+  width: 98%;
   text-align: center;
 }
 
@@ -595,12 +604,23 @@ button:active {
   color: #42526e;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 100%;
-  line-height: 125%;
-  width: 100%;
+  font-weight: 400;
+  font-size: 140%;
+  line-height: 1.6;
+  width: 98%;
   margin-top: 5%;
   margin-bottom: 7%;
+  text-align: center;
+  padding-right: 2%;
+  padding-left: 1%;
+}
+
+.aboutme2 {
+  justify-content: center;
+  display: grid;
+  justify-items: center;
+  padding-top: 10%;
+  width: 85%;
 }
 
 .skills,
@@ -673,8 +693,6 @@ button:active {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding: 2%;
-  margin-top: 8%;
 }
 
 .contact-me-header-desktop {
