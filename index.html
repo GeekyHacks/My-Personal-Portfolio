@@ -4,31 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Personal Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="mobilestyle.css" media="(max-width: 768px)" rel="stylesheet" />
+    <link href="desktopstyle.css" media="(min-width: 768px)" rel="stylesheet" />
   </head>
 
-  <body>
+  <body id="bodyContent">
     <header class="header">
-      <h2><a href="index.html" class="mylogo">GeekyHacks</a></h2>
-      <nav class="menu-button">
-        <button type="button" title="Menu">
-          <img src="assests/images/menubutton.svg" alt="menu-button" />
+      <div id="menuPage" class="menuPage">
+        <div class="menuPageContent" id="menuPageContent">
+          <img class="menuX" src="assests/images/x.svg" alt="close" />
+          <ul class="menuPageList">
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul class="desktop-header">
+        <li><a href="#portfolio"> Portfolio </a></li>
+        <li><a href="#about"> About </a></li>
+        <li><a href="#contact"> Contact </a></li>
+      </ul>
+      <h2 class="logo"><a href="index.html" class="mylogo">GeekyHacks</a></h2>
+      <nav class="menuNav">
+        <button id="menuBtn" type="button" title="Menu" class="menu-button">
+          <img
+            src="assests/images/menubutton.svg"
+            alt="menu-button"
+            class="menuImg"
+          />
         </button>
       </nav>
     </header>
-
     <main class="container">
       <section class="headlines">
-        <h1 class="primary">
+        <h1 class="primary-mobile">
           Hey there. <br />
           I’m Abdullah. <br />
-          <span class="dev-span"> I’m a software developer</span>
+          <span class="dev-span-mobile"> I’m a software <br> developer</span>
         </h1>
-        <p class="supporting-content">
+        <h1 class="primary-desktop">
+          Hey there. I’m Abdullah. <br />
+          <span class="dev-span-desktop"> I’m a software developer</span>
+        </h1>
+
+        <p class="supporting-content-mobile">
           I can help you build a product , <br />
           feature or website Look through <br />
           some of my work and experience! <br />
@@ -36,132 +69,286 @@
           a project you need coded, <br />
           don’t hesitate to contact me.
         </p>
-
+        <p class="supporting-content-desktop">
+          I can help you build a product , feature or website Look through some
+          of my work and<br />
+          experience! If you like what you see and have a project you need
+          coded, <br />
+          don’t hesitate to contact me.
+        </p>
         <ul class="headlines-contact-icons">
           <li>
-            <button type="button" title="icon-twitter" class="btn-twitter">
+            <button type="button" title="icon-github" class="socialbtn">
+              <img src="assests/images/github.svg" alt="github" />
+            </button>
+          </li>
+
+          <li>
+            <button type="button" title="icon-linkedin" class="socialbtn">
+              <img src="assests/images/Linkedin icon.svg" alt="Linkedin" />
+            </button>
+          </li>
+
+          <li>
+            <button type="button" title="icon-angellist" class="socialbtn">
+              <img src="assests/images/angellist.svg" alt="angellist" />
+            </button>
+          </li>
+          <li>
+            <button type="button" title="icon-twitter" class="socialbtn">
               <img src="assests/images/twitter.svg" alt="twitter" />
             </button>
           </li>
           <li>
-            <button type="button" title="icon-linkedin" class="btn-linkedin">
-              <img src="assests/images/Linkedin icon.svg" alt="Linkedin" />
-            </button>
-          </li>
-          <li>
-            <button type="button" title="icon-medium" class="btn-medium">
+            <button type="button" title="icon-medium" class="socialbtn">
               <img src="assests/images/medium.svg" alt="medium" />
-            </button>
-          </li>
-          <li>
-            <button type="button" title="icon-github" class="btn-github">
-              <img src="assests/images/github.svg" alt="github" />
-            </button>
-          </li>
-          <li>
-            <button type="button" title="icon-github" class="btn-angellist">
-              <img src="assests/images/angellist.svg" alt="angellist" />
             </button>
           </li>
         </ul>
 
-        <a href="index.html" class="downarrow">
-          <button title="btn-downarrow" type="button">
-            <img
-              src="assests/images/Disabled.svg"
-              alt="downarrow"
-              class="downarrow"
-            /></button
-        ></a>
+        <a href="index.html" class="down-arrow-btn">
+          <button type="button" class="downarrow-btn">
+            <img src="assests/images/Disabled.svg" alt="downarrow-btn" />
+          </button>
+        </a>
       </section>
-
-      <section class="my-work">
+      <section class="my-work" id="portfolio">
         <div class="start">
-          <h2 class="my-work-header">
+          <h2 class="my-work-header-mobile">
             My Recent <br />
             Works.
           </h2>
+          <h2 class="my-work-header-desktop">My Recent Works.</h2>
+          <img
+            class="small-indcator"
+            src="assests/images/Indicator.svg"
+            alt="Indicator"
+          />
+        </div>
+        <ul id="popupPage" class="popupPage">
+          <li class="popuppage-header">
+            <img class="pageX" src="assests/images/x.svg" alt="close" />
+            <img
+              src="assests/images/Snapshoot-portfolio-desktop.svg"
+              alt="Medical Illustration Sets"
+              class="poppage-desktop-img"
+            />
+          </li>
+          <li class="poppage">
+            <div class="desktop-content">
+              <div class="first-section">
+                <h1 class="title-desktop">
+                  Keeping track of hundreds of <br />
+                  components
+                </h1>
+                <ul class="poppage-buttons">
+                  <li>
+                    <a href="index.html" tabindex="0">
+                      See live<img
+                        src="assests/images/see live icon.svg"
+                        alt="see live"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/GeekyHacks/Personal-Portfolio-Microverse"
+                      tabindex="0"
+                    >
+                      See Source<img
+                        src="assests/images/git.svg"
+                        alt="project source code"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="labels">
+                <li>Codekit</li>
+                <li>GitHub</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>Terminal</li>
+                <li>Codepen</li>
+              </ul>
+              <p class="p-1">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it 1960s. Lorem Ipsum is simply dummy text
+                of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and scrambled it 1960s.
+              </p>
+            </div>
 
-          <img src="assests/images/Indicator.svg" alt="Indicator" />
-        </div>
-        <div class="project">
-          <img src="assests/images/project1-img.svg" alt="project1-img" />
-          <div class="project1-content">
-            <h3 class="project1-content-sec1">
-              Multi-Post Stories <br />
-              Gain+Glory
-            </h3>
-            <ul class="project1-content-sec2">
-              <li class="small-li" for="html">HTML</li>
-              <li class="small-li" for="JS">JS</li>
-              <li class="small-li" for="CSS">CSS</li>
-              <li class="big-li" for="Ruby">Ruby & Rails</li>
-            </ul>
-            <button class="green-btn" type="button" title="see-project">
-              <a href="popuppage.html"> See Project </a>
-            </button>
-          </div>
-        </div>
+            <div class="mobile-content">
+              <h1 class="title-mobile">
+                Keeping track of <br />
+                hundreds of <br />
+                components
+              </h1>
+              <ul class="labels">
+                <li>Ruby and Rails</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <p class="p-1">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it 1960s.
+              </p>
+              <p class="p-2">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it 1960s.
+              </p>
+              <ul class="poppage-buttons">
+                <li>
+                  <a href="index.html">
+                    See live
+                    <img src="assests/images/see live icon.svg" alt="see live"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/GeekyHacks/Personal-Portfolio-Microverse"
+                  >
+                    See Source
+                    <img
+                      src="assests/images/git.svg"
+                      alt="project source code"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="projects">
+          <li class="project">
+            <img src="assests/images/project1-img.svg" alt="project1-img" />
+            <div class="project1-content">
+              <h3 class="project1-content-sec1">
+                Multi-Post Stories <br />
+                Gain+Glory
+              </h3>
+              <ul class="project1-content-sec2">
+                <li class="small-li" for="html">HTML</li>
+                <li class="small-li" for="JS">JS</li>
+                <li class="small-li" for="CSS">CSS</li>
+                <li class="big-li" for="Ruby">Ruby & Rails</li>
+              </ul>
 
-        <div class="project">
-          <img src="assests/images/project2-img.svg" alt="project2-img" />
-          <div class="project2-content">
-            <h3 class="project2-content-sec1">
-              Multi-Post Stories <br />
-              Gain+Glory
-            </h3>
-            <ul class="project2-content-sec2">
-              <li class="small-li" for="html">HTML</li>
-              <li class="small-li" for="JS">JS</li>
-              <li class="small-li" for="CSS">CSS</li>
-              <li class="big-li" for="Ruby">Ruby & Rails</li>
-            </ul>
-            <button class="green-btn" type="button" title="see-project">
-              <a href="popuppage.html"> See Project </a>
-            </button>
-          </div>
-        </div>
+              <button class="projectBtn" type="button" title="see-project">
+                See Project
+              </button>
+            </div>
+          </li>
 
-        <div class="project">
-          <img src="assests/images/project3-img.svg" alt="project3-img" />
-          <div class="project3-content">
-            <h3 class="project3-content-sec1">
-              Multi-Post Stories <br />
-              Gain+Glory
-            </h3>
-            <ul class="project3-content-sec2">
-              <li class="small-li" for="html">HTML</li>
-              <li class="small-li" for="JS">JS</li>
-              <li class="small-li" for="CSS">CSS</li>
-              <li class="big-li" for="Ruby">Ruby & Rails</li>
-            </ul>
-            <button class="green-btn" type="button" title="see-project">
-              <a href="popuppage.html"> See Project </a>
-            </button>
-          </div>
-        </div>
+          <li class="project">
+            <img src="assests/images/project2-img.svg" alt="project2-img" />
+            <div class="project2-content">
+              <h3 class="project2-content-sec1">
+                Multi-Post Stories <br />
+                Gain+Glory
+              </h3>
+              <ul class="project2-content-sec2">
+                <li class="small-li" for="html">HTML</li>
+                <li class="small-li" for="JS">JS</li>
+                <li class="small-li" for="CSS">CSS</li>
+                <li class="big-li" for="Ruby">Ruby & Rails</li>
+              </ul>
 
-        <div class="last-project">
-          <img src="assests/images/project4-img.svg" alt="project4-img" />
-          <div class="project4-content">
-            <h3 class="project4-content-sec1">
-              Multi-Post Stories <br />
-              Gain+Glory
-            </h3>
-            <ul class="project4-content-sec2">
-              <li class="small-li" for="html">HTML</li>
-              <li class="small-li" for="JS">JS</li>
-              <li class="small-li" for="CSS">CSS</li>
-              <li class="big-li" for="Ruby">Ruby & Rails</li>
-            </ul>
-            <button class="green-btn" type="button" title="see-project">
-              <a href="popuppage.html"> See Project </a>
-            </button>
-          </div>
-        </div>
+              <button class="projectBtn" type="button" title="see-project">
+                See Project
+              </button>
+            </div>
+          </li>
+
+          <li class="project">
+            <img src="assests/images/project3-img.svg" alt="project3-img" />
+            <div class="project3-content">
+              <h3 class="project3-content-sec1">
+                Multi-Post Stories <br />
+                Gain+Glory
+              </h3>
+              <ul class="project3-content-sec2">
+                <li class="small-li" for="html">HTML</li>
+                <li class="small-li" for="JS">JS</li>
+                <li class="small-li" for="CSS">CSS</li>
+                <li class="big-li" for="Ruby">Ruby & Rails</li>
+              </ul>
+
+              <button class="projectBtn" type="button" title="see-project">
+                See Project
+              </button>
+            </div>
+          </li>
+
+          <li class="project">
+            <img src="assests/images/project3-img.svg" alt="project4-img" />
+            <div class="project4-content">
+              <h3 class="project4-content-sec1">
+                Multi-Post Stories <br />
+                Gain+Glory
+              </h3>
+              <ul class="project3-content-sec2">
+                <li class="small-li" for="html">HTML</li>
+                <li class="small-li" for="JS">JS</li>
+                <li class="small-li" for="CSS">CSS</li>
+                <li class="big-li" for="Ruby">Ruby & Rails</li>
+              </ul>
+
+              <button class="projectBtn" type="button" title="see-project">
+                See Project
+              </button>
+            </div>
+          </li>
+
+          <li class="project">
+            <img src="assests/images/project3-img.svg" alt="project5-img" />
+            <div class="project5-content">
+              <h3 class="project5-content-sec1">
+                Multi-Post Stories <br />
+                Gain+Glory
+              </h3>
+              <ul class="project5-content-sec2">
+                <li class="small-li" for="html">HTML</li>
+                <li class="small-li" for="JS">JS</li>
+                <li class="small-li" for="CSS">CSS</li>
+                <li class="big-li" for="Ruby">Ruby & Rails</li>
+              </ul>
+
+              <button class="projectBtn" type="button" title="see-project">
+                See Project
+              </button>
+            </div>
+          </li>
+
+          <li class="last-project">
+            <img src="assests/images/project4-img.svg" alt="project6-img" />
+            <div class="project6-content">
+              <h3 class="project6-content-sec1">
+                Multi-Post Stories <br />
+                Gain+Glory
+              </h3>
+              <ul class="project6-content-sec2">
+                <li class="small-li" for="html">HTML</li>
+                <li class="small-li" for="JS">JS</li>
+                <li class="small-li" for="CSS">CSS</li>
+                <li class="big-li" for="Ruby">Ruby & Rails</li>
+              </ul>
+
+              <button class="projectBtn" type="button" title="see-project">
+                See Project
+              </button>
+            </div>
+          </li>
+        </ul>
       </section>
-
-      <section class="about-me">
+      <section class="about-me" id="about">
         <div class="aboutme1">
           <h2 class="about-me-header">About me</h2>
           <p class="about-me-1">
@@ -169,9 +356,8 @@
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hesitate to contact me.
           </p>
-          <button class="green-btn" type="button" title="see-project">
-            <a href="index.html"> Get my resume </a>
-          </button>
+
+          <a href="index.html"> Get my resume </a>
         </div>
 
         <ul class="aboutme2">
@@ -226,9 +412,8 @@
           </li>
         </ul>
       </section>
-
-      <section class="contact-me">
-        <h2 class="contact-me-header">
+      <section class="contact-me" id="contact">
+        <h2 class="contact-me-header-mobile">
           I'm always <br />
           interested in <br />
           hearing about <br />
@@ -237,14 +422,20 @@
           chat please get <br />
           in touch.
         </h2>
+        <h2 class="contact-me-header-desktop">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </h2>
         <form
+          method="post"
           autocomplete="off"
           action="https://formspree.io/f/xdovwjar"
-          method="post"
           class="input-form"
         >
           <input
-            co
+            id="name-input"
+            onchange="saveValue(this);"
+            class="full-name"
             type="text"
             placeholder="Full name"
             maxlength="30"
@@ -252,12 +443,19 @@
             required
           />
           <input
-            required
+            id="email-input"
+            onchange="saveValue(this);"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             type="email"
             placeholder="Email address"
             name="email"
+            oninvalid="InvalidMsg(this);"
+            oninput="InvalidMsg(this);"
+            required="required"
           />
           <textarea
+            id="textarea-input"
+            onchange="saveValue(this);"
             class="details"
             id="details"
             cols="20"
@@ -267,38 +465,48 @@
             required
             name="message"
           ></textarea>
-          <button name="submit" class="green-btn" type="submit" title="press">
-            Get in touch 
+          <button
+          id="submitBtn"
+            name="submit"
+            class="green-btn-submit"
+            type="submit"
+            title="press"
+          >
+            Get in touch
           </button>
           <p class="contact-email">geekyhacks22@gmail.com</p>
         </form>
       </section>
     </main>
-
     <footer class="footer">
+      <img
+        src="assests/images/longendingline.svg"
+        alt="longendingline"
+        class="longendingline"
+      />
       <ul class="contact-me-contact-icons">
         <li>
-          <button type="button" title="icon-twitter" class="btn-twitter">
+          <button type="button" title="icon-twitter" class="socialbtn">
             <img src="assests/images/twitter.svg" alt="twitter" />
           </button>
         </li>
         <li>
-          <button type="button" title="icon-linkedin" class="btn-linkedin">
+          <button type="button" title="icon-linkedin" class="socialbtn">
             <img src="assests/images/Linkedin icon.svg" alt="Linkedin" />
           </button>
         </li>
         <li>
-          <button type="button" title="icon-medium" class="btn-medium">
+          <button type="button" title="icon-medium" class="socialbtn">
             <img src="assests/images/medium.svg" alt="medium" />
           </button>
         </li>
         <li>
-          <button type="button" title="icon-github" class="btn-github">
+          <button type="button" title="icon-github" class="socialbtn">
             <img src="assests/images/github.svg" alt="github" />
           </button>
         </li>
         <li>
-          <button type="button" title="icon-github" class="btn-angellist">
+          <button type="button" title="icon-github" class="socialbtn">
             <img src="assests/images/angellist.svg" alt="angellist" />
           </button>
         </li>
@@ -310,5 +518,6 @@
         alt="Indicator"
       />
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
