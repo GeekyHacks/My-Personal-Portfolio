@@ -570,7 +570,8 @@ button:active {
 }
 
 .aboutme1 {
-  background-image: url(assests/images/aboutme2.svg), url(assests/images/about-me22.svg);
+  background-image: url(assests/images/aboutme2.svg),
+    url(assests/images/about-me22.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
@@ -611,10 +612,18 @@ button:active {
   justify-content: center;
   border: 1px solid grey;
   border-radius: 16px;
-  width: 100%;
-  padding: 2%;
+  width: 90%;
+  padding: 6%;
   margin-top: 8%;
   background: #ebf0ee;
+}
+
+.skills img,
+.framworks img,
+.languages img {
+  width: 60%;
+  align-self: center;
+  flex: 1;
 }
 
 .languages-text,
@@ -629,22 +638,30 @@ button:active {
   font-weight: 600;
   font-size: 150%;
   line-height: 5%;
+  flex: 0.5;
 }
 
 .skills-lis,
 .framworks-lis,
 .languages-lis {
-  flex: 0.5;
-  gap: 2%;
-  margin: 4%;
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+  flex: 1.5;
+  gap: 8px;
+  display: grid;
   padding: 2%;
-  align-content: inherit;
+  grid-template-columns: auto auto auto ;
+  grid-template-rows: auto auto;
+  width: 95%;
+}
+
+.languages-lis {
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+}
+
+.framworks-lis {
+  grid-template-columns: auto auto auto ;
+  grid-template-rows: auto ;
+
 }
 
 .framworks-lis li,
@@ -652,17 +669,49 @@ button:active {
 .skills-lis li {
   font-family: "Inter", sans-serif;
   font-weight: 550;
-  font-size: 80%;
+  font-size: 95%;
   color: #36b37e;
   letter-spacing: 0.01em;
   background: #fff;
   border: 1px solid transparent;
-  border-radius: 5px;
-  padding: 2%;
+  border-radius: 8px;
+  padding: 5%;
   margin: 1.5%;
   white-space: nowrap;
-  flex: 1;
+  width: auto;
 }
+
+.framworks-lis li {
+
+ }
+
+/* use this way 
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  grid-auto-rows: 100px;
+  grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d";
+} */
+
+
+ .skills-lis {
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.skills-lis li {
+  padding: 4%;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
 
 /* contact me section */
 .contact-me {
