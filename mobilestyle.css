@@ -29,7 +29,6 @@ body {
 }
 
 /* to hide desktop and menu btn content */
-
 .desktop-header {
   display: none;
 }
@@ -68,7 +67,6 @@ body {
 }
 
 /* The Modal (background)  */
-
 .menuPage {
   display: none;
   position: fixed;
@@ -79,7 +77,6 @@ body {
 }
 
 /* Modal Content  */
-
 .menuPageContent {
   display: flex;
   flex-direction: column;
@@ -97,7 +94,6 @@ body {
 }
 
 /* The Close Button  */
-
 .menuX {
   position: absolute;
   color: #67798e;
@@ -186,7 +182,6 @@ a {
 }
 
 /* headlines section */
-
 .dev-span-desktop {
   display: none;
 }
@@ -246,6 +241,14 @@ a {
   width: 100%;
 }
 
+.skills img,
+.framworks img,
+.languages img {
+  width: 60%;
+  align-self: center;
+  flex: 1;
+}
+
 .headlines-contact-icons li {
   margin: 1% 3%;
 }
@@ -253,7 +256,6 @@ a {
 /* my-work section */
 
 /* popup page section */
-
 .popupPage {
   display: none;
 }
@@ -276,7 +278,6 @@ a {
 }
 
 /* header section */
-
 .poppage-desktop-img {
   display: none;
 }
@@ -302,7 +303,6 @@ a {
 }
 
 /* The Close Button  */
-
 .pageX:hover,
 .pageX:focus {
   opacity: 0.7;
@@ -323,7 +323,6 @@ a {
 }
 
 /* all elements in .poppage */
-
 .poppage > * {
   margin: 2% 1%;
   padding: 2% 1%;
@@ -398,7 +397,6 @@ a {
 }
 
 /* work section */
-
 .my-work {
   display: grid;
   justify-items: center;
@@ -582,8 +580,7 @@ button:active {
 }
 
 .aboutme1 {
-  background-image: url(assests/images/aboutme2.svg),
-    url(assests/images/about-me22.svg);
+  background-image: url(assests/images/aboutme2.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
@@ -628,14 +625,6 @@ button:active {
   padding: 6%;
   margin-top: 8%;
   background: #ebf0ee;
-}
-
-.skills img,
-.framworks img,
-.languages img {
-  width: 60%;
-  align-self: center;
-  flex: 1;
 }
 
 .languages-text,
@@ -692,9 +681,6 @@ button:active {
   width: auto;
 }
 
-.framworks-lis li {
-}
-
 /* use this way 
 .wrapper {
   display: grid;
@@ -722,7 +708,6 @@ button:active {
 }
 
 /* contact me section */
-
 .contact-me {
   background-image: url(assests/images/contactbottom.svg);
   background-position: right bottom;
