@@ -521,7 +521,7 @@ a {
   cursor: pointer;
   background: #36b37f;
   border: 2px solid transparent;
-  border-radius: 6px;
+  border-radius: 4px;
   width: auto;
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -530,7 +530,7 @@ a {
   word-spacing: normal;
   color: white;
   transition-duration: 0.4s;
-  padding: 2%;
+  padding: 3%;
   margin: 2%;
 }
 
@@ -792,8 +792,8 @@ textarea {
   line-height: 32px;
   text-align: center;
   color: #42526e;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 16%;
+  margin-bottom: 1%;
 }
 
 .longendingline {
