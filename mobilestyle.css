@@ -648,7 +648,7 @@ button:active {
   gap: 8px;
   display: grid;
   padding: 2%;
-  grid-template-columns: auto auto auto ;
+  grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   width: 95%;
 }
@@ -660,14 +660,31 @@ button:active {
 
 .framworks-lis {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   grid-template-rows: auto auto;
   grid-template-areas:
-    "a a a a b b b b"
-    "a a a a b b b b"
-    "c c c c d d d d"
-    "c c c c d d d d";
-} 
+    "a a b b c"
+    "d d d e e";
+}
+
+.a{
+
+}
+.b{
+
+}
+
+.c{
+  
+}
+
+.d{
+  
+}
+
+.e{
+  
+}
 
 .framworks-lis li,
 .languages-lis li,
@@ -687,10 +704,9 @@ button:active {
 }
 
 .framworks-lis li {
+}
 
- }
-
- .skills-lis {
+.skills-lis {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
 }
@@ -702,7 +718,6 @@ button:active {
   align-content: space-evenly;
   align-items: center;
 }
-
 
 /* contact me section */
 .contact-me {
