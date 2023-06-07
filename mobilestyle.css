@@ -264,8 +264,6 @@ a {
   margin: 1% 3%;
 }
 
-/* my-work section */
-
 /* popup page section */
 .popupPage {
   display: none;
@@ -423,6 +421,8 @@ a {
   width: 100%;
   margin-top: 3%;
   margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
 }
 
 .my-work-header-mobile {
@@ -621,7 +621,8 @@ a {
   text-align: center;
 }
 
-.about-me-1 {
+.about-me-1-mobile {
+  display: block;
   color: #42526e;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -634,6 +635,9 @@ a {
   letter-spacing: 0.04em;
 }
 
+.about-me-1-desktop {
+  display: none;
+}
 .aboutme2 {
   display: grid;
   width: 100%;
@@ -731,7 +735,11 @@ a {
   text-align: center;
 }
 
-.input-form {
+.input-form-desktop{
+  display: none;
+}
+
+.input-form-mobile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -739,7 +747,7 @@ a {
   margin-right: 3%;
 }
 
-.input-form input,
+.input-form-mobile input,
 textarea {
   font-family: "Inter", sans-serif;
   font-style: italic;

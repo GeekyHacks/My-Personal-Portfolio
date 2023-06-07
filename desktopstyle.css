@@ -38,16 +38,6 @@ body {
   padding: 0;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 1%;
-  width: 98%;
-  align-items: center;
-  justify-content: center;
-}
-
 .header .logo,
 nav {
   display: none;
@@ -103,6 +93,17 @@ a {
   opacity: 0.8;
 }
 
+/* main section */
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1%;
+  width: 98%;
+  align-items: center;
+  justify-content: center;
+}
+
 /* headlines section */
 .headlines {
   display: flex;
@@ -126,31 +127,38 @@ a {
   display: none;
 }
 
-.primary-desktop {
-  margin-top: 10%;
+.primary-desktop,
+.dev-span-desktop {
+  margin-top: 9.5cqh;
+  margin-bottom: 0.3cqh;
   width: 100%;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 165%;
-  line-height: 32px;
+  font-size: 3.5cqw;
+  line-height: 75%;
   letter-spacing: 0.25px;
   color: #172b4d;
+  display: block;
 }
 
 .dev-span-desktop {
   color: #36b37e;
+  margin-top: 1cqh;
 }
 
 .supporting-content-desktop {
   color: #172b4d;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 85%;
-  line-height: 136%;
+  font-weight: 500;
+  font-size: 1.5cqw;
+  line-height: 120%;
   width: 100%;
-  margin-top: 2.5%;
+  padding-right: 3cqw;
+  letter-spacing: 0;
+  margin: 1.5cqh 4cqw;
+  display: block;
 }
 
 .headlines-contact-icons {
@@ -160,16 +168,16 @@ a {
   align-items: center;
   margin: 0 auto;
   margin-bottom: 10%;
-  margin-top: 2.5%;
-  padding: -1%;
-  gap: 10px;
+  width: 25%;
+}
+
+.headlines-contact-icons li {
+  flex: 1;
 }
 
 .down-arrow-btn {
   margin-top: 5%;
 }
-
-/* work section */
 
 /* popup page section */
 .popupPage {
@@ -192,7 +200,7 @@ a {
   margin-right: 1%;
 }
 
-/* The Close Button  */
+/* poppage Close Button  */
 .pageX {
   background-color: #ebecf0;
   padding: 0.5%;
@@ -306,7 +314,7 @@ footer {
   display: none;
 }
 
-/* main section */
+/* poppage main section */
 .poppage {
   text-align: left;
   border-radius: 16px;
@@ -352,6 +360,7 @@ footer {
 .my-work {
   display: grid;
   justify-items: center;
+  justify-content: center;
   width: 100%;
   gap: 2%;
 }
@@ -368,14 +377,8 @@ footer {
   padding-top: 5%;
   width: 100%;
   text-align: center;
-  margin-top: 18%;
-}
-
-.start {
-  color: #172b4d;
-  width: 100%;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 5%;
+  display: block;
 }
 
 .small-indcator {
@@ -384,29 +387,33 @@ footer {
 
 .projects {
   display: grid;
-  justify-items: center;
-  width: 100%;
+  justify-items: stretch;
+  width: 100cqw;
   grid-template-columns: repeat(3, 25%);
   grid-template-rows: 1fr 1fr;
-  gap: 5%;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
   align-content: center;
+  gap: 1.5%;
 }
 
 .project,
 .last-project {
-  background-color: #fff;
   display: flex;
+  background: #fff;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid grey;
-  border-radius: 12px;
-  width: 105%;
-  padding: 2%;
-  align-items: stretch;
   align-content: center;
-  justify-items: center;
+  border: 1px solid grey;
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+  padding: 2%;
+  margin-top: 5%;
+}
+
+.project_img {
+  flex: 0.5;
+  padding: 1%;
 }
 
 .project1-conetent,
@@ -415,6 +422,7 @@ footer {
 .project4-conetent,
 .project5-conetent,
 .project6-conetent {
+  flex: 1.5;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -436,9 +444,10 @@ footer {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 85%;
+  font-size: 1.7cqw;
   background: #fff;
   margin-top: 4%;
+  flex: 1;
 }
 
 .project1-content-sec2,
@@ -447,10 +456,11 @@ footer {
 .project4-content-sec2,
 .project5-content-sec2,
 .project6-content-sec2 {
+  flex: 1;
   gap: 2%;
-  margin: 5% 2% 4% 2%;
-  width: 96%;
-  padding: 2%;
+  margin: 2% 2% 4% 2%;
+  width: 90%;
+  padding: 1%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -468,16 +478,17 @@ footer {
   background: #ebf0ee;
   font-family: "Inter", sans-serif;
   font-weight: 450;
-  font-size: 62%;
+  font-size: 1cqw;
   border: 1px solid transparent;
   border-radius: 5px;
-  padding: 2%;
+  padding: 3%;
   white-space: nowrap;
 }
 
 .green-btn,
 .resume-btn,
 .projectBtn {
+  flex: 1;
   transition: all 0.5s;
   cursor: pointer;
   background: #36b37f;
@@ -489,7 +500,7 @@ footer {
   color: white;
   transition-duration: 0.4s;
   padding: 2.5%;
-  margin-top: 3%;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 
@@ -537,9 +548,9 @@ button:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 95%;
+  width: 100cqw;
   padding: 2%;
-  margin-top: 8%;
+  margin-top: 3%;
 }
 
 .aboutme1 {
@@ -551,73 +562,83 @@ button:active {
   background-repeat: no-repeat;
   box-sizing: content-box;
   background-position: revert;
-  background-size: contain;
+  background-size: 100% 100%;
   background-clip: border-box;
   background-origin: content-box;
-}
-
-.aboutme1 > * {
-  padding: 1.3%;
 }
 
 .about-me-header {
   color: #172b4d;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 180%;
-  margin: 4% 1% 1% 1%;
-  padding-top: 4%;
+  font-size: 3.5cqw;
+  margin: 2% 1% 1% 1%;
+  padding-top: 2%;
 }
 
 .about-me-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutme1 a {
+  margin: 1.5% auto;
+  padding: 1.5%;
+  align-self: stretch;
+}
+
+
+.about-me-1-mobile {
+  display: none;
+}
+
+.about-me-1-desktop {
+  display: block;
   color: #42526e;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 85%;
-  line-height: 122%;
-  margin: 1% 9%;
-}
-
-.resume-btn {
-  padding: 1.5%;
-  margin-top: 2%;
-  margin-bottom: 4%;
+  font-weight: 500;
+  font-size: 1.5cqw;
+  line-height: 125%;
+  width: 100%;
+  margin-bottom: 1%;
+  letter-spacing: 0.04em;
 }
 
 .aboutme2 {
+  margin-top: 2%;
   display: flex;
   flex-direction: row;
-  justify-items: center;
-  gap: 4%;
-  height: 515px;
+  justify-content:center ;
+  gap: 2%;
+  width: 92%;
 }
 
 .skills,
 .framworks,
 .languages {
+  flex: 0.5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: 1px solid grey;
   border-radius: 16px;
   width: 100%;
-  padding: 2%;
-  margin-top: 8%;
+  padding: 1%;
   background: #ebf0ee;
 }
 
 .languages-img,
 .framworks-img,
 .skills-img {
-  margin-bottom: 5%;
+  flex: 1;
 }
 
 .languages-text,
 .framworks-text,
 .skills-text {
-  flex: 0.5;
-  margin-top: 5%;
+  flex: 0.1;
   color: #344563;
   align-self: center;
   font-family: "Inter", sans-serif;
@@ -629,17 +650,15 @@ button:active {
 .skills-lis,
 .framworks-lis,
 .languages-lis {
-  flex: 0.5;
+  flex: 0.9;
   gap: 2%;
-  margin: 4%;
-  width: 90%;
+  width: 96%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2%;
-  align-content: inherit;
+  align-content: center;
 }
 
 .framworks-lis li,
@@ -654,7 +673,6 @@ button:active {
   border: 1px solid transparent;
   border-radius: 5px;
   padding: 2%;
-  margin: 1.5%;
   white-space: nowrap;
   flex: 1;
 }
@@ -663,13 +681,13 @@ button:active {
 .contact-me {
   background-image: url(assests/images/contactbackground-desktop.svg);
   background-position: bottom;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  margin-top: 7%;
+  margin-top: 4%;
 }
 
 .contact-me-header-mobile {
@@ -677,6 +695,7 @@ button:active {
 }
 
 .contact-me-header-desktop {
+  display: block;
   color: #172b4d;
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -684,19 +703,32 @@ button:active {
   margin-left: 7%;
   padding-top: 4%;
   letter-spacing: 0.01rem;
-  width: 50%;
-  text-align: left;
+  width: 100%;
+  text-align: center;
+  flex: 1;
 }
 
-.input-form {
+.input-form-mobile{
+  display: none;
+}
+.input-form-desktop {
+  flex: 1.5;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 50%;
 }
 
-.input-form input,
-textarea {
+.fullName{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 99.4%;
+  gap: 0.6%;
+}
+
+.name{
+  flex: 1;
   font-family: "Inter", sans-serif;
   font-style: italic;
   font-weight: 400;
@@ -708,7 +740,22 @@ textarea {
   border-radius: 4px;
   margin: 12px 0 12px 0;
   padding: 5px;
-  width: 90%;
+  width: 50cqw;
+  text-align: left;
+}
+.input-form-desktop textarea {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #172b4d;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  margin: 12px 0 12px 0;
+  padding: 5px;
+  width: 50cqw;
   text-align: left;
 }
 
