@@ -631,16 +631,15 @@ a {
   width: 100%;
   margin-top: 5%;
   margin-bottom: 7%;
-  letter-spacing: .04em;
+  letter-spacing: 0.04em;
 }
 
-.aboutme2{
+.aboutme2 {
   display: grid;
   width: 100%;
   justify-content: center;
   justify-items: center;
   align-items: center;
-  
 }
 
 .skills,
@@ -686,15 +685,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
-
 }
-/* .framworks-lis{
-  flex:1.2;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-} */
 
 .framworks-lis li,
 .languages-lis li,
