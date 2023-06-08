@@ -53,8 +53,17 @@ pageX.addEventListener('click', () => {
   projectPopup.classList.toggle('showPage');
 });
 
+// get the saved value function - return the value of 'v' from localStorage.
+function getSavedValue(v) {
+  if (!localStorage.getItem(v)) {
+    return saveValue(); // You can change this to your defualt value.
+  }
+  return localStorage.getItem(v);
+}
+
 //  save input values to localstorage
-document.getElementById('name-input').value = getSavedValue('name-input'); // set the value to this input
+document.getElementById('firstname-input').value = getSavedValue('firstname-input'); 
+document.getElementById('secondname-input').value = getSavedValue('secondname-input'); // set the value to this input
 document.getElementById('email-input').value = getSavedValue('email-input');
 document.getElementById('textarea-input').value = getSavedValue('textarea-input');
 
@@ -65,14 +74,6 @@ function saveValue(e) {
   // const val = e.value; // get the value.
   // Every time user writing something, the localStorage's value will override .
   localStorage.setItem(id, val);
-}
-
-// get the saved value function - return the value of 'v' from localStorage.
-function getSavedValue(v) {
-  if (!localStorage.getItem(v)) {
-    return saveValue(); // You can change this to your defualt value.
-  }
-  return localStorage.getItem(v);
 }
 
 // the input valdiation
