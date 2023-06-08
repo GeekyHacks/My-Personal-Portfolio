@@ -53,21 +53,6 @@ pageX.addEventListener('click', () => {
   projectPopup.classList.toggle('showPage');
 });
 
-// the input valdiation
-function InvalidMsg(input) {
-  if (input.value === '') {
-    input.setCustomValidity('Entering an email-id is necessary!');
-  } else if (input.validity.patternMismatch) {
-    input.setCustomValidity('Please enter a lowercase email address!');
-  } else {
-    input.setCustomValidity('');
-  }
-
-  return true;
-}
-
-
-
 //  save input values to localstorage
 document.getElementById('name-input').value = getSavedValue('name-input'); // set the value to this input
 document.getElementById('email-input').value = getSavedValue('email-input');
@@ -76,7 +61,6 @@ document.getElementById('textarea-input').value = getSavedValue('textarea-input'
 // Save the value function - save it to localStorage as (ID, VALUE)
 function saveValue(e) {
   const { id, val } = e; //  destructure
-
   // const id = e.id; // get the sender's id to save it .
   // const val = e.value; // get the value.
   // Every time user writing something, the localStorage's value will override .
@@ -91,9 +75,21 @@ function getSavedValue(v) {
   return localStorage.getItem(v);
 }
 
-// submitBtn.addEventListener('click', () => {
-//   InvalidMsg();
-//   saveValue();
-//   getSavedValue();
-//   return null;
-// });
+// the input valdiation
+function InvalidMsg(input) {
+  if (input.value === '') {
+    input.setCustomValidity('Entering an email-id is necessary!');
+  } else if (input.validity.patternMismatch) {
+    input.setCustomValidity('Please enter a lowercase email address!');
+  } else {
+    input.setCustomValidity('');
+  }
+
+  return true;
+}
+
+submitBtn.addEventListener('click', () => {
+  getSavedValue();
+  InvalidMsg();
+  saveValue();
+});
