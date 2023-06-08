@@ -376,118 +376,136 @@
         </ul>
       </section>
       <section class="contact-me" id="contact">
-        <h2 class="contact-me-header-mobile">
-          I'm always <br />
-          interested in <br />
-          hearing about <br />
-          new projects, so <br />
-          if you'd like to <br />
-          chat please get <br />
-          in touch.
-        </h2>
-        <h2 class="contact-me-header-desktop">
-          I'm always interested in hearing <br> about new projects, so if you'd <br> like to chat please get
-          in touch.
-        </h2>
-        <form
-          method="post"
-          autocomplete="off"
-          action="https://formspree.io/f/xdovwjar"
-          class="input-form-mobile"
-        >
-          <input
-            id="name-input"
-            onchange="saveValue(this);"
-            class="full-name"
-            type="text"
-            placeholder="Full name"
-            maxlength="30"
-            name="full-name"
-            required
-          />
-          <input
-            id="email-input"
-            onchange="saveValue(this);"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            type="email"
-            placeholder="Email address"
-            name="email"
-            oninvalid="InvalidMsg(this);"
-            oninput="InvalidMsg(this);"
-            required="required"
-          />
-          <textarea
-            id="textarea-input"
-            onchange="saveValue(this);"
-            class="details"
-            id="details"
-            cols="20"
-            rows="30"
-            placeholder="Hey I’d like to connect to..."
-            maxlength="500"
-            required
-            name="message"
-          ></textarea>
-          <button id="submitBtn" name="submit" class="green-btn-submit" type="submit" title="press">
-            Get in touch
-          </button>
-          <p class="contact-email">geekyhacks22@gmail.com</p>
-        </form>
-        <form
-          method="post"
-          autocomplete="off"
-          action="https://formspree.io/f/xdovwjar"
-          class="input-form-desktop"
-        >
-          <div class="fullName">
+        <div class="contact-desktop">
+          <h2 class="contact-me-header-desktop">
+            I'm always interested in hearing <br />
+            about new projects, so if you'd <br />
+            like to chat please get in touch.
+          </h2>
+          <form
+            method="post"
+            autocomplete="off"
+            action="https://formspree.io/f/xdovwjar"
+            class="input-form-desktop"
+          >
+            <div class="fullName">
+              <input
+                id="name-input"
+                onchange="saveValue(this);"
+                class="name"
+                type="text"
+                placeholder="First Name"
+                maxlength="30"
+                name="First-name"
+                required
+              />
+              <input
+                id="name-input"
+                onchange="saveValue(this);"
+                class="name"
+                type="text"
+                placeholder="Second name"
+                maxlength="30"
+                name="Second-name"
+                required
+              />
+            </div>
+            <input
+              id="email-input"
+              onchange="saveValue(this);"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              type="email"
+              placeholder="Email address"
+              name="email"
+              oninvalid="InvalidMsg(this);"
+              oninput="InvalidMsg(this);"
+              required="required"
+            />
+            <textarea
+              id="textarea-input"
+              onchange="saveValue(this);"
+              class="details"
+              id="details"
+              cols="20"
+              rows="30"
+              placeholder="Hey I’d like to connect to..."
+              maxlength="500"
+              required
+              name="message"
+            ></textarea>
+            <button
+              id="submitBtn"
+              name="submit"
+              class="green-btn-submit"
+              type="submit"
+              title="press"
+            >
+              Get in touch
+            </button>
+          </form>
+        </div>
+        <div class="contact-mobile">
+          <h2 class="contact-me-header-mobile">
+            I'm always <br />
+            interested in <br />
+            hearing about <br />
+            new projects, so <br />
+            if you'd like to <br />
+            chat please get <br />
+            in touch.
+          </h2>
+          <form
+            method="post"
+            autocomplete="off"
+            action="https://formspree.io/f/xdovwjar"
+            class="input-form-mobile"
+          >
             <input
               id="name-input"
               onchange="saveValue(this);"
-              class="name"
+              class="full-name"
               type="text"
-              placeholder="First Name"
+              placeholder="Full name"
               maxlength="30"
-              name="First-name"
+              name="full-name"
               required
             />
             <input
-              id="name-input"
+              id="email-input"
               onchange="saveValue(this);"
-              class="name"
-              type="text"
-              placeholder="Second name"
-              maxlength="30"
-              name="Second-name"
-              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              type="email"
+              placeholder="Email address"
+              name="email"
+              oninvalid="InvalidMsg(this);"
+              oninput="InvalidMsg(this);"
+              required="required"
             />
-          </div>
-          <input
-            id="email-input"
-            onchange="saveValue(this);"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            type="email"
-            placeholder="Email address"
-            name="email"
-            oninvalid="InvalidMsg(this);"
-            oninput="InvalidMsg(this);"
-            required="required"
-          />
-          <textarea
-            id="textarea-input"
-            onchange="saveValue(this);"
-            class="details"
-            id="details"
-            cols="20"
-            rows="30"
-            placeholder="Hey I’d like to connect to..."
-            maxlength="500"
-            required
-            name="message"
-          ></textarea>
-          <button id="submitBtn" name="submit" class="green-btn-submit" type="submit" title="press">
-            Get in touch
-          </button>
-        </form>
+            <textarea
+              id="textarea-input"
+              onchange="saveValue(this);"
+              class="details"
+              id="details"
+              cols="20"
+              rows="30"
+              placeholder="Hey I’d like to connect to..."
+              maxlength="500"
+              required
+              name="message"
+            ></textarea>
+
+            <button
+              id="submitBtn"
+              name="submit"
+              class="green-btn-submit"
+              type="submit"
+              title="press"
+            >
+              Get in touch
+            </button>
+            <p class="contact-email">geekyhacks22@gmail.com</p>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer">

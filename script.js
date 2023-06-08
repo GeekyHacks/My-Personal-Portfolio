@@ -66,13 +66,7 @@ function InvalidMsg(input) {
   return true;
 }
 
-// get the saved value function - return the value of 'v' from localStorage.
-function getSavedValue(v) {
-  if (!localStorage.getItem(v)) {
-    return ''; // You can change this to your defualt value.
-  }
-  return localStorage.getItem(v);
-}
+
 
 //  save input values to localstorage
 document.getElementById('name-input').value = getSavedValue('name-input'); // set the value to this input
@@ -89,8 +83,17 @@ function saveValue(e) {
   localStorage.setItem(id, val);
 }
 
-submitBtn.addEventListener('click', () => {
-  getSavedValue();
-  InvalidMsg();
-  saveValue();
-});
+// get the saved value function - return the value of 'v' from localStorage.
+function getSavedValue(v) {
+  if (!localStorage.getItem(v)) {
+    return saveValue(); // You can change this to your defualt value.
+  }
+  return localStorage.getItem(v);
+}
+
+// submitBtn.addEventListener('click', () => {
+//   InvalidMsg();
+//   saveValue();
+//   getSavedValue();
+//   return null;
+// });

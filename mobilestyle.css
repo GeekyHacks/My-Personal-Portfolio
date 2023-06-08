@@ -39,7 +39,7 @@ a {
 }
 
 .mylogo {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 65%;
   font-weight: 700;
@@ -135,7 +135,7 @@ a {
   border: 2px solid transparent;
   border-radius: 4px;
   padding: 3%;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 14pt;
   letter-spacing: 0.001em;
@@ -148,7 +148,7 @@ a {
 }
 
 .menuPageList li a {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 195%;
   font-weight: 600;
@@ -213,7 +213,7 @@ a {
 
 .primary-mobile {
   color: #172b4d;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 250%;
   margin: 16% 1% 5% 1%;
@@ -229,7 +229,7 @@ a {
 
 .supporting-content-mobile {
   color: #172b4d;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 123%;
@@ -248,7 +248,7 @@ a {
   width: 98%;
   margin-left: 1%;
   margin-right: 1%;
-  padding-bottom: 3%;
+  padding-bottom: 14%;
   padding-top: 7%;
 }
 
@@ -371,7 +371,7 @@ a {
 .labels li {
   color: #3a4a42;
   background: #ebf0ee;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 550;
   font-size: 80%;
   letter-spacing: 0.01em;
@@ -384,7 +384,7 @@ a {
 .title-mobile {
   width: 100%;
   color: #172b4d;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 180%;
@@ -396,7 +396,7 @@ a {
 .p-1,
 .p-2 {
   color: #344563;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -427,13 +427,18 @@ a {
 
 .my-work-header-mobile {
   color: #172b4d;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: 250%;
   margin: 1%;
   padding-top: 0%;
   width: 98%;
   text-align: center;
+}
+
+.small-indcator {
+  width: 14cqw;
+  align-self: center;
 }
 
 .projects {
@@ -484,7 +489,7 @@ a {
 .project5-content-sec1,
 .project6-content-sec1 {
   color: #3a4a42;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 125%;
@@ -519,7 +524,7 @@ a {
 .about-me-2 li {
   color: #3a4a42;
   background: #ebf0ee;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 550;
   font-size: 83%;
   letter-spacing: 0.01em;
@@ -533,14 +538,13 @@ a {
 .green-btn,
 .projectBtn,
 .green-btn-submit {
-  flex: 1;
   transition: all 0.5s;
   cursor: pointer;
   background: #36b37f;
   border: 2px solid transparent;
   border-radius: 4px;
   width: auto;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 107%;
   letter-spacing: 0.001em;
@@ -612,7 +616,7 @@ a {
 
 .about-me-header {
   color: #172b4d;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 250%;
   margin: 16% 1% 5% 2%;
@@ -624,7 +628,7 @@ a {
 .about-me-1-mobile {
   display: block;
   color: #42526e;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 120%;
@@ -668,7 +672,7 @@ a {
   margin-top: 10%;
   color: #344563;
   align-self: center;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 150%;
@@ -694,7 +698,7 @@ a {
 .framworks-lis li,
 .languages-lis li,
 .skills-lis li {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 550;
   font-size: 80%;
   color: #36b37e;
@@ -727,7 +731,7 @@ a {
 
 .contact-me-header-mobile {
   color: #172b4d;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 245%;
   margin: 2% 1% 5% 1%;
@@ -735,7 +739,7 @@ a {
   text-align: center;
 }
 
-.input-form-desktop{
+.input-form-desktop {
   display: none;
 }
 
@@ -749,7 +753,7 @@ a {
 
 .input-form-mobile input,
 textarea {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 13px;
@@ -775,7 +779,7 @@ textarea {
 }
 
 .contact-email {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
