@@ -67,6 +67,12 @@ a {
   white-space: nowrap;
 }
 
+.aboutme1 a {
+  margin: 1.5% auto;
+  padding: 1.1%;
+  align-self: stretch;
+}
+
 .desktop-header li {
   opacity: 1;
 }
@@ -129,13 +135,13 @@ a {
 
 .primary-desktop,
 .dev-span-desktop {
-  margin-top: 9.5cqh;
-  margin-bottom: 0.3cqh;
+  margin-top: 9.5%;
+  margin-bottom: 0.3%;
   width: 100%;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 3.5cqw;
+  font-size: 3rem;
   line-height: 75%;
   letter-spacing: 0.25px;
   color: #172b4d;
@@ -144,7 +150,7 @@ a {
 
 .dev-span-desktop {
   color: #36b37e;
-  margin-top: 1cqh;
+  margin-top: 1%;
 }
 
 .supporting-content-desktop {
@@ -152,12 +158,12 @@ a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5cqw;
+  font-size: 1.3rem;
   line-height: 120%;
   width: 100%;
-  padding-right: 3cqw;
+  padding-right: 3%;
   letter-spacing: 0;
-  margin: 1.5cqh 4cqw;
+  margin: 1.5% 3%;
   display: block;
 }
 
@@ -373,7 +379,7 @@ footer {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 3.5cqw;
+  font-size: 3.5rem;
   padding-top: 5%;
   width: 100%;
   text-align: center;
@@ -388,7 +394,7 @@ footer {
 .projects {
   display: grid;
   justify-items: stretch;
-  width: 100cqw;
+  width: 100vw;
   grid-template-columns: repeat(3, 25%);
   grid-template-rows: 1fr 1fr;
   justify-content: space-evenly;
@@ -445,7 +451,7 @@ footer {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.7cqw;
+  font-size: 1.7rem;
   background: #fff;
   margin-top: 4%;
   flex: 1;
@@ -479,7 +485,7 @@ footer {
   background: #ebf0ee;
   font-family: 'Inter', sans-serif;
   font-weight: 450;
-  font-size: 1cqw;
+  font-size: 1rem;
   border: 1px solid transparent;
   border-radius: 5px;
   padding: 3%;
@@ -548,7 +554,7 @@ button:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100cqw;
+  width: 100vw;
   padding: 2%;
   margin-top: 3%;
 }
@@ -571,7 +577,7 @@ button:active {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 3.5cqw;
+  font-size: 3.5rem;
   margin: 2% 1% 1% 1%;
   padding-top: 2%;
 }
@@ -580,12 +586,6 @@ button:active {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.aboutme1 a {
-  margin: 1.5% auto;
-  padding: 1.1%;
-  align-self: stretch;
 }
 
 .about-me-1-mobile {
@@ -598,7 +598,7 @@ button:active {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5cqw;
+  font-size: 1.5rem;
   line-height: 125%;
   width: 100%;
   margin-bottom: 1%;
@@ -683,15 +683,14 @@ button:active {
   background-image: url(assests/images/contactbackground-desktop.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 99%;
-  margin-top: 2.5cqw;
+  margin-top: 2.5%;
   align-content: center;
   padding: 2%;
-  margin-bottom: 4%;
-  height: 52cqh;
 }
 
 .contact-desktop {
@@ -718,9 +717,9 @@ button:active {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 2.2cqw;
+  font-size: 2rem;
   padding-top: 2%;
-  margin-left: 1.8cqw;
+  margin-left: 1.8%;
   line-height: 1.5em;
   letter-spacing: 0.01rem;
   text-align: left;
@@ -730,6 +729,7 @@ button:active {
 .input-form-mobile {
   display: none;
 }
+
 .input-form-desktop {
   flex: 2;
   display: flex;
@@ -744,7 +744,7 @@ button:active {
   flex-direction: row;
   justify-content: stretch;
   gap: 3%;
-  width: 57.5cqw;
+  width: 97.5%;
 }
 
 .input-form-desktop textarea,
@@ -775,7 +775,6 @@ input,
   font-weight: 500;
   font-size: 85%;
   color: white;
-  transition-duration: 0.4s;
   padding: 1.5%;
   margin-top: 1%;
   white-space: nowrap;

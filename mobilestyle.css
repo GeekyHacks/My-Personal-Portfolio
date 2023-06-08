@@ -437,7 +437,7 @@ a {
 }
 
 .small-indcator {
-  width: 14cqw;
+  width: 14%;
   align-self: center;
 }
 
@@ -642,6 +642,7 @@ a {
 .about-me-1-desktop {
   display: none;
 }
+
 .aboutme2 {
   display: grid;
   width: 100%;
