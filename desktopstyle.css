@@ -59,7 +59,17 @@ a {
   position: relative;
   transition: 0.5s;
 }
-
+.grow-up {
+  animation: grow-up 1s ease-in-out;
+}
+@keyframes grow-up {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .green-btn a,
 .projectBtn a,
 .resume-btn a {
@@ -87,7 +97,7 @@ a {
 }
 
 .desktop-header li a {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 85%;
   font-weight: 700;
@@ -141,7 +151,7 @@ a {
 .primary,
 .primary-span {
   margin-top: 9.5%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 3rem;
@@ -157,7 +167,7 @@ a {
 
 .supporting-content {
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.3rem;
@@ -240,7 +250,7 @@ a {
   align-content: center;
   background: #172b4d;
   border: 2px solid transparent;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 14pt;
   letter-spacing: 0.001em;
@@ -297,7 +307,7 @@ a {
 .labels li {
   color: #3a4a42;
   background: #ebf0ee;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 550;
   font-size: 80%;
   letter-spacing: 0.01em;
@@ -349,7 +359,7 @@ footer {
   flex: 2;
   width: 50%;
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 180%;
@@ -361,7 +371,7 @@ footer {
 .p-1 {
   text-align: left;
   color: #344563;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -380,7 +390,7 @@ footer {
 
 .myworkHeader {
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
   padding-top: 5%;
@@ -448,7 +458,7 @@ footer {
 .project5-content-sec1,
 .project6-content-sec1 {
   color: #3a4a42;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.7rem;
@@ -483,7 +493,7 @@ footer {
 .about-me-2 li {
   color: #3a4a42;
   background: #ebf0ee;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 450;
   font-size: 1rem;
   border: 1px solid transparent;
@@ -500,7 +510,7 @@ footer {
   background: #36b37f;
   border: 2px solid transparent;
   border-radius: 6px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 85%;
   color: white;
@@ -575,7 +585,7 @@ button:active {
 
 .about-me-header {
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 3.5rem;
   margin: 2% 1% 1% 1%;
@@ -595,7 +605,7 @@ button:active {
 .about-me-1-desktop {
   display: block;
   color: #42526e;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
@@ -642,7 +652,7 @@ button:active {
   flex: 0.1;
   color: #344563;
   align-self: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 150%;
@@ -665,7 +675,7 @@ button:active {
 .framworks-lis li,
 .languages-lis li,
 .skills-lis li {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 550;
   font-size: 80%;
   color: #36b37e;
@@ -716,7 +726,7 @@ button:active {
 .contact-me-header-desktop {
   display: block;
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 2rem;
   padding-top: 2%;
@@ -751,7 +761,7 @@ button:active {
 .input-form-desktop textarea,
 input,
 .name {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
@@ -772,7 +782,7 @@ input,
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: 6px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 85%;
   color: white;
