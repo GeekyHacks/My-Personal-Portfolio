@@ -1,23 +1,28 @@
-
-body {
-  margin: 0;
-  padding: 0;
-  animation: fadeIn 1s;
-}
-
+/* 
 button,
 a {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
+} */
+
+* {
+  text-decoration: none;
+  box-sizing: content-box;
+  color: #fff;
+  outline: none;
+  background: none repeat scroll 0 0 transparent;
+  border: 0;
+  border-spacing: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
+
 
 /* to hide desktop and menu btn content */
-.desktop-header {
-  display: none;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -47,6 +52,9 @@ a {
   width: 30px;
 }
 
+.desktop-header{
+  display: none;
+}
 .mylogo:hover,
 #menuBtn:hover {
   opacity: 0.8;
@@ -175,54 +183,54 @@ a {
 }
 
 /* headlines section */
-.dev-span-desktop {
-  display: none;
-}
-
-.primary-desktop {
-  display: none;
-}
-
-.supporting-content-desktop {
-  display: none;
-}
-
 .headlines {
   background-image: url(assests/images/header-illsutration-mobile.svg);
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding-bottom: 15%;
+
+}
+.headlinesContent {
+  margin-top: 17%;
+  padding: 2% 10% 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
-.primary-mobile {
-  color: #172b4d;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 250%;
-  margin: 16% 1% 5% 1%;
-  padding-top: 5%;
-  width: 98%;
-  text-align: center;
-  letter-spacing: 0.03rem;
-}
-
-.dev-span-mobile {
-  color: #36b37e;
-}
-
-.supporting-content-mobile {
-  color: #172b4d;
-  font-family: 'Inter', sans-serif;
+.primary,
+.primary-span {
+  font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 123%;
-  line-height: 125%;
-  width: 98%;
-  margin: 0 1%;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.05;
+  color: #172b4d;
+  letter-spacing: 2.5px;
+  width: 100%;
+}
+
+.primary-span {
+  color: #36b37e;
+  margin-top: 3%;
+  letter-spacing: 0;
+}
+
+.supporting-content {
+  color: #172b4d;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.37rem;
+  line-height: 120%;
+  width: 100%;
+  letter-spacing: 0;
+  margin-top: 2%;
 }
 
 .headlines-contact-icons {
@@ -612,18 +620,21 @@ a {
   text-align: center;
 }
 
-.about-me-1-mobile {
+.aboutmeHeaderSupport {
   display: block;
-  color: #42526e;
-  font-family: 'Inter', sans-serif;
+  color: #172b4d;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 120%;
-  line-height: 125%;
+  font-size: 1.37rem;
+  line-height: 120%;
   width: 100%;
+  letter-spacing: 0;
   margin-top: 5%;
   margin-bottom: 7%;
   letter-spacing: 0.04em;
+  text-align: center;
+  padding: 5%;
 }
 
 .about-me-1-desktop {

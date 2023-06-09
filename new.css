@@ -1,0 +1,44 @@
+@media (min-width: 375px) and (max-width: 768px) {
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  /* header section */
+  .desktop-header {
+    gap: 25px;
+  }
+  .desktop-header li a {
+    font-size: 0.9rem;
+  }
+  /* main section */
+  .container {
+    width: 98%;
+  }
+
+  /* headlines section */
+  .headlines {
+    width: 100vw;
+  }
+
+  .primary,
+  .primary-span {
+    font-weight: 800;
+    font-size: 3rem;
+  }
+
+  .supporting-content {
+    font-size: 1.3rem;
+    line-height: 120%;
+    width: 84%;
+  }
+  .headlines-contact-icons {
+    width: 30%;
+    gap: 2%;
+  }
+  .headlines-contact-icons li button img {
+    width: 140%;
+  }
+
+  .grow-up {
+    width: 5.5%;
+  }
+}
