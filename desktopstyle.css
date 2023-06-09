@@ -59,6 +59,16 @@ a {
   position: relative;
   transition: 0.6s;
 }
+.grow-up {
+  animation: grow-up 1s ease-in-out;
+}
+@keyframes grow-up {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 
 .green-btn a,
 .projectBtn a,
