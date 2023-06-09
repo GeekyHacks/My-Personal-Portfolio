@@ -57,17 +57,17 @@ a {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: 0.6s;
 }
-.grow-up {
+.grow-up:hover {
   animation: grow-up 1s ease-in-out;
 }
 @keyframes grow-up {
   from {
-    transform: scale(0);
+    transform: scale(1);
   }
   to {
-    transform: scale(1);
+    transform: scale(1.5);
   }
 }
 .green-btn a,
@@ -93,7 +93,7 @@ a {
 
 .poppage a {
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.6s;
 }
 
 .desktop-header li a {
@@ -194,7 +194,7 @@ a {
   flex: 1;
 }
 
-.downarrowBtn {
+.grow-up {
   margin-top: 12%;
   width: 6%;
   margin-bottom: 12%;
@@ -505,7 +505,7 @@ footer {
 .green-btn,
 .resume-btn,
 .projectBtn {
-  transition: all 0.5s;
+  transition: all 0.7s;
   cursor: pointer;
   background: #36b37f;
   border: 2px solid transparent;
@@ -514,7 +514,7 @@ footer {
   font-weight: 500;
   font-size: 85%;
   color: white;
-  transition-duration: 0.4s;
+  transition-duration: 0.5s;
   padding: 3.5%;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -541,19 +541,18 @@ button:active {
   box-shadow: none;
 }
 
-.downarrowBtn:hover,
 .socialbtn:hover,
 .menu-button:hover,
 .logo:hover {
   opacity: 0.8;
-  transition: all 0.15s;
+  transition: all 0.2s;
   background: transparent;
   box-shadow: none;
 }
 
 .downarrowBtn:active,
 .socialbtn:active {
-  transition: all 0.15s;
+  transition: all 0.2s;
   background: transparent;
   background-clip: content-box;
   box-shadow: none;
@@ -777,8 +776,8 @@ input,
 }
 
 .green-btn-submit {
-  transition: all 0.5s;
-  transition-duration: 0.5s;
+  transition: all 1s;
+  transition-duration: 0.6s;
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: 6px;
