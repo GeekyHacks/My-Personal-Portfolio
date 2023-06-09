@@ -33,9 +33,7 @@
 body {
   background-image: url(assests/images/Header-llustration-desktop.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0;
-  padding: 0;
+  background-size: 100vw;
 }
 
 .header .logo,
@@ -99,8 +97,8 @@ a {
 .desktop-header li a {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-size: 85%;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
   color: #172b4d;
 }
@@ -124,24 +122,23 @@ a {
 .headlines {
   display: flex;
   background-image: none;
-  width: 100%;
+  width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  margin-bottom: 15%;
+  padding-bottom: 0;
+
 }
 
 .headlinesContent {
+  margin-top: 5%;
   padding: 2% 17% 0 17%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-.headlinesContent > * {
-  width: 100%;
 }
 
 /* .supporting-content-mobile {
@@ -172,8 +169,7 @@ a {
   font-weight: 500;
   font-size: 1.3rem;
   line-height: 120%;
-  width: 100%;
-  padding-right: 3%;
+  width: 84%;
   letter-spacing: 0;
   margin: 1.5% 3%;
   display: block;
@@ -185,19 +181,19 @@ a {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 25%;
+  width: 30%;
   padding-bottom: 4%;
   padding-top: 3%;
+  gap: 2%;
 }
 
-.headlines-contact-icons li {
-  flex: 1;
+.headlines-contact-icons li button img{
+  width: 140%;
 }
 
 .grow-up {
-  margin-top: 12%;
-  width: 6%;
-  margin-bottom: 12%;
+  margin-top: 7%;
+  width: 5.5%;
   align-self: center;
   margin-right: 4%;
 }
@@ -386,17 +382,18 @@ footer {
   justify-content: center;
   width: 100%;
   gap: 2%;
+  align-items: center;
+  margin-top: 13%;
 }
 
 .myworkHeader {
   color: #172b4d;
   font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 2.5rem;
+  font-weight: 700;
+  font-size: 3rem;
   padding-top: 5%;
   width: 100%;
   text-align: center;
-  margin-top: 7%;
   display: block;
 }
 
@@ -405,16 +402,18 @@ footer {
 }
 
 .projects {
+  margin-top: 1%;
   display: grid;
   justify-items: center;
-  width: 100vw;
-  grid-template-columns: repeat(3, 27%);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-content: center;
-  gap: 2.5%;
+  gap: 3% 0%;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
+  width: 84vw;
+  align-items: center;
 }
 
 .projects > li {
@@ -423,32 +422,32 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  padding: 4%;
   border: 1px solid grey;
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
-  margin-top: 4%;
-  padding: 1%;
+  border-radius: 5px;
+  margin-top: 0;
 }
 
 .project_img {
   flex: 1.5;
-  width: 95%;
-  padding: 3% 1% 1% 1%;
-  align-self: stretch;
+  width: 100%;
+  padding: 1%;
+  align-self: center;
 }
 
-.projectConetent {
+.projectContent {
+  width: 97%;
   flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
   border: 5px solid transparent;
   border-radius: 4px;
   align-items: center;
-  width: 100%;
   background: #fff;
-  color: #fff;
+
+
 }
 
 .project1-content-sec1,
@@ -494,8 +493,8 @@ footer {
   color: #3a4a42;
   background: #ebf0ee;
   font-family: "Inter", sans-serif;
-  font-weight: 450;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 0.85rem;
   border: 1px solid transparent;
   border-radius: 5px;
   padding: 3%;
@@ -512,7 +511,7 @@ footer {
   border-radius: 6px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 85%;
+  font-size: 1rem;
   color: white;
   transition-duration: 0.5s;
   padding: 3.5%;
@@ -564,11 +563,11 @@ button:active {
   flex-direction: column;
   justify-content: center;
   width: 100vw;
-  padding: 2%;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 .aboutme1 {
+  flex: 1;
   width: 100%;
   flex-direction: column;
   display: flex;
@@ -581,46 +580,48 @@ button:active {
   background-clip: border-box;
   background-origin: content-box;
 }
-
 .about-me-header {
   color: #172b4d;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   margin: 2% 1% 1% 1%;
-  padding-top: 2%;
+  width: 65%;
 }
 
-.about-me-1 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.about-me-1-mobile {
+/* .about-me-1-mobile {
   display: none;
-}
+} */
 
-.about-me-1-desktop {
+.aboutmeHeaderSupport {
   display: block;
   color: #42526e;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 1.3rem;
   line-height: 125%;
-  width: 100%;
+  width: 60%;
   margin-bottom: 1%;
   letter-spacing: 0.04em;
+  text-align: center;
 }
 
+.aboutme1 a{
+  padding: 1% 2.1%;
+}
+
+
 .aboutme2 {
+  flex: 2;
   margin-top: 2%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 2%;
-  width: 92%;
+width: 83%;
+align-content: center;
+justify-items: center;
 }
 
 .skills,
@@ -690,17 +691,18 @@ button:active {
 /* contact me section */
 .contact-me {
   background-image: url(assests/images/contactbackground-desktop.svg);
-  background-size: 100% 113%;
+  background-size: 100% 128%;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: unset;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 99%;
-  margin-top: 2.5%;
+  width: 100%;
+  margin-top: 0;
   margin-bottom: 0;
   align-content: center;
-  padding: 2%;
+  padding: 2% 1%;
+  align-items: center;
 }
 
 .contact-desktop {
@@ -710,8 +712,9 @@ button:active {
   width: 100%;
   align-content: center;
   justify-items: center;
-  padding: 0;
+  padding: 5% 6% 17% 6%;
   gap: 0.4%;
+  align-items: flex-start;
 }
 
 .contact-mobile {
@@ -722,31 +725,30 @@ button:active {
   display: none;
 } */
 
-.contact-me-header-desktop {
+.contactmeHeader {
   display: block;
   color: #172b4d;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 160%;
   padding-top: 2%;
-  margin-left: 1.8%;
   line-height: 1.5em;
   letter-spacing: 0.01rem;
   text-align: left;
   flex: 1.2;
+  margin-left: 1%;
 }
 
-.input-form-mobile {
+/* .input-form-mobile {
   display: none;
-}
+} */
 
-.input-form-desktop {
+.inputForm {
   flex: 2;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: left;
-  margin-right: 1%;
 }
 
 .fullName {
@@ -757,7 +759,7 @@ button:active {
   width: 97.5%;
 }
 
-.input-form-desktop textarea,
+.inputForm textarea,
 input,
 .name {
   font-family: "Inter", sans-serif;
@@ -786,16 +788,16 @@ input,
   font-size: 85%;
   color: white;
   padding: 1.5%;
-  margin-top: 1%;
   white-space: nowrap;
+  margin: 0;
 }
 
 .details {
   background: #fff;
   border: 1px solid #60c095;
-  height: 20%;
   word-break: break-all;
   font-style: normal;
+  height: 114px;
 }
 
 .contact-email {
