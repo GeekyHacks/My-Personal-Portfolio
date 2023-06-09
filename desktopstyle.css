@@ -57,7 +57,7 @@ a {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: 0.6s;
 }
 
 .green-btn a,
@@ -83,7 +83,7 @@ a {
 
 .poppage a {
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.6s;
 }
 
 .desktop-header li a {
@@ -228,7 +228,7 @@ a {
 .pageX:focus {
   opacity: 0.7;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .poppage-buttons li a {
@@ -257,7 +257,7 @@ a {
 }
 
 .poppage a:active {
-  transition: all 0.15s;
+  transition: all 0.25s;
   background: #172b4d;
   box-shadow: none;
 }
@@ -495,7 +495,7 @@ footer {
 .green-btn,
 .resume-btn,
 .projectBtn {
-  transition: all 0.5s;
+  transition: all 0.6s;
   cursor: pointer;
   background: #36b37f;
   border: 2px solid transparent;
@@ -504,7 +504,7 @@ footer {
   font-weight: 500;
   font-size: 85%;
   color: white;
-  transition-duration: 0.4s;
+  transition-duration: 0.6s;
   padding: 3.5%;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -517,7 +517,7 @@ footer {
   cursor: pointer;
   background: transparent;
   color: transparent;
-  transition-duration: 0.4s;
+  transition-duration: 0.6s;
 }
 
 button:hover {
@@ -526,7 +526,7 @@ button:hover {
 }
 
 button:active {
-  transition: all 0.15s;
+  transition: all 0.25s;
   background: #008552;
   box-shadow: none;
 }
@@ -536,14 +536,14 @@ button:active {
 .menu-button:hover,
 .logo:hover {
   opacity: 0.8;
-  transition: all 0.15s;
+  transition: all 0.25s;
   background: transparent;
   box-shadow: none;
 }
 
 .downarrowBtn:active,
 .socialbtn:active {
-  transition: all 0.15s;
+  transition: all 0.25s;
   background: transparent;
   background-clip: content-box;
   box-shadow: none;
@@ -766,8 +766,8 @@ input,
 }
 
 .green-btn-submit {
-  transition: all 0.5s;
-  transition-duration: 0.5s;
+  transition: all 0.6s;
+  transition-duration: 0.8s;
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: 6px;
