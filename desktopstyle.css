@@ -130,7 +130,7 @@ a {
   align-items: center;
 }
 
-.headlinesContent >*{
+.headlinesContent > * {
   width: 100%;
 }
 
@@ -175,16 +175,21 @@ a {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 10%;
   width: 25%;
+  padding-bottom: 4%;
+  padding-top: 3%;
 }
 
 .headlines-contact-icons li {
   flex: 1;
 }
 
-.down-arrow-btn {
-  margin-top: 5%;
+.downarrowBtn {
+  margin-top: 12%;
+  width: 6%;
+  margin-bottom: 12%;
+  align-self: center;
+  margin-right: 4%;
 }
 
 /* popup page section */
@@ -373,19 +378,15 @@ footer {
   gap: 2%;
 }
 
-.my-work-header-mobile {
-  display: none;
-}
-
-.my-work-header-desktop {
+.myworkHeader {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   padding-top: 5%;
   width: 100%;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 7%;
   display: block;
 }
 
@@ -395,43 +396,40 @@ footer {
 
 .projects {
   display: grid;
-  justify-items: stretch;
+  justify-items: center;
   width: 100vw;
-  grid-template-columns: repeat(3, 25%);
+  grid-template-columns: repeat(3, 27%);
   grid-template-rows: 1fr 1fr;
-  justify-content: space-evenly;
+  justify-content: center;
   align-content: center;
-  gap: 1.5%;
+  gap: 2.5%;
+  align-items: center;
+  margin-bottom: 5%;
 }
 
-.project,
-.last-project {
+.projects > li {
   display: flex;
   background: #fff;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   border: 1px solid grey;
-  border-radius: 16px;
+  border-radius: 10px;
   width: 100%;
-  height: unset;
+  height: auto;
   margin-top: 4%;
   padding: 1%;
 }
 
 .project_img {
-  flex: 1;
-  width: 96%;
-  padding: 2%;
+  flex: 1.5;
+  width: 95%;
+  padding: 3% 1% 1% 1%;
+  align-self: stretch;
 }
 
-.project1-conetent,
-.project2-conetent,
-.project3-conetent,
-.project4-conetent,
-.project5-conetent,
-.project6-conetent {
-  flex: 1.5;
+.projectConetent {
+  flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -533,7 +531,7 @@ button:active {
   box-shadow: none;
 }
 
-.downarrow-btn:hover,
+.downarrowBtn:hover,
 .socialbtn:hover,
 .menu-button:hover,
 .logo:hover {
@@ -543,7 +541,7 @@ button:active {
   box-shadow: none;
 }
 
-.downarrow-btn:active,
+.downarrowBtn:active,
 .socialbtn:active {
   transition: all 0.15s;
   background: transparent;
