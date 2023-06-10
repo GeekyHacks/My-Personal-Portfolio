@@ -21,21 +21,29 @@ a {
   text-align: center;
 }
 
-
 /* to hide desktop and menu btn content */
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   width: 100%;
 }
+.desktop-header {
+  display: none;
+}
 
+.logo {
+  flex: 1;
+  margin-top: 2%;
+  margin-right: 20%;
+  margin-left: 7%;
+}
 .mylogo {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-size: 65%;
+  font-size: 75%;
   font-weight: 700;
-  margin-left: 20%;
   border: none;
   text-decoration: none;
   cursor: pointer;
@@ -44,17 +52,15 @@ a {
 }
 
 .menuNav {
-  margin-right: 4%;
+  flex: 1;
   margin-top: 2%;
+  margin-left: 20%;
 }
 
 .menuImg {
-  width: 30px;
+  width: 25px;
 }
 
-.desktop-header{
-  display: none;
-}
 .mylogo:hover,
 #menuBtn:hover {
   opacity: 0.8;
@@ -185,17 +191,17 @@ a {
 /* headlines section */
 .headlines {
   background-image: url(assests/images/header-illsutration-mobile.svg);
-  background-size: 100%;
+  background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-
+  padding: 5%;
 }
+
 .headlinesContent {
-  margin-top: 17%;
-  padding: 2% 10% 0 10%;
+  margin-top: 10%;
+  padding:5% 7%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -205,11 +211,11 @@ a {
 
 .primary,
 .primary-span {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
+  font-family: 'Inter', sans-serif;
+  font-style: bold;
   font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 1.05;
+  font-size: 40px;
+  line-height: 107%;
   color: #172b4d;
   letter-spacing: 2.5px;
   width: 100%;
@@ -223,14 +229,14 @@ a {
 
 .supporting-content {
   color: #172b4d;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.37rem;
-  line-height: 120%;
+  font-size: 1.29rem;
+  line-height: 28px;
   width: 100%;
   letter-spacing: 0;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 .headlines-contact-icons {
@@ -240,23 +246,42 @@ a {
   align-items: center;
   margin-top: 1%;
   margin-bottom: 12%;
-  width: 98%;
+  width: 100%;
   margin-left: 1%;
   margin-right: 1%;
-  padding-bottom: 14%;
-  padding-top: 7%;
+  padding-top: 5%;
 }
 
 .skills img,
 .framworks img,
 .languages img {
-  width: 60%;
+  width: 50%;
   align-self: center;
   flex: 1;
 }
 
 .headlines-contact-icons li {
   margin: 1% 3%;
+}
+
+.grow-up {
+  width: 15%;
+  /* margin-bottom: 10%; */
+  margin-top: 15%;
+}
+
+
+.grow-up:hover {
+  animation: grow-up 1s ease-in-out;
+}
+@keyframes grow-up {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.3);
+  }
 }
 
 /* popup page section */
@@ -403,12 +428,8 @@ a {
 /* work section */
 .my-work {
   display: grid;
-  justify-items: center;
   width: 100%;
-}
-
-.my-work-header-desktop {
-  display: none;
+  justify-content: center;
 }
 
 .start {
@@ -418,19 +439,21 @@ a {
   margin-bottom: 2%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.my-work-header-mobile {
+.myworkHeader {
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
-  font-size: 250%;
-  margin: 1%;
-  padding-top: 0%;
-  width: 98%;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 107%;
+  padding-top: 5%;
+  width: 80%;
   text-align: center;
+  display: block;
 }
-
 .small-indcator {
   width: 14%;
   align-self: center;
@@ -451,14 +474,15 @@ a {
   justify-items: center;
   border: 1px solid grey;
   border-radius: 16px;
-  width: 85%;
+  width: 70vw;
   padding: 2%;
   margin-top: 8%;
 }
-
 .project_img {
-  flex: 1;
+  flex: 1.5;
+  width: 100%;
   padding: 1%;
+  align-self: center;
 }
 
 .project1-conetent,
@@ -592,9 +616,6 @@ a {
 .about-me {
   display: grid;
   width: 100%;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
   align-content: center;
 }
 
@@ -607,14 +628,19 @@ a {
   background-clip: border-box;
   background-origin: content-box;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
 }
 
 .about-me-header {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 250%;
-  margin: 16% 1% 5% 2%;
+  font-size: 2.8rem;
+  margin: 10% 1% 0% 2%;
   padding-top: 2%;
   width: 95%;
   text-align: center;
@@ -623,27 +649,25 @@ a {
 .aboutmeHeaderSupport {
   display: block;
   color: #172b4d;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.37rem;
+  font-size: 1.45rem;
   line-height: 120%;
-  width: 100%;
-  letter-spacing: 0;
-  margin-top: 5%;
+  width: 93%;
+  margin-top: 0%;
   margin-bottom: 7%;
   letter-spacing: 0.04em;
   text-align: center;
   padding: 5%;
 }
-
 .about-me-1-desktop {
   display: none;
 }
 
 .aboutme2 {
   display: grid;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -658,7 +682,7 @@ a {
   justify-items: center;
   border: 1px solid grey;
   border-radius: 16px;
-  width: 85%;
+  width: 80vw;
   height: 350px;
   padding: 2%;
   margin-top: 8%;
@@ -668,7 +692,8 @@ a {
 .languages-text,
 .framworks-text,
 .skills-text {
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   color: #344563;
   align-self: center;
   font-family: 'Inter', sans-serif;
@@ -724,48 +749,61 @@ a {
   margin-top: 8%;
 }
 
-.contact-me-header-desktop {
-  display: none;
+.contact-dev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-content: center;
+  justify-items: center;
+  padding: 5% 6% 17% 6%;
+  gap: 0.4%;
+  align-items: center;
 }
 
-.contact-me-header-mobile {
+.contactmeHeader {
+  display: block;
   color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 245%;
-  margin: 2% 1% 5% 1%;
-  width: 100%;
+  font-size: 2rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  line-height: 1.5em;
+  letter-spacing: 0.01rem;
   text-align: center;
+  flex: 1;
+  width: 80%;
 }
 
-.input-form-desktop {
+.inputForm {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: left;
+}
+
+.fullName {
   display: none;
 }
 
-.input-form-mobile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-.input-form-mobile input,
-textarea {
+.inputForm textarea,
+input,
+.name {
   font-family: 'Inter', sans-serif;
   font-style: italic;
-  font-weight: 500;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 15px;
   line-height: 24px;
   color: #172b4d;
   background: #fff;
   border: 1px solid #d0d9d4;
-  border-radius: 3px;
-  margin: 12px 0 12px 0;
-  padding: 5px;
-  width: 90%;
+  border-radius: 4px;
+  margin: 1% 0;
+  padding: 10px;
+  width: 95%;
   text-align: left;
-  height: 35px;
 }
 
 .details {

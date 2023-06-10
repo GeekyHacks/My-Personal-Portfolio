@@ -394,7 +394,7 @@ footer {
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   align-content: center;
-  gap: 3% 0%;
+  gap: 3% 2%;
   align-items: center;
   margin-bottom: 2%;
   width: 84vw;
@@ -690,7 +690,7 @@ justify-items: center;
   align-items: center;
 }
 
-.contact-desktop {
+.contact-dev {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -701,14 +701,6 @@ justify-items: center;
   gap: 0.4%;
   align-items: flex-start;
 }
-
-.contact-mobile {
-  display: none;
-}
-
-/* .contact-me-header-mobile {
-  display: none;
-} */
 
 .contactmeHeader {
   display: block;
@@ -724,10 +716,6 @@ justify-items: center;
   margin-left: 1%;
 }
 
-/* .input-form-mobile {
-  display: none;
-} */
-
 .inputForm {
   flex: 2;
   display: flex;
@@ -736,6 +724,9 @@ justify-items: center;
   justify-content: left;
 }
 
+.full_Name{
+  display: none;
+}
 .fullName {
   display: flex;
   flex-direction: row;
