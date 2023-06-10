@@ -47,6 +47,7 @@ a {
 .grow-up:hover {
   animation: grow-up 1s ease-in-out;
 }
+
 @keyframes grow-up {
   from {
     transform: scale(1);
@@ -65,7 +66,6 @@ a {
 }
 
 .aboutme1 a {
-  padding: 1%;
   padding: 1%;
   align-self: center;
 }
@@ -381,6 +381,7 @@ footer {
   text-align: center;
   display: block;
 }
+
 .myworkHeader span {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
@@ -407,7 +408,6 @@ footer {
   align-items: center;
   margin-bottom: 2%;
   width: 84vw;
-  align-items: center;
 }
 
 .projects > li {
@@ -515,7 +515,7 @@ footer {
   margin-bottom: 5%;
 }
 
-.menu-button button img,
+.menu-button img,
 .headlines-contact-icons li button img,
 .contact-me-contact-icons li button img {
   opacity: 1;
@@ -572,7 +572,6 @@ button:active {
   background-image: url(assests/images/aboutbackground-desktop.svg);
   background-repeat: no-repeat;
   box-sizing: content-box;
-  background-position: revert;
   background-size: 100% 109%;
   background-clip: border-box;
   background-position: bottom;
@@ -832,6 +831,7 @@ input,
   .project6-content-sec1 {
     font-size: 1.55rem;
   }
+  
   .about-me-header {
     font-size: 2.6rem;
   }

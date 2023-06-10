@@ -1,12 +1,3 @@
-/* 
-button,
-a {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-} */
-
 * {
   text-decoration: none;
   box-sizing: content-box;
@@ -39,6 +30,7 @@ a {
   margin-right: 20%;
   margin-left: 7%;
 }
+
 .mylogo {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -273,6 +265,7 @@ a {
 .grow-up:hover {
   animation: grow-up 1s ease-in-out;
 }
+
 @keyframes grow-up {
   from {
     transform: scale(1);
@@ -281,9 +274,6 @@ a {
   to {
     transform: scale(1.3);
   }
-}
-
-.small-indcator {
 }
 
 /* popup page section */
@@ -457,6 +447,7 @@ a {
   text-align: center;
   display: block;
 }
+
 .small-indcator {
   width: 14%;
   align-self: center;
@@ -481,6 +472,7 @@ a {
   padding: 2%;
   margin-top: 8%;
 }
+
 .project_img {
   flex: 1.5;
   width: 100%;
@@ -664,6 +656,7 @@ a {
   text-align: center;
   padding: 5%;
 }
+
 .about-me-1-desktop {
   display: none;
 }
