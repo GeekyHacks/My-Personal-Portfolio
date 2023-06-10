@@ -20,6 +20,7 @@
   align-items: center;
   width: 100%;
 }
+
 .desktop-header {
   display: none;
 }
@@ -258,7 +259,6 @@
 
 .grow-up {
   width: 15%;
-  /* margin-bottom: 10%; */
   margin-top: 15%;
 }
 

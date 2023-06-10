@@ -44,6 +44,13 @@ a {
   transition: 0.6s;
 }
 
+.grow-up {
+  margin-top: 7%;
+  width: 5.5%;
+  align-self: center;
+  margin-right: 4%;
+}
+
 .grow-up:hover {
   animation: grow-up 1s ease-in-out;
 }
@@ -173,13 +180,6 @@ a {
 
 .headlines-contact-icons li button img {
   width: 140%;
-}
-
-.grow-up {
-  margin-top: 7%;
-  width: 5.5%;
-  align-self: center;
-  margin-right: 4%;
 }
 
 /* popup page section */
@@ -515,7 +515,6 @@ footer {
   margin-bottom: 5%;
 }
 
-.menu-button img,
 .headlines-contact-icons li button img,
 .contact-me-contact-icons li button img {
   opacity: 1;
@@ -831,7 +830,7 @@ input,
   .project6-content-sec1 {
     font-size: 1.55rem;
   }
-  
+
   .about-me-header {
     font-size: 2.6rem;
   }
