@@ -390,6 +390,7 @@ footer {
   width: 100%;
   text-align: center;
 }
+
 .small-indcator {
   display: none;
 }
@@ -415,6 +416,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  align-items: center;
+  justify-items: center;
   padding: 5%;
   border: 1px solid grey;
   border-radius: 5px;
@@ -430,7 +433,7 @@ footer {
 }
 
 .projectContent {
-  width: 97%;
+  width: 100%;
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -440,6 +443,7 @@ footer {
   border-radius: 4px;
   align-items: center;
   background: #fff;
+  flex-wrap: nowrap;
 }
 
 .project1-content-sec1,
@@ -465,14 +469,14 @@ footer {
 .project5-content-sec2,
 .project6-content-sec2 {
   flex: 1;
-  gap: 2%;
-  margin: 2% 2% 4% 2%;
-  width: 90%;
+  width: 85%;
   padding: 1%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  justify-items: center;
+  flex-wrap: nowrap;
 }
 
 .project1-content-sec2 li,
@@ -574,6 +578,7 @@ button:active {
   background-position: bottom;
   margin: 2% 0 0 0;
 }
+
 .about-me-header {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
@@ -597,7 +602,6 @@ button:active {
   text-align: center;
   padding: 1%;
 }
-
 
 .aboutme2 {
   flex: 2;
@@ -730,6 +734,7 @@ button:active {
 .full_Name {
   display: none;
 }
+
 .fullName {
   display: flex;
   flex-direction: row;
@@ -806,131 +811,236 @@ input,
 }
 
 @media (min-width: 1280px) and (max-width: 1440px) {
-}
-
-@media (min-width: 1080px) and (max-width: 1280px) {
-  /* header section */
-  .desktop-header {
-    gap: 28px;
-  }
-  .desktop-header li a {
-    font-size: 1rem;
-  }
-  /* main section */
-  .container {
-    width: 98vw;
-  }
-
-  /* headlines section */
-  .headlines {
-    width: 100vw;
-  }
-
   .primary,
   .primary-span {
-    font-weight: 800;
-    font-size: 2.8rem;
+    font-size: 2.7rem;
   }
 
   .supporting-content {
-    font-size: 1.2rem;
+    font-size: 1.17rem;
   }
+
+  .myworkHeader {
+    font-size: 2.4rem;
+  }
+
+  .project1-content-sec1,
+  .project2-content-sec1,
+  .project3-content-sec1,
+  .project4-content-sec1,
+  .project5-content-sec1,
+  .project6-content-sec1 {
+    font-size: 1.55rem;
+  }
+  .about-me-header {
+    font-size: 2.6rem;
+  }
+
+  .aboutmeHeaderSupport {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1280px) {
+  .primary,
+  .primary-span {
+    font-size: 2.2rem;
+    line-height: 50%;
+    letter-spacing: 2px;
+  }
+
+  .supporting-content {
+    font-size: 1rem;
+  }
+
   .headlines-contact-icons {
-    width: 35%;
-    gap: 1.8%;
-  }
-  .headlines-contact-icons li button img {
-    width: 130%;
+    width: 20%;
+    gap: 3%;
   }
 
   .grow-up {
+    margin-top: 6%;
     width: 5%;
-    margin-bottom: 10%;
+    align-self: center;
+    margin-right: 4%;
+  }
+
+  .myworkHeader {
+    font-size: 2.1rem;
+  }
+
+  .project1-content-sec1,
+  .project2-content-sec1,
+  .project3-content-sec1,
+  .project4-content-sec1,
+  .project5-content-sec1,
+  .project6-content-sec1 {
+    font-size: 1.4rem;
+  }
+
+  .about-me-header {
+    font-size: 2.3rem;
+  }
+
+  .aboutmeHeaderSupport {
+    font-size: 1rem;
+  }
+
+  .contactmeHeader {
+    font-size: 125%;
+    line-height: 1.5em;
   }
 }
 
 @media (min-width: 967px) and (max-width: 1080px) {
-  /* header section */
-  .desktop-header {
-    gap: 25px;
-  }
-  .desktop-header li a {
-    font-size: 0.9rem;
-  }
-  /* main section */
-  .container {
-    width: 98vw;
+  .primary,
+  .primary-span {
+    font-size: 2rem;
+    line-height: 50%;
+    letter-spacing: 2px;
   }
 
-  /* headlines section */
-  .headlines {
-    width: 100vw;
+  .supporting-content {
+    font-size: 0.8rem;
+  }
+
+  .headlines-contact-icons {
+    width: 18%;
+    gap: 4%;
+  }
+
+  .grow-up {
+    margin-top: 4%;
+    width: 5%;
+    align-self: center;
+    margin-right: 4%;
+  }
+
+  .myworkHeader {
+    font-size: 2rem;
+  }
+
+  .project1-content-sec2,
+  .project2-content-sec2,
+  .project3-content-sec2,
+  .project4-content-sec2,
+  .project5-content-sec2,
+  .project6-content-sec2 {
+    width: 55%;
+  }
+
+  .project1-content-sec2 li,
+  .project2-content-sec2 li,
+  .project3-content-sec2 li,
+  .project4-content-sec2 li,
+  .project5-content-sec2 li,
+  .project6-content-sec2 li {
+    padding: 4%;
+  }
+
+  .project1-content-sec1,
+  .project2-content-sec1,
+  .project3-content-sec1,
+  .project4-content-sec1,
+  .project5-content-sec1,
+  .project6-content-sec1 {
+    font-size: 1.3rem;
+  }
+
+  .about-me-header {
+    font-size: 2rem;
+  }
+
+  .aboutmeHeaderSupport {
+    font-size: 0.8rem;
+  }
+
+  .contactmeHeader {
+    font-size: 120%;
+    line-height: 1.5em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 967px) {
+  .desktop-header {
+    gap: 18px;
+  }
+
+  .desktop-header li a {
+    font-size: 0.9rem;
   }
 
   .primary,
   .primary-span {
-    font-weight: 800;
-    font-size: 2.6rem;
-    margin-right: calc(font-size-1rem);
+    font-size: 1.5rem;
+    line-height: 35%;
+    letter-spacing: 0.5px;
   }
 
   .supporting-content {
-    font-size: 1.1rem;
+    font-size: 0.75rem;
+    line-height: 140%;
   }
+
   .headlines-contact-icons {
-    width: 35%;
-    gap: 1.8%;
-  }
-  .headlines-contact-icons li button img {
-    width: 130%;
+    width: 20%;
+    gap: 4%;
   }
 
   .grow-up {
+    margin-top: 9%;
     width: 5%;
-    margin-bottom: 10%;
-  }
-}
-
-@media (min-width: 967px) and (max-width: 1018px) {
-  /* header section */
-  .desktop-header {
-    gap: 25px;
-  }
-  .desktop-header li a {
-    font-size: 0.9rem;
-  }
-  /* main section */
-  .container {
-    width: 98vw;
+    align-self: center;
+    margin-right: 4%;
   }
 
-  /* headlines section */
-  .headlines {
-    width: 100vw;
+  .myworkHeader {
+    font-size: 1.5rem;
   }
 
-  .primary,
-  .primary-span {
-    font-weight: 800;
-    font-size: 2.7rem;
-    margin-right: calc(font-size-1rem);
+  .project1-content-sec2,
+  .project2-content-sec2,
+  .project3-content-sec2,
+  .project4-content-sec2,
+  .project5-content-sec2,
+  .project6-content-sec2 {
+    width: 100%;
+    flex-wrap: wrap;
   }
 
-  .supporting-content {
+  .project1-content-sec2 li,
+  .project2-content-sec2 li,
+  .project3-content-sec2 li,
+  .project4-content-sec2 li,
+  .project5-content-sec2 li,
+  .project6-content-sec2 li {
+    padding: 3%;
+  }
+
+  .project1-content-sec1,
+  .project2-content-sec1,
+  .project3-content-sec1,
+  .project4-content-sec1,
+  .project5-content-sec1,
+  .project6-content-sec1 {
+    font-size: 1rem;
+  }
+
+  .about-me-header {
+    font-size: 1.5rem;
+  }
+
+  .aboutmeHeaderSupport {
+    font-size: 0.75rem;
+  }
+
+  .contactmeHeader {
+    flex: 1.5;
     font-size: 1.1rem;
-  }
-  .headlines-contact-icons {
-    width: 35%;
-    gap: 1.8%;
-  }
-  .headlines-contact-icons li button img {
-    width: 130%;
+    line-height: 1.5em;
   }
 
-  .grow-up {
-    width: 5%;
-    margin-bottom: 10%;
+  .fullName {
+    width: 100%;
   }
 }
-
-/* @media (min-width: 768px) and (max-width: 967px) { */
