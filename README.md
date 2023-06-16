@@ -3,7 +3,9 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="assests/images/project1-img.png"  alt="project1">
+
+![Personal portfolio video](./assests/images/Personal-portfolio-with-play.gif)
+  <img src="assests/images/Personal-portfolio-with-play.gif"  alt="Personal portfolio video">
   <br/>
 
   <h3><b> Personal Portfolio!</b></h3>
