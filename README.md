@@ -3,8 +3,8 @@
 <a name="readme-top"></a>
 
 <div align="center">
-![Personal portfolio video](./assests/images/Personal-portfolio-with-play.gif)
-  
+  <img src="assests/images/Personal-portfolio-with-play.gif"  alt="Personal portfolio video">
+  <br>
 </div>
 
 # 📗 Table of Contents
