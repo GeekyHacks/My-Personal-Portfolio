@@ -5,7 +5,10 @@
 <div align="center">
   <img src="assests/images/Personal-portfolio-with-play.gif"  alt="Personal portfolio video">
   <br>
+   <a href="https://www.loom.com/share/cd64aa69dc6a4eccbdb72ddcaad2930e?sid=4119501f-11fe-4048-a05e-4e344525febe">Watch full video </a>
 </div>
+<br>
+
 
 # 📗 Table of Contents
 
