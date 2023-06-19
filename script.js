@@ -82,8 +82,7 @@ function InvalidMsg(input) {
   if (input.value === '') {
     input.setCustomValidity('Entering an email-id is necessary!');
   } else if (input.validity.patternMismatch) {
-    input.setCustomValidity(
-      'Please enter a lowercase email address!');
+    input.setCustomValidity('Please enter a lowercase email address!');
   } else {
     input.setCustomValidity('');
   }
