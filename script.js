@@ -72,15 +72,11 @@ function getSavedValue(v) {
 }
 
 //  save input values to localstorage
-document.getElementById('firstname-input').value =
-  getSavedValue('firstname-input');
+document.getElementById('firstname-input').value = getSavedValue('firstname-input');
 document.getElementById('secondname-input').value = getSavedValue(
-  'secondname-input'
-); // set the value to this input
-document.getElementById('email-input').value =
-  getSavedValue('email-input');
-document.getElementById('textarea-input').value =
-  getSavedValue('textarea-input');
+  'secondname-input'); // set the value to this input
+document.getElementById('email-input').value = getSavedValue('email-input');
+document.getElementById('textarea-input').value = getSavedValue('textarea-input');
 
 // the input valdiation
 function InvalidMsg(input) {
