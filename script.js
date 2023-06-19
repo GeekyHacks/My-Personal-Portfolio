@@ -73,8 +73,7 @@ function getSavedValue(v) {
 
 //  save input values to localstorage
 document.getElementById('firstname-input').value = getSavedValue('firstname-input');
-document.getElementById('secondname-input').value = getSavedValue(
-  'secondname-input'); // set the value to this input
+document.getElementById('secondname-input').value = getSavedValue('secondname-input'); // set the value to this input
 document.getElementById('email-input').value = getSavedValue('email-input');
 document.getElementById('textarea-input').value = getSavedValue('textarea-input');
 
@@ -84,8 +83,7 @@ function InvalidMsg(input) {
     input.setCustomValidity('Entering an email-id is necessary!');
   } else if (input.validity.patternMismatch) {
     input.setCustomValidity(
-      'Please enter a lowercase email address!'
-    );
+      'Please enter a lowercase email address!');
   } else {
     input.setCustomValidity('');
   }
