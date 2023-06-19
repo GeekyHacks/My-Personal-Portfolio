@@ -1,5 +1,6 @@
 // menu popup
 // Get the modal
+
 const modal = document.querySelector('#menuPage');
 // Get the button that opens the modal
 const menubtn = document.querySelector('#menuBtn');
