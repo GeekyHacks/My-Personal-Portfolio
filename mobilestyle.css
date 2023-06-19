@@ -147,7 +147,7 @@
   font-size: 195%;
   font-weight: 600;
   cursor: pointer;
-  color: #172b4d;
+  color: #3a4a42;
   width: 100%;
   align-self: center;
   transition: all 0.5s;
@@ -622,7 +622,8 @@
 }
 
 .aboutme1 {
-  background-image: url(assests/images/aboutme2.svg), url(assests/images/about-me22.svg);
+  background-image: url(assests/images/aboutme2.svg),
+    url(assests/images/about-me22.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
