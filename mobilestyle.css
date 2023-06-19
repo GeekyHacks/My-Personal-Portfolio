@@ -63,10 +63,11 @@
 .menuPage {
   display: none;
   position: fixed;
-  background-color: #fff;
-  width: 100vw;
-  height: 100vh;
   z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  margin-top: 233%;
 }
 
 /* Modal Content  */
@@ -77,8 +78,8 @@
   background-color: #fff;
   color: #344563;
   padding: 6%;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 40vh;
   animation: fadeIn 1s;
 }
 
