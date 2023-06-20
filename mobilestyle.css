@@ -104,6 +104,7 @@
   opacity: 0.7;
   cursor: pointer;
   transition: all 0.3s;
+  transform: scale(1.15)
 }
 
 .menuPageList {
@@ -169,6 +170,7 @@
 .menuPageList li a:hover {
   color: #36b37f;
   transition: all 0.6s;
+  
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
@@ -270,6 +272,7 @@
 }
 
 .grow-up:hover {
+  transform: scale(1.3);
   animation: grow-up 1s ease-in-out;
 }
 
@@ -478,6 +481,12 @@
   width: 80vw;
   padding: 2%;
   margin-top: 8%;
+  
+}
+
+.project:hover,
+.last-project:hover{
+  transform: scale(1.02)
 }
 
 .project_img {
@@ -587,6 +596,7 @@
 .projectBtn:hover {
   background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.05)
 }
 
 .green-btn:active,
@@ -604,6 +614,7 @@
   transition: all 0.15s;
   background: transparent;
   box-shadow: none;
+  transform: scale(1.05)
 }
 
 .downarrow-btn:active,
