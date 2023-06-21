@@ -8,10 +8,9 @@ const projectBtn = document.querySelectorAll('.projectBtn');
 
 projectBtn.forEach((btn, btnIndex) => {
   btn.addEventListener('click', () => {
-    createProjects();
-    projectPopup.style.display = 'block';
     const cardIndex = btnIndex;
     projectPopup.innerHTML = `
+    <div class="popup">
     <div class="popuppage-header">
     <img
       class="pageX"
@@ -113,11 +112,16 @@ projectBtn.forEach((btn, btnIndex) => {
       </ul>
     </div>
   </div>
+  </div>
     `;
+
+    projectPopup.style.display = 'block';
 
     const closebtn = document.querySelector('.pageX');
     closebtn.addEventListener('click', () => {
       projectPopup.style.display = 'none';
+      // body.style.backgroundColor = '#fff';
+      body.style.backdropFilter = 'none';
     });
   });
 });

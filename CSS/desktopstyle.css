@@ -185,37 +185,53 @@ a {
 }
 
 /* popup page section */
-.popupPage {
+/* .popupPage {
   display: none;
   flex-direction: column;
+  margin: 5%;
   height: 100vh;
-  width: 100vw;
   position: fixed;
-  background: #fff;
   z-index: 1;
   top: 0;
   bottom: 0;
+  top: 0;
+  left: 0;
   box-sizing: border-box;
   padding: 1%;
-  overflow-y: scroll;
-  margin-right: 1%;
+} */
+
+.popupPage {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 15, 24, 0.6);
+  backdrop-filter: blur(28px);
+  width: 96%;
+  height: 100vh;
+  z-index: 10;
+  padding: 2.5%;
 }
 
-.showPage {
+.popup {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  background: #fff;
+  margin: 5%;
+  position: relative;
+  background-color: #fff;
   z-index: 1;
   top: 0;
   bottom: 0;
+  left: 0;
+  height: 100vh;
   box-sizing: border-box;
-  padding: 1%;
-  overflow-y: scroll;
-  margin-right: 1%;
+  border: 1px solid #ebecf0;
+  padding: 4%;
+  border-radius: 6px;
 }
+
 
 /* poppage Close Button  */
 .pageX {
@@ -233,6 +249,20 @@ a {
   display: inline;
 }
 
+
+.popuppage-header {
+  flex: 2;
+  height: 100vh;
+  background-image: url(/My-Personal-Portfolio/assests/images/Snapshoot-Portfolio.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2% 2% 4% 2%;
+}
+
+
+
+
+
 .pageX:hover,
 .pageX:focus {
   opacity: 0.7;
@@ -247,7 +277,7 @@ a {
   flex: 1;
   height: 30px;
   align-content: center;
-  background: #172b4d;
+  background: #36b37f;
   border: 2px solid transparent;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
@@ -261,13 +291,14 @@ a {
 
 .poppage a:hover,
 .poppage a:focus {
-  background: #172b4d;
+  background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.05);
 }
 
 .poppage a:active {
   transition: all 0.15s;
-  background: #172b4d;
+  background: #36b37f;
   box-shadow: none;
 }
 
@@ -317,10 +348,11 @@ a {
 }
 
 .poppage-desktop-img {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 1%;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
+  height: 100vh;
   align-self: center;
 }
 

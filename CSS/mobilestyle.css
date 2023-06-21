@@ -141,7 +141,7 @@ body {
 .poppage-buttons li a {
   align-content: baseline;
   align-self: baseline;
-  background: #172b4d;
+  background: #36b37f;
   border: 2px solid transparent;
   border-radius: 4px;
   padding: 3%;
@@ -172,13 +172,14 @@ body {
 
 .popupPage a:hover,
 .popupPage a:focus {
-  background: #172b4d;
+  background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.15);
 }
 
 .popupPage a:active {
   transition: all 0.15s;
-  background: #172b4d;
+  background: #36b37f;
   box-shadow: none;
 }
 
@@ -330,6 +331,44 @@ body {
   padding: 5%;
   overflow-y: scroll;
 }
+
+/* .popupPage {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 15, 24, 0.6);
+  backdrop-filter: blur(28px);
+  width: 96%;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  padding: 2%;
+  overflow-y: scroll;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 94%;
+  box-sizing: border-box;
+  border: 1px solid #ebecf0;
+  padding: 4%;
+  border-radius: 6px;
+} */
+
+
+
 
 /* popup page header section */
 .poppage-desktop-img {
