@@ -3,13 +3,13 @@
 const submitBtn = document.querySelector('#submitBtn');
 
 // Save the value function - save it to localStorage as (ID, VALUE)
-function saveValue(e) {
-  const { id, val } = e; //  destructure
-  // const id = e.id; // get the sender's id to save it .
-  // const val = e.value; // get the value.
-  // Every time user writing something, the localStorage's value will override .
-  localStorage.setItem(id, val);
-}
+// function saveValue(e) {
+//   const { id, val } = e; //  destructure
+//   // const id = e.id; // get the sender's id to save it .
+//   // const val = e.value; // get the value.
+//   // Every time user writing something, the localStorage's value will override .
+//   localStorage.setItem(id, val);
+// }
 
 // get the saved value function - return the value of 'v' from localStorage.
 function getSavedValue(v) {

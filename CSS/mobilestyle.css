@@ -303,9 +303,18 @@ body {
 }
 
 /* popup page section */
-/* .popupPage {
+.popupPage {
   display: none;
-} */
+  height: 100vh;
+  width: 100wh;
+  position: fixed;
+  background: #fff;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  padding: 5%;
+  overflow-y: scroll;
+}
 
 .popupPage > * {
   margin: 1%;
@@ -314,7 +323,7 @@ body {
 .showPage {
   display: block;
   height: 100vh;
-  width: 100%;
+  width: 100wh;
   position: fixed;
   background: #fff;
   z-index: 1;

@@ -187,6 +187,18 @@ a {
 /* popup page section */
 .popupPage {
   display: none;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: #fff;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 1%;
+  overflow-y: scroll;
+  margin-right: 1%;
 }
 
 .showPage {

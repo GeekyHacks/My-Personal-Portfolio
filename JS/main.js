@@ -1,7 +1,3 @@
-import './contactForm';
-import './popupPage';
-import './projects';
-
 // menu popup
 // Get the modal
 
