@@ -9,13 +9,11 @@
   margin: 0;
   padding: 0;
   text-align: center;
-
 }
+
 body {
   overflow-x: hidden;
-
 }
-
 
 /* to hide desktop and menu btn content */
 .header {
@@ -26,7 +24,7 @@ body {
   width: 100%;
 }
 
-.itemArray{
+.itemArray {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 75%;
@@ -120,7 +118,7 @@ body {
   opacity: 0.7;
   cursor: pointer;
   transition: all 0.3s;
-  transform: scale(1.15)
+  transform: scale(1.15);
 }
 
 .menuPageList {
@@ -186,7 +184,6 @@ body {
 .menuPageList li a:hover {
   color: #36b37f;
   transition: all 0.6s;
-  
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
@@ -487,13 +484,14 @@ body {
   width: 14%;
   align-self: center;
 }
+
 .projectsContainer {
   display: grid;
   justify-items: center;
   width: 100%;
 }
 
-.project{
+.project {
   display: flex;
   background: #fff;
   flex-direction: column;
@@ -506,7 +504,6 @@ body {
   height: 90%;
   padding: 2%;
   margin-top: 8%;
-  
 }
 
 .project:hover,
