@@ -816,7 +816,7 @@ body {
 }
 
 .inputForm input,
-.name {
+.secondName-input, .firstName-input {
   font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 400;
