@@ -185,21 +185,6 @@ a {
 }
 
 /* popup page section */
-/* .popupPage {
-  display: none;
-  flex-direction: column;
-  margin: 5%;
-  height: 100vh;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  padding: 1%;
-} */
-
 .popupPage {
   display: none;
   position: fixed;
@@ -232,7 +217,6 @@ a {
   border-radius: 6px;
 }
 
-
 /* poppage Close Button  */
 .pageX {
   background-color: #ebecf0;
@@ -249,7 +233,6 @@ a {
   display: inline;
 }
 
-
 .popuppage-header {
   flex: 2;
   height: 100vh;
@@ -258,10 +241,6 @@ a {
   background-size: cover;
   margin: 2% 2% 4% 2%;
 }
-
-
-
-
 
 .pageX:hover,
 .pageX:focus {
@@ -351,6 +330,7 @@ a {
   /* margin: 0 auto; */
   padding: 1%;
   justify-content: center;
+
   /* width: 100%; */
   height: 100vh;
   align-self: center;

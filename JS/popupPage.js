@@ -1,4 +1,4 @@
-import { projectsarray, createProjects } from './projects.js';
+import { projectsarray } from './projects.js';
 
 // popup page
 // get the div that includes the popup page
@@ -120,8 +120,6 @@ projectBtn.forEach((btn, btnIndex) => {
     const closebtn = document.querySelector('.pageX');
     closebtn.addEventListener('click', () => {
       projectPopup.style.display = 'none';
-      // body.style.backgroundColor = '#fff';
-      body.style.backdropFilter = 'none';
     });
   });
 });
