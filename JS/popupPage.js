@@ -1,5 +1,4 @@
-import { projectsarray, createProjects } from "./projects.js";
-
+import { projectsarray, createProjects } from './projects.js';
 
 // popup page
 // get the div that includes the popup page
