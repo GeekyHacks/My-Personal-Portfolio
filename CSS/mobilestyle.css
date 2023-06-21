@@ -35,6 +35,7 @@ body {
   color: #172b4d;
   opacity: 1;
 }
+
 .desktop-header {
   display: none;
 }
@@ -303,7 +304,7 @@ body {
 .popupPage {
   display: none;
   height: 100vh;
-  width: 100wh;
+  width: 94vw;
   position: fixed;
   background: #fff;
   z-index: 1;
@@ -320,7 +321,7 @@ body {
 .showPage {
   display: block;
   height: 100vh;
-  width: 100wh;
+  width: 94vw;
   position: fixed;
   background: #fff;
   z-index: 1;
@@ -507,8 +508,8 @@ body {
 }
 
 .project:hover,
-.last-project:hover{
-  transform: scale(1.02)
+.last-project:hover {
+  transform: scale(1.02);
 }
 
 .project_img {
@@ -598,7 +599,7 @@ body {
 .projectBtn:hover {
   background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 
 .green-btn:active,
@@ -616,7 +617,7 @@ body {
   transition: all 0.15s;
   background: transparent;
   box-shadow: none;
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 
 .downarrow-btn:active,
@@ -709,7 +710,7 @@ body {
 .skills:hover,
 .framworks:hover,
 .languages:hover {
-transform: scale(1.02)
+  transform: scale(1.02);
 }
 
 .languages-text,
@@ -741,8 +742,6 @@ transform: scale(1.02)
   flex-wrap: wrap;
   align-content: center;
 }
-
-
 
 .framworks-lis li,
 .languages-lis li,

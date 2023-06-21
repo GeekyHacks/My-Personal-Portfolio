@@ -1,7 +1,7 @@
 // The form section
 const submitBtn = document.querySelector('#submitBtn');
 
-//Save the value function - save it to localStorage as (ID, VALUE)
+// Save the value function - save it to localStorage as (ID, VALUE)
 function saveValue(e) {
   const { id, val } = e; // destructure
   // const id = e.id; // get the sender's id to save it .

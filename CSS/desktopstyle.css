@@ -425,7 +425,6 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
-  justify-items: center;
   padding: 2%;
   margin-top: 0;
   min-height: 150px;
@@ -491,6 +490,26 @@ footer {
   align-items: center;
   justify-items: center;
   flex-wrap: nowrap;
+}
+
+.framworks-lis li,
+.languages-lis li,
+.skills-lis li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 550;
+  font-size: 80%;
+  color: #36b37e;
+  letter-spacing: 0.01em;
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 2%;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.contact-me-contact-icons li {
+  margin: 1%;
 }
 
 .project1-content-sec2 li .about-me-2 li {
@@ -617,7 +636,6 @@ button:active {
   justify-content: center;
   gap: 2%;
   width: 85%;
-
   justify-items: center;
 }
 
@@ -628,7 +646,6 @@ button:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   border: 1px solid grey;
   border-radius: 16px;
   width: 100%;
@@ -670,22 +687,6 @@ button:active {
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
-}
-
-.framworks-lis li,
-.languages-lis li,
-.skills-lis li {
-  font-family: 'Inter', sans-serif;
-  font-weight: 550;
-  font-size: 80%;
-  color: #36b37e;
-  letter-spacing: 0.01em;
-  background: #fff;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  padding: 2%;
-  white-space: nowrap;
-  flex: 1;
 }
 
 /* contact me section */
@@ -808,10 +809,6 @@ input,
 
 .longendingline {
   margin-top: 5%;
-}
-
-.contact-me-contact-icons li {
-  margin: 1%;
 }
 
 .longindicator {
