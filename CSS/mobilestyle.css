@@ -303,9 +303,9 @@ body {
 }
 
 /* popup page section */
-.popupPage {
+/* .popupPage {
   display: none;
-}
+} */
 
 .popupPage > * {
   margin: 1%;
@@ -477,6 +477,11 @@ body {
 .small-indcator {
   width: 14%;
   align-self: center;
+}
+.projectsContainer {
+  display: grid;
+  justify-items: center;
+  width: 100%;
 }
 
 .projectContainer {

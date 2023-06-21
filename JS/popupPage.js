@@ -7,11 +7,36 @@ import './projects.js';
 
 // Get the x element that closes the modal
 const pageX = document.querySelector('.pageX');
+const body = document.querySelector('body');
+const projectBtn = document.querySelectorAll('.projectBtn');
+projectBtn.addEventListener('click', () => {
 
-const projectPopup = document.querySelector('.popupPage');
-const popupContent = document.createElement('div');
+  const projectPopup = document.querySelector('.popupPage');
+  const popupContent = document.createElement('div');
+  popupContent.innerHTML = `
+  <div class="project">
+    <img class="project_img" src='${item.img}' alt="project1-img" />
+    <div class="projectContent">
+      <h3 class="project1-content-sec1">
+      ${item.Name}
+      </h3>
+      <ul class="project1-content-sec2">
+        <li class="small-li" for="html">${item.technologies[0]}</li>
+        <li class="small-li" for="JS">${item.technologies[1]}</li>
+        <li class="small-li" for="CSS">${item.technologies[2]}</li>
+        <li class="big-li" for="Ruby">${item.technologies[3]}</li>
+      </ul>
 
+      <button class="projectBtn" type="button" title="see-project">${item.popupBtn}</button>
+    </div>
+  </div>
 
+`;
+projectPopup.classList.toggle('showPage')
+projectPopup.style.animation = 'fadeOut 4s';
+projectPopup.appendChild(popupContent);
+body.appendChild(projectPopup);
+});
 
 // function popupPAGE(projectsarrayId) {
 //   // get the popup page
@@ -72,5 +97,3 @@ const popupContent = document.createElement('div');
 // }
 
 // Get the button that open popup page
-const projectBtn = document.querySelectorAll('.projectBtn');
-projectBtn.onclick = popupPAGE();
