@@ -410,21 +410,24 @@ footer {
   display: none;
 }
 
-.projectContainer {
-  margin-top: 1%;
+.projectsContainer {
   display: grid;
   justify-items: center;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 3% 1%;
   justify-content: center;
   align-content: center;
-  gap: 3% 1%;
   align-items: center;
-  margin-bottom: 2%;
-  width: 84vw;
+  justify-items: center;
+  padding: 2%;
+  margin-top: 0;
+  min-height: 150px;
+  height: 98%;
 }
 
-.projectContainer > div {
+.project {
   display: flex;
   background: #fff;
   flex-direction: column;
@@ -485,8 +488,7 @@ footer {
   flex-wrap: nowrap;
 }
 
-.project1-content-sec2 li
-.about-me-2 li {
+.project1-content-sec2 li .about-me-2 li {
   color: #3a4a42;
   background: #ebf0ee;
   font-family: 'Inter', sans-serif;
@@ -610,8 +612,7 @@ button:active {
   justify-content: center;
   gap: 2%;
   width: 85%;
- 
- 
+
   justify-items: center;
 }
 
@@ -622,7 +623,6 @@ button:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 
   border: 1px solid grey;
   border-radius: 16px;
@@ -918,7 +918,7 @@ input,
     width: 55%;
   }
 
-  .project1-content-sec2 li{
+  .project1-content-sec2 li {
     padding: 4%;
   }
 

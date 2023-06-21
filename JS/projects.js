@@ -57,15 +57,14 @@ const projectsarray = [
   },
 ];
 
-
 const projects = document.querySelector('.projectsContainer');
 
 for (let i = 0; i < projectsarray.length; i += 1) {
   const card = document.createElement('div');
-  card.classList.add('projectContainer');
+  card.classList.add('project');
 
   card.innerHTML = `
-  <div class="project">
+ 
   <img class="project_img" src='${projectsarray[i].img}' alt="project1-img" />
   <div class="projectContent">
     <h3 class="project1-content-sec1">
@@ -80,10 +79,10 @@ for (let i = 0; i < projectsarray.length; i += 1) {
 
     <button class="projectBtn" type="button" title="see-project">${projectsarray[i].popupBtn}</button>
   </div>
-</div>
+
 
 `;
-projects.appendChild(card);
+  projects.appendChild(card);
 }
 
 const projectPopup = document.querySelector('.popupPage');
@@ -141,10 +140,6 @@ projectBtn.forEach((btn, btnIndex) => {
   });
 });
 
-
-
-
-
 // function createProjects() {
 //   const projects = document.querySelector('.projectsContainer');
 //   const projectss = document.createElement('div');
@@ -189,7 +184,7 @@ projectBtn.forEach((btn, btnIndex) => {
 //           <button class="projectBtn" type="button" title="see-project">${item.popupBtn}</button>
 //         </div>
 //       </div>
-    
+
 //     `;
 //   body.appendChild(projectPopup);
 //   projectPopup.appendChild(popupContent);
@@ -199,7 +194,6 @@ projectBtn.forEach((btn, btnIndex) => {
 // const projectBtn = document.querySelectorAll('.projectBtn');
 // projectBtn.addEventListener('click', () => {
 //   createPopup();
-  
 
 //   // projectPopup.style.animation = 'fadeOut 4s';
 // });

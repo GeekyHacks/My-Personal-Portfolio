@@ -493,12 +493,6 @@ body {
   width: 100%;
 }
 
-.projectContainer {
-  display: grid;
-  justify-items: center;
-  width: 100%;
-}
-
 .project{
   display: flex;
   background: #fff;
