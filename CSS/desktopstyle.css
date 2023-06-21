@@ -225,7 +225,12 @@ a {
   margin-left: 96%;
   margin-bottom: 0;
   margin-top: 1%;
+  margin-right: 1%;
   border-radius: 4px;
+}
+
+.desktop-content {
+  display: inline;
 }
 
 .pageX:hover,
