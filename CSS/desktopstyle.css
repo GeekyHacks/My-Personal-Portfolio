@@ -17,7 +17,9 @@
 }
 
 body {
-  background-image: url(assests/images/Header-llustration-desktop.svg);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-image: url(/My-Personal-Portfolio/assests/images/Header-llustration-desktop.svg);
   background-repeat: no-repeat;
   background-size: 100vw;
 }
@@ -396,7 +398,7 @@ footer {
   display: none;
 }
 
-.projects {
+.projectContainer {
   margin-top: 1%;
   display: grid;
   justify-items: center;
@@ -410,7 +412,7 @@ footer {
   width: 84vw;
 }
 
-.projects > li {
+.projectContainer > div {
   display: flex;
   background: #fff;
   flex-direction: column;
@@ -418,11 +420,13 @@ footer {
   align-content: center;
   align-items: center;
   justify-items: center;
-  padding: 5%;
+  padding: 2%;
   border: 1px solid grey;
   border-radius: 5px;
   margin-top: 0;
-  width: 85%;
+  width: 90%;
+  min-height: 150px;
+  height: 98%;
 }
 
 .project_img {
@@ -446,12 +450,7 @@ footer {
   flex-wrap: nowrap;
 }
 
-.project1-content-sec1,
-.project2-content-sec1,
-.project3-content-sec1,
-.project4-content-sec1,
-.project5-content-sec1,
-.project6-content-sec1 {
+.project1-content-sec1 {
   color: #3a4a42;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -462,12 +461,7 @@ footer {
   flex: 1;
 }
 
-.project1-content-sec2,
-.project2-content-sec2,
-.project3-content-sec2,
-.project4-content-sec2,
-.project5-content-sec2,
-.project6-content-sec2 {
+.project1-content-sec2 {
   flex: 1;
   width: 85%;
   padding: 1%;
@@ -479,12 +473,7 @@ footer {
   flex-wrap: nowrap;
 }
 
-.project1-content-sec2 li,
-.project2-content-sec2 li,
-.project3-content-sec2 li,
-.project4-content-sec2 li,
-.project5-content-sec2 li,
-.project6-content-sec2 li,
+.project1-content-sec2 li
 .about-me-2 li {
   color: #3a4a42;
   background: #ebf0ee;
@@ -568,7 +557,7 @@ button:active {
   flex-direction: column;
   display: flex;
   align-items: center;
-  background-image: url(assests/images/aboutbackground-desktop.svg);
+  background-image: url(/My-Personal-Portfolio/assests/images/aboutbackground-desktop.svg);
   background-repeat: no-repeat;
   box-sizing: content-box;
   background-size: 100% 109%;
@@ -609,8 +598,8 @@ button:active {
   justify-content: center;
   gap: 2%;
   width: 85%;
-  align-content: center;
-  align-items: center;
+ 
+ 
   justify-items: center;
 }
 
@@ -621,12 +610,16 @@ button:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+
   border: 1px solid grey;
   border-radius: 16px;
   width: 100%;
   padding: 1%;
   background: #ebf0ee;
   margin-top: 2%;
+  min-height: 150px;
+  height: 270px;
 }
 
 .languages-img,
@@ -680,7 +673,7 @@ button:active {
 
 /* contact me section */
 .contact-me {
-  background-image: url(assests/images/contactbackground-desktop.svg);
+  background-image: url(/My-Personal-Portfolio/assests/images/contactbackground-desktop.svg);
   background-size: 100% 128%;
   background-repeat: no-repeat;
   background-position: unset;
@@ -822,12 +815,7 @@ input,
     font-size: 2.4rem;
   }
 
-  .project1-content-sec1,
-  .project2-content-sec1,
-  .project3-content-sec1,
-  .project4-content-sec1,
-  .project5-content-sec1,
-  .project6-content-sec1 {
+  .project1-content-sec1 {
     font-size: 1.55rem;
   }
 
@@ -868,12 +856,7 @@ input,
     font-size: 2.1rem;
   }
 
-  .project1-content-sec1,
-  .project2-content-sec1,
-  .project3-content-sec1,
-  .project4-content-sec1,
-  .project5-content-sec1,
-  .project6-content-sec1 {
+  .project1-content-sec1 {
     font-size: 1.4rem;
   }
 
@@ -919,30 +902,15 @@ input,
     font-size: 2rem;
   }
 
-  .project1-content-sec2,
-  .project2-content-sec2,
-  .project3-content-sec2,
-  .project4-content-sec2,
-  .project5-content-sec2,
-  .project6-content-sec2 {
+  .project1-content-sec2 {
     width: 55%;
   }
 
-  .project1-content-sec2 li,
-  .project2-content-sec2 li,
-  .project3-content-sec2 li,
-  .project4-content-sec2 li,
-  .project5-content-sec2 li,
-  .project6-content-sec2 li {
+  .project1-content-sec2 li{
     padding: 4%;
   }
 
-  .project1-content-sec1,
-  .project2-content-sec1,
-  .project3-content-sec1,
-  .project4-content-sec1,
-  .project5-content-sec1,
-  .project6-content-sec1 {
+  .project1-content-sec1 {
     font-size: 1.3rem;
   }
 
@@ -997,31 +965,16 @@ input,
     font-size: 1.5rem;
   }
 
-  .project1-content-sec2,
-  .project2-content-sec2,
-  .project3-content-sec2,
-  .project4-content-sec2,
-  .project5-content-sec2,
-  .project6-content-sec2 {
+  .project1-content-sec2 {
     width: 100%;
     flex-wrap: wrap;
   }
 
-  .project1-content-sec2 li,
-  .project2-content-sec2 li,
-  .project3-content-sec2 li,
-  .project4-content-sec2 li,
-  .project5-content-sec2 li,
-  .project6-content-sec2 li {
+  .project1-content-sec2 li {
     padding: 3%;
   }
 
-  .project1-content-sec1,
-  .project2-content-sec1,
-  .project3-content-sec1,
-  .project4-content-sec1,
-  .project5-content-sec1,
-  .project6-content-sec1 {
+  .project1-content-sec1 {
     font-size: 1rem;
   }
 

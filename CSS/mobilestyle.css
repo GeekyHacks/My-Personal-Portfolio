@@ -1,7 +1,6 @@
 * {
   text-decoration: none;
   box-sizing: content-box;
-  color: #fff;
   outline: none;
   background: none repeat scroll 0 0 transparent;
   border: 0;
@@ -10,7 +9,13 @@
   margin: 0;
   padding: 0;
   text-align: center;
+
 }
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 
 /* to hide desktop and menu btn content */
 .header {
@@ -21,6 +26,17 @@
   width: 100%;
 }
 
+.itemArray{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 75%;
+  font-weight: 700;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #172b4d;
+  opacity: 1;
+}
 .desktop-header {
   display: none;
 }
@@ -66,7 +82,7 @@
   z-index: 1;
   background-color: #fff;
   width: 100%;
-  height: 2vh;
+  height: 6vh;
 }
 
 /* Modal Content  */
@@ -192,8 +208,8 @@
 
 /* headlines section */
 .headlines {
-  background-image: url(assests/images/header-illsutration-mobile.svg);
-  background-size: contain;
+  background-image: url(/My-Personal-Portfolio/assests/images/header-illsutration-mobile.svg);
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -315,7 +331,7 @@
 
 .popuppage-header {
   flex: 1;
-  background-image: url(assests/images/Snapshoot-Portfolio.svg);
+  background-image: url(/My-Personal-Portfolio/assests/images/Snapshoot-Portfolio.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
@@ -463,14 +479,13 @@
   align-self: center;
 }
 
-.projects {
+.projectContainer {
   display: grid;
   justify-items: center;
   width: 100%;
 }
 
-.project,
-.last-project {
+.project{
   display: flex;
   background: #fff;
   flex-direction: column;
@@ -479,6 +494,8 @@
   border: 1px solid grey;
   border-radius: 16px;
   width: 80vw;
+  min-height: 50px;
+  height: 90%;
   padding: 2%;
   margin-top: 8%;
   
@@ -496,28 +513,18 @@
   align-self: center;
 }
 
-.project1-conetent,
-.project2-conetent,
-.project3-conetent,
-.project4-conetent,
-.project5-conetent,
-.project6-conetent {
+.projectContent {
   flex: 1.5;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 5px solid gainsboro;
+  border: 5px solid transparent;
   border-radius: 4px;
   align-items: center;
   width: auto;
 }
 
-.project1-content-sec1,
-.project2-content-sec1,
-.project3-content-sec1,
-.project4-content-sec1,
-.project5-content-sec1,
-.project6-content-sec1 {
+.project1-content-sec1 {
   color: #3a4a42;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -528,12 +535,7 @@
   flex: 1;
 }
 
-.project1-content-sec2,
-.project2-content-sec2,
-.project3-content-sec2,
-.project4-content-sec2,
-.project5-content-sec2,
-.project6-content-sec2 {
+.project1-content-sec2 {
   flex: 1;
   gap: 10px;
   margin: 7% 2% 5% 2%;
@@ -546,11 +548,6 @@
 }
 
 .project1-content-sec2 li,
-.project2-content-sec2 li,
-.project3-content-sec2 li,
-.project4-content-sec2 li,
-.project5-content-sec2 li,
-.project6-content-sec2 li,
 .about-me-2 li {
   color: #3a4a42;
   background: #ebf0ee;
@@ -633,7 +630,7 @@
 }
 
 .aboutme1 {
-  background-image: url(assests/images/aboutme2.svg), url(assests/images/about-me22.svg);
+  background-image: url(/My-Personal-Portfolio/assests/images/aboutme2.svg), url(/My-Personal-Portfolio/assests/images/about-me22.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
@@ -697,10 +694,17 @@
   border: 1px solid grey;
   border-radius: 16px;
   width: 80vw;
-  height: 350px;
+  min-height: 50px;
+  height: 90%;
   padding: 2%;
   margin-top: 8%;
   background: #ebf0ee;
+}
+
+.skills:hover,
+.framworks:hover,
+.languages:hover {
+transform: scale(1.02)
 }
 
 .languages-text,
@@ -733,6 +737,8 @@
   align-content: center;
 }
 
+
+
 .framworks-lis li,
 .languages-lis li,
 .skills-lis li {
@@ -752,7 +758,7 @@
 
 /* contact me section */
 .contact-me {
-  background-image: url(assests/images/contactbottom.svg);
+  background-image: url(/My-Personal-Portfolio/assests/images/contactbottom.svg);
   background-position: right bottom;
   background-repeat: no-repeat;
   display: flex;

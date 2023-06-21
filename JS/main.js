@@ -1,3 +1,7 @@
+import './contactForm';
+import './popupPage';
+import './projects';
+
 // menu popup
 // Get the modal
 
@@ -25,4 +29,3 @@ menuItems.forEach((element) => {
     modal.classList.toggle('showMenu');
   });
 });
-
