@@ -148,13 +148,13 @@
         <div class="contact-dev">
           <h2 class="contactmeHeader">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
           <form method="post" autocomplete="off" action="https://formspree.io/f/xdovwjar" class="inputForm">
-            <input id="firstname-input" onchange="saveValue(this);" class="full_Name" type="text" placeholder="Full Name" maxlength="30" name="First-name" required />
-            <div class="fullName">
-              <input id="firstname-input" onchange="saveValue(this);" class="name" type="text" placeholder="First Name" maxlength="30" name="First-name" required />
-              <input id="secondname-input" onchange="saveValue(this);" class="name" type="text" placeholder="Second name" maxlength="30" name="Second-name" required />
-            </div>
+            <input id="fullName" onchange="saveValue(this);" class="full_Name" type="text" placeholder="Full Name" maxlength="30" name="First-name" required />
+            <!-- 
+            <input id="firstname-input" onchange="saveValue(this);" class="name" type="text" placeholder="First Name" maxlength="30" name="First-name" required />
+            <input id="secondname-input" onchange="saveValue(this);" class="name" type="text" placeholder="Second name" maxlength="30" name="Second-name" required /> -->
+
             <input id="email-input" onchange="saveValue(this);" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email" placeholder="Email address" name="email" oninvalid="InvalidMsg(this);" oninput="InvalidMsg(this);" required="required" />
-            <textarea id="textarea-input" onchange="saveValue(this);" class="details" id="details" cols="20" rows="30" placeholder="Hey I’d like to connect to..." maxlength="500" required name="message"></textarea>
+            <textarea id="textarea-input" onchange="saveValue(this);" class="details" cols="20" rows="30" placeholder="Hey I’d like to connect to..." maxlength="500" required name="message"></textarea>
             <button id="submitBtn" name="submit" class="green-btn" type="submit" title="press">Get in touch</button>
           </form>
           <p class="contact-email">geekyhacks22@gmail.com</p>

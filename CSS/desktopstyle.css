@@ -214,10 +214,9 @@ a {
   width: 80%;
 }
 
-.desktop-content{
+.desktop-content {
   display: flex;
   flex-direction: column;
-  
 }
 
 /* poppage Close Button  */
@@ -267,10 +266,6 @@ a {
   cursor: pointer;
   transition: all 0.3s;
 }
-
-
-
-
 
 .poppage-buttons li a {
   text-align: center;
@@ -753,29 +748,53 @@ button:active {
   margin-left: 1%;
 }
 
+
+/* .inputForm {
+  flex: 2;
+  display: grid;
+  grid-template-areas:
+  'first first first second second second'
+  'email email email email email email'
+  'text text text text text text'
+  'btn . . . . .';
+  align-items: start;
+  justify-content: left;
+} */
+
 .inputForm {
   flex: 2;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: left;
+  width: 90%;
+  gap: 2.5%;
 }
 
-.full_Name {
-  display: none;
+/* 
+
+#firstname-input {
+  grid-area: first;
+
 }
 
-.fullName {
-  display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-  gap: 3%;
-  width: 97.5%;
+#secondname-input {
+  grid-area: second;
 }
 
-.inputForm textarea,
-input,
-.name {
+#email-input{
+  grid-area: email;
+}
+#textarea-input {
+  grid-area: text;
+}
+
+#submitBtn{
+  grid-area: btn;
+} */
+
+
+#firstname-input, #secondname-input, #email-input, #textarea-input {
   font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 400;
@@ -787,7 +806,6 @@ input,
   border-radius: 4px;
   margin: 1% 0;
   padding: 10px;
-  width: 95%;
   text-align: left;
 }
 
