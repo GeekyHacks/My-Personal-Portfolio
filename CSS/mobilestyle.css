@@ -303,13 +303,15 @@ body {
 
 /* popup page section */
 .popupPage {
-  display: none;
   height: 100vh;
   width: 94vw;
   z-index: 1;
   top: 0;
   bottom: 0;
   overflow-y: scroll;
+
+  display: none;
+
   position: fixed;
   background-color: rgba(0, 15, 24, 0.6);
   backdrop-filter: blur(28px);
@@ -363,6 +365,7 @@ body {
 
 /* popup page main section */
 
+/* popup page section */
 .popup {
   top: 0;
   left: 1%;
@@ -389,7 +392,6 @@ body {
   align-items: center;
   justify-content: center;
   margin-left: 0;
-  height: auto;
   width: 100%;
   background-image: url(../assests/images/Snapshoot-Portfolio.svg);
   background-repeat: no-repeat;

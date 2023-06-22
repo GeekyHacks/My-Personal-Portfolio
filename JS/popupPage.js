@@ -11,10 +11,15 @@ projectBtn.forEach((btn, btnIndex) => {
     const cardIndex = btnIndex;
     projectPopup.innerHTML = `
         <div class="popup">
-      <div class="desktop-content">
-        <div class="popupImgDiv"><img src="${projectsarray[cardIndex].popImg}" alt="Medical Illustration Sets" class="poppageDesktopImg" /></div>
-
+    
+        <div class="desktop-content">
         <div class="firstSectionDesk">
+          <div class="closeImgDiv"><img class="pageX" src="assests/images/x.svg" alt="close" /></div>
+  
+          <div class="popupImgDiv"><img src="${projectsarray[cardIndex].popImg}" alt="Medical Illustration Sets" class="poppageDesktopImg" /></div>
+        </div>
+  
+        <div class="secondSectionDesk">
           <h1 class="title-desktop">${projectsarray[cardIndex].Name}</h1>
           <ul class="poppage-buttons">
             <li>
@@ -25,7 +30,7 @@ projectBtn.forEach((btn, btnIndex) => {
             </li>
           </ul>
         </div>
-        <div class="secondSectionDesk">
+        <div class="thirdSectionDesk">
           <ul class="labels">
             <li>Codekit</li>
             <li>GitHub</li>

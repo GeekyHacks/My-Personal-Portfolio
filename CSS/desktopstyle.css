@@ -87,11 +87,6 @@ a {
   display: none;
 }
 
-/* .poppage a {
-  cursor: pointer;
-  transition: 0.6s;
-} */
-
 .desktop-header li a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -187,28 +182,24 @@ a {
 /* popup page section */
 .popupPage {
   display: none;
-  position: fixed;
   background-color: rgba(0, 15, 24, 0.6);
   backdrop-filter: blur(28px);
   width: 100%;
+  /* position: fixed; */
+  height: auto;
   z-index: 1;
-  padding: 2%;
-  justify-content: center;
-  align-items: center;
+  padding: 1%;
   overflow-y: scroll;
 }
 
 .popup {
-  display: flex;
-  top: 3%;
+  display: block;
   bottom: 0%;
-  left: 8%;
-  flex-direction: column;
-  margin: 0% 4%;
+  left: 6%;
+  margin: 2%;
   position: fixed;
   background-color: #fff;
   z-index: 1;
-  padding: 1%;
   border-radius: 7px;
   height: 100%;
   width: 80%;
@@ -219,18 +210,49 @@ a {
   flex-direction: column;
 }
 
-/* poppage Close Button  */
+.firstSectionDesk {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondSectionDesk {
+  flex: 0.1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 1%;
+}
+
+.thirdSectionDesk {
+  margin: 0 1%;
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .closeImgDiv {
-  /* display: flex;
+  background-image: none;
+  margin-left: 95%;
+}
+
+/* poppage Close Button
+.closeImgDiv {
+   display: flex;
   flex-direction: row;
   height: 24px;
   align-items: center;
   justify-content: center;
   margin-left: 47.6%;
-  width: 100%; */
+  width: 100%;
   flex: 0.2;
   background-image: none;
-}
+} */
 
 .pageX {
   background-color: #ebecf0;
@@ -247,7 +269,7 @@ a {
 }
 
 .popupImgDiv {
-  flex: 1.2;
+  flex: 1;
   padding: 0 1%;
   display: flex;
   justify-content: center;
@@ -326,6 +348,8 @@ a {
   align-items: left;
   flex-wrap: wrap;
   gap: 0.5%;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .labels li {
@@ -362,15 +386,6 @@ footer {
   padding: 2%;
 }
 
-.firstSectionDesk {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  margin-top: 1%;
-}
-
 .title-desktop {
   flex: 2;
   width: 50%;
@@ -392,7 +407,7 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 2%;
+  margin-top: 1%;
 }
 
 /* work section */
@@ -436,7 +451,7 @@ footer {
 .projectsContainer {
   display: grid;
   justify-items: center;
-  width: 88%;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2% 1%;
@@ -866,24 +881,31 @@ button:active {
 @media (min-width: 1280px) and (max-width: 1440px) {
   /* popupSection */
   .poppage-buttons li a {
-    font-size: 2.2rem;
+    font-size: 1.4rem;
   }
 
   .title-desktop {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   .labels li {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .p-1 {
-    font-size: 0.8rem;
+    font-size: 1.25rem;
+  }
+
+  .popup {
+    left: 8%;
+    height: 142%;
+    width: 80%;
   }
 
   .poppageDesktopImg {
-    width: 100%;
-    height: max-content;
+    padding: 0.5% 1%;
+    width: 84vw;
+    height: 50vh;
   }
 
   .primary,
@@ -915,24 +937,31 @@ button:active {
 @media (min-width: 1080px) and (max-width: 1280px) {
   /* popupSection */
   .poppage-buttons li a {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .title-desktop {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   .labels li {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .p-1 {
-    font-size: 0.8rem;
+    font-size: 1.25rem;
+  }
+
+  .popup {
+    left: 8%;
+    height: 144%;
+    width: 80%;
   }
 
   .poppageDesktopImg {
-    width: 100%;
-    height: max-content;
+    padding: 0.5% 1%;
+    width: 84vw;
+    height: auto;
   }
 
   .primary,
@@ -983,20 +1012,21 @@ button:active {
 @media (min-width: 967px) and (max-width: 1080px) {
   /* popupSection */
   .poppage-buttons li a {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .title-desktop {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
 
   .labels li {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .p-1 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
+
 
   .poppageDesktopImg {
     flex: 1;
@@ -1004,6 +1034,12 @@ button:active {
     /* width: 95%; */
 
     /* height: 100%; */
+
+  .popup {
+    left: 8%;
+    height: 122%;
+    width: 80%;
+
   }
 
   .primary,
@@ -1066,7 +1102,7 @@ button:active {
   }
 
   .title-desktop {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   .poppage-buttons {
@@ -1075,16 +1111,17 @@ button:active {
   }
 
   .labels li {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
 
   .p-1 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
-  .poppageDesktopImg {
-    width: 99%;
-    height: 100%;
+  .popup {
+    left: 11%;
+    height: 109%;
+    width: 80%;
   }
 
   .desktop-header {
