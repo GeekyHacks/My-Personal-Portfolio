@@ -303,16 +303,19 @@ body {
 
 /* popup page section */
 .popupPage {
-  display: none;
   height: 100vh;
   width: 94vw;
-  position: fixed;
-  background: #fff;
   z-index: 1;
   top: 0;
   bottom: 0;
-  padding: 5%;
   overflow-y: scroll;
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 15, 24, 0.6);
+  backdrop-filter: blur(28px);
+
+  /* width: 100%; */
+  padding: 2%;
 }
 
 .popupPage > * {
@@ -341,28 +344,9 @@ body {
   display: none;
 }
 
-/* popup page Close Button  */
-.pageX:hover,
-.pageX:focus {
-  opacity: 0.7;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
 /* popup page main section */
-/* popup page section */
-.popupPage {
-  display: none;
-  position: fixed;
-  background-color: rgba(0, 15, 24, 0.6);
-  backdrop-filter: blur(28px);
-  /* width: 100%; */
-  padding: 2%;
-  /* justify-content: center;
-  align-items: center;
-   */
-}
 
+/* popup page section */
 .popup {
   top: 0;
   left: 1%;
@@ -374,16 +358,17 @@ body {
   box-sizing: border-box;
   padding: 1%;
   border-radius: 4px;
+
   /* justify-content: center;
   align-items: center; */
   align-self: center;
   width: 92%;
-
 }
 
 .mobile-content > * {
   margin: 3% 2%;
 }
+
 /* poppage Close Button  */
 .closeImgDiv {
   display: flex;
@@ -392,7 +377,6 @@ body {
   align-items: center;
   justify-content: center;
   margin-left: 0;
-  height: auto;
   width: 100%;
   background-image: url(../assests/images/Snapshoot-Portfolio.svg);
   background-repeat: no-repeat;
@@ -408,9 +392,18 @@ body {
   width: 30px;
 }
 
+/* popup page Close Button  */
+.pageX:hover,
+.pageX:focus {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
 .popupImgDiv {
   display: none;
 }
+
 .poppage-buttons {
   display: flex;
   flex-direction: row;

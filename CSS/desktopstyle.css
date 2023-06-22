@@ -187,6 +187,7 @@ a {
 /* popup page section */
 .popupPage {
   display: none;
+
   /* position: fixed; */
   background-color: rgba(0, 15, 24, 0.6);
   backdrop-filter: blur(28px);
@@ -194,7 +195,9 @@ a {
   height: auto;
   z-index: 1;
   padding: 1%;
+
   /* justify-content: center; */
+
   /* align-items: center; */
   overflow-y: scroll;
 }
@@ -215,6 +218,7 @@ a {
 .desktop-content {
   display: flex;
   flex-direction: column;
+
   /* width:100%;
   height: 100vh; */
 }
@@ -225,8 +229,10 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   /* justify-items: center; */
-  /* margin-top: 1%;*/
+
+  /* margin-top: 1%; */
 }
 
 .secondSectionDesk {
@@ -245,10 +251,14 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   /* align-items: center; */
+
   /* justify-items: center; */
+
   /* margin-top: 1%; */
-  /* height: auto;*/
+
+  /* height: auto; */
 }
 
 .closeImgDiv {
@@ -256,7 +266,7 @@ a {
   margin-left: 95%;
 }
 
-/* poppage Close Button 
+/* poppage Close Button
 .closeImgDiv {
    display: flex;
   flex-direction: row;
@@ -264,7 +274,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-left: 47.6%;
-  width: 100%; 
+  width: 100%;
   flex: 0.2;
   background-image: none;
 } */
@@ -429,6 +439,7 @@ footer {
 .my-work {
   display: grid;
   justify-items: center;
+
   /* justify-content: center; */
   width: 100%;
   gap: 2%;
@@ -469,7 +480,9 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2% 1%;
+
   /* justify-content: center; */
+
   /* align-content: center; */
   align-items: center;
   padding: 2%;
@@ -870,6 +883,7 @@ input,
   .title-desktop {
     font-size: 2.2rem;
   }
+
   .labels li {
     font-size: 1.05rem;
   }
@@ -889,7 +903,7 @@ input,
     width: 84vw;
     height: 50vh;
   }
-  
+
   .primary,
   .primary-span {
     font-size: 2.7rem;
@@ -925,6 +939,7 @@ input,
   .title-desktop {
     font-size: 2.2rem;
   }
+
   .labels li {
     font-size: 1.05rem;
   }
@@ -944,6 +959,7 @@ input,
     width: 84vw;
     height: auto;
   }
+
   .primary,
   .primary-span {
     font-size: 2.2rem;
@@ -998,6 +1014,7 @@ input,
   .title-desktop {
     font-size: 1.9rem;
   }
+
   .labels li {
     font-size: 0.9rem;
   }
@@ -1005,11 +1022,13 @@ input,
   .p-1 {
     font-size: 1rem;
   }
+
   .popup {
     left: 8%;
     height: 122%;
     width: 80%;
   }
+
   .primary,
   .primary-span {
     font-size: 2rem;
@@ -1072,6 +1091,7 @@ input,
   .title-desktop {
     font-size: 1.6rem;
   }
+
   .poppage-buttons {
     width: 30%;
     height: 90%;
