@@ -187,51 +187,55 @@ a {
 /* popup page section */
 .popupPage {
   display: none;
-  position: fixed;
+  /* position: fixed; */
   background-color: rgba(0, 15, 24, 0.6);
   backdrop-filter: blur(28px);
   width: 100%;
+  height: auto;
   z-index: 1;
-  padding: 2%;
-  justify-content: center;
-  align-items: center;
+  padding: 1%;
+  /* justify-content: center; */
+  /* align-items: center; */
   overflow-y: scroll;
 }
 
 .popup {
-  display: flex;
-  top: 3%;
+  display: block;
   bottom: 0%;
-  left: 8%;
-  flex-direction: column;
-  margin: 0% 4%;
+  left: 6%;
+  margin: 2%;
   position: fixed;
   background-color: #fff;
   z-index: 1;
-  padding: 1%;
   border-radius: 7px;
   height: 100%;
   width: 80%;
 }
 
-.desktop-content{
+.desktop-content {
   display: flex;
   flex-direction: column;
-  
+  /* width:100%;
+  height: 100vh; */
 }
 
-/* poppage Close Button  */
 .closeImgDiv {
-  /* display: flex;
+  background-image: none;
+  margin-left: 95%;
+}
+
+/* poppage Close Button 
+.closeImgDiv {
+   display: flex;
   flex-direction: row;
   height: 24px;
   align-items: center;
   justify-content: center;
   margin-left: 47.6%;
-  width: 100%; */
+  width: 100%; 
   flex: 0.2;
   background-image: none;
-}
+} */
 
 .pageX {
   background-color: #ebecf0;
@@ -267,10 +271,6 @@ a {
   cursor: pointer;
   transition: all 0.3s;
 }
-
-
-
-
 
 .poppage-buttons li a {
   text-align: center;
@@ -331,6 +331,7 @@ a {
   align-items: left;
   flex-wrap: wrap;
   gap: 0.5%;
+  margin-bottom: 0;
 }
 
 .labels li {
@@ -368,12 +369,35 @@ footer {
 }
 
 .firstSectionDesk {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* justify-items: center; */
+  /* margin-top: 1%;*/
+}
+
+.secondSectionDesk {
+  flex: 0.1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  margin-top: 1%;
+  margin: 1%;
+}
+
+.thirdSectionDesk {
+  margin: 1%;
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* justify-items: center; */
+  /* margin-top: 1%; */
+  /* height: auto;*/
 }
 
 .title-desktop {
@@ -397,7 +421,7 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 2%;
+  margin-top: 1%;
 }
 
 /* work section */
@@ -1049,8 +1073,8 @@ input,
   }
 
   .poppageDesktopImg {
-    width: 99%;
-    height: 100%;
+    /* width: 99%;
+    height: 100%; */
   }
 
   .desktop-header {
