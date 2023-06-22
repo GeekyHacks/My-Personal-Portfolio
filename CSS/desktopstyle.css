@@ -17,7 +17,9 @@
 }
 
 body {
-  background-image: url(assests/images/Header-llustration-desktop.svg);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-image: url(/My-Personal-Portfolio/assests/images/Header-llustration-desktop.svg);
   background-repeat: no-repeat;
   background-size: 100vw;
 }
@@ -85,10 +87,10 @@ a {
   display: none;
 }
 
-.poppage a {
+/* .poppage a {
   cursor: pointer;
   transition: 0.6s;
-}
+} */
 
 .desktop-header li a {
   font-family: 'Inter', sans-serif;
@@ -185,33 +187,124 @@ a {
 /* popup page section */
 .popupPage {
   display: none;
+
+  /* position: fixed; */
+  background-color: rgba(0, 15, 24, 0.6);
+  backdrop-filter: blur(28px);
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  padding: 1%;
+
+  /* justify-content: center; */
+
+  /* align-items: center; */
+  overflow-y: scroll;
 }
 
-.showPage {
+.popup {
+  display: block;
+  bottom: 0%;
+  left: 6%;
+  margin: 2%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1;
+  border-radius: 7px;
+  height: 100%;
+  width: 80%;
+}
+
+.desktop-content {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  background: #fff;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  box-sizing: border-box;
-  padding: 1%;
-  overflow-y: scroll;
-  margin-right: 1%;
+
+  /* width:100%;
+  height: 100vh; */
 }
 
-/* poppage Close Button  */
+.firstSectionDesk {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* justify-items: center; */
+
+  /* margin-top: 1%; */
+}
+
+.secondSectionDesk {
+  flex: 0.1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 1%;
+}
+
+.thirdSectionDesk {
+  margin: 0 1%;
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* align-items: center; */
+
+  /* justify-items: center; */
+
+  /* margin-top: 1%; */
+
+  /* height: auto; */
+}
+
+.closeImgDiv {
+  background-image: none;
+  margin-left: 95%;
+}
+
+/* poppage Close Button
+.closeImgDiv {
+   display: flex;
+  flex-direction: row;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 47.6%;
+  width: 100%;
+  flex: 0.2;
+  background-image: none;
+} */
+
 .pageX {
   background-color: #ebecf0;
-  padding: 0.5%;
+  padding: 1% 0.5%;
   color: #67798e;
-  margin-left: 96%;
+  background-image: none;
+  height: 12px;
+  width: 24px;
   margin-bottom: 0;
-  margin-top: 1%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 1rem;
   border-radius: 4px;
+}
+
+.popupImgDiv {
+  flex: 1;
+  padding: 0 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poppageDesktopImg {
+  padding: 0.5% 1%;
+  width: 100%;
+  height: auto;
 }
 
 .pageX:hover,
@@ -228,7 +321,7 @@ a {
   flex: 1;
   height: 30px;
   align-content: center;
-  background: #172b4d;
+  background: #36b37f;
   border: 2px solid transparent;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
@@ -242,13 +335,14 @@ a {
 
 .poppage a:hover,
 .poppage a:focus {
-  background: #172b4d;
+  background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.05);
 }
 
 .poppage a:active {
   transition: all 0.15s;
-  background: #172b4d;
+  background: #36b37f;
   box-shadow: none;
 }
 
@@ -276,12 +370,11 @@ a {
 .labels {
   display: flex;
   flex-direction: row;
-  justify-content: left;
   align-items: left;
   flex-wrap: wrap;
-  gap: 1%;
-  margin-bottom: 2%;
-  margin-top: 2%;
+  gap: 0.5%;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .labels li {
@@ -295,18 +388,6 @@ a {
   white-space: nowrap;
   border-radius: 8px;
   padding: 1%;
-}
-
-.poppage-desktop-img {
-  margin: 0 auto;
-  padding: 1%;
-  justify-content: center;
-  width: 100%;
-  align-self: center;
-}
-
-.poppage-mobile-img {
-  display: none;
 }
 
 .mobile-content {
@@ -330,11 +411,6 @@ footer {
   padding: 2%;
 }
 
-.first-section {
-  display: flex;
-  flex-direction: row;
-}
-
 .title-desktop {
   flex: 2;
   width: 50%;
@@ -342,7 +418,7 @@ footer {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 180%;
+  font-size: 1.4rem;
   letter-spacing: 0.03rem;
   line-height: 1.3;
   text-align: left;
@@ -356,14 +432,15 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 2%;
+  margin-top: 1%;
 }
 
 /* work section */
 .my-work {
   display: grid;
   justify-items: center;
-  justify-content: center;
+
+  /* justify-content: center; */
   width: 100%;
   gap: 2%;
   align-items: center;
@@ -396,21 +473,24 @@ footer {
   display: none;
 }
 
-.projects {
-  margin-top: 1%;
+.projectsContainer {
   display: grid;
   justify-items: center;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  align-content: center;
-  gap: 3% 1%;
+  gap: 2% 1%;
+
+  /* justify-content: center; */
+
+  /* align-content: center; */
   align-items: center;
-  margin-bottom: 2%;
-  width: 84vw;
+  padding: 2%;
+  margin-top: 0;
+  min-height: 150px;
 }
 
-.projects > li {
+.project {
   display: flex;
   background: #fff;
   flex-direction: column;
@@ -418,11 +498,13 @@ footer {
   align-content: center;
   align-items: center;
   justify-items: center;
-  padding: 5%;
+  padding: 2%;
   border: 1px solid grey;
   border-radius: 5px;
   margin-top: 0;
-  width: 85%;
+  width: 90%;
+  min-height: 150px;
+  height: 98%;
 }
 
 .project_img {
@@ -446,12 +528,7 @@ footer {
   flex-wrap: nowrap;
 }
 
-.project1-content-sec1,
-.project2-content-sec1,
-.project3-content-sec1,
-.project4-content-sec1,
-.project5-content-sec1,
-.project6-content-sec1 {
+.project1-content-sec1 {
   color: #3a4a42;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -462,12 +539,7 @@ footer {
   flex: 1;
 }
 
-.project1-content-sec2,
-.project2-content-sec2,
-.project3-content-sec2,
-.project4-content-sec2,
-.project5-content-sec2,
-.project6-content-sec2 {
+.project1-content-sec2 {
   flex: 1;
   width: 85%;
   padding: 1%;
@@ -479,13 +551,27 @@ footer {
   flex-wrap: nowrap;
 }
 
-.project1-content-sec2 li,
-.project2-content-sec2 li,
-.project3-content-sec2 li,
-.project4-content-sec2 li,
-.project5-content-sec2 li,
-.project6-content-sec2 li,
-.about-me-2 li {
+.framworks-lis li,
+.languages-lis li,
+.skills-lis li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 550;
+  font-size: 80%;
+  color: #36b37e;
+  letter-spacing: 0.01em;
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 2%;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.contact-me-contact-icons li {
+  margin: 1%;
+}
+
+.project1-content-sec2 li .about-me-2 li {
   color: #3a4a42;
   background: #ebf0ee;
   font-family: 'Inter', sans-serif;
@@ -568,7 +654,7 @@ button:active {
   flex-direction: column;
   display: flex;
   align-items: center;
-  background-image: url(assests/images/aboutbackground-desktop.svg);
+  background-image: url(/My-Personal-Portfolio/assests/images/aboutbackground-desktop.svg);
   background-repeat: no-repeat;
   box-sizing: content-box;
   background-size: 100% 109%;
@@ -609,8 +695,6 @@ button:active {
   justify-content: center;
   gap: 2%;
   width: 85%;
-  align-content: center;
-  align-items: center;
   justify-items: center;
 }
 
@@ -627,6 +711,8 @@ button:active {
   padding: 1%;
   background: #ebf0ee;
   margin-top: 2%;
+  min-height: 150px;
+  height: 270px;
 }
 
 .languages-img,
@@ -662,25 +748,9 @@ button:active {
   align-content: center;
 }
 
-.framworks-lis li,
-.languages-lis li,
-.skills-lis li {
-  font-family: 'Inter', sans-serif;
-  font-weight: 550;
-  font-size: 80%;
-  color: #36b37e;
-  letter-spacing: 0.01em;
-  background: #fff;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  padding: 2%;
-  white-space: nowrap;
-  flex: 1;
-}
-
 /* contact me section */
 .contact-me {
-  background-image: url(assests/images/contactbackground-desktop.svg);
+  background-image: url(/My-Personal-Portfolio/assests/images/contactbackground-desktop.svg);
   background-size: 100% 128%;
   background-repeat: no-repeat;
   background-position: unset;
@@ -800,15 +870,40 @@ input,
   margin-top: 5%;
 }
 
-.contact-me-contact-icons li {
-  margin: 1%;
-}
-
 .longindicator {
   display: none;
 }
 
 @media (min-width: 1280px) and (max-width: 1440px) {
+  /* popupSection */
+  .poppage-buttons li a {
+    font-size: 1.4rem;
+  }
+
+  .title-desktop {
+    font-size: 2.2rem;
+  }
+
+  .labels li {
+    font-size: 1.05rem;
+  }
+
+  .p-1 {
+    font-size: 1.25rem;
+  }
+
+  .popup {
+    left: 8%;
+    height: 142%;
+    width: 80%;
+  }
+
+  .poppageDesktopImg {
+    padding: 0.5% 1%;
+    width: 84vw;
+    height: 50vh;
+  }
+
   .primary,
   .primary-span {
     font-size: 2.7rem;
@@ -822,12 +917,7 @@ input,
     font-size: 2.4rem;
   }
 
-  .project1-content-sec1,
-  .project2-content-sec1,
-  .project3-content-sec1,
-  .project4-content-sec1,
-  .project5-content-sec1,
-  .project6-content-sec1 {
+  .project1-content-sec1 {
     font-size: 1.55rem;
   }
 
@@ -841,6 +931,35 @@ input,
 }
 
 @media (min-width: 1080px) and (max-width: 1280px) {
+  /* popupSection */
+  .poppage-buttons li a {
+    font-size: 1.4rem;
+  }
+
+  .title-desktop {
+    font-size: 2.2rem;
+  }
+
+  .labels li {
+    font-size: 1.05rem;
+  }
+
+  .p-1 {
+    font-size: 1.25rem;
+  }
+
+  .popup {
+    left: 8%;
+    height: 144%;
+    width: 80%;
+  }
+
+  .poppageDesktopImg {
+    padding: 0.5% 1%;
+    width: 84vw;
+    height: auto;
+  }
+
   .primary,
   .primary-span {
     font-size: 2.2rem;
@@ -868,12 +987,7 @@ input,
     font-size: 2.1rem;
   }
 
-  .project1-content-sec1,
-  .project2-content-sec1,
-  .project3-content-sec1,
-  .project4-content-sec1,
-  .project5-content-sec1,
-  .project6-content-sec1 {
+  .project1-content-sec1 {
     font-size: 1.4rem;
   }
 
@@ -892,6 +1006,29 @@ input,
 }
 
 @media (min-width: 967px) and (max-width: 1080px) {
+  /* popupSection */
+  .poppage-buttons li a {
+    font-size: 1.4rem;
+  }
+
+  .title-desktop {
+    font-size: 1.9rem;
+  }
+
+  .labels li {
+    font-size: 0.9rem;
+  }
+
+  .p-1 {
+    font-size: 1rem;
+  }
+
+  .popup {
+    left: 8%;
+    height: 122%;
+    width: 80%;
+  }
+
   .primary,
   .primary-span {
     font-size: 2rem;
@@ -919,30 +1056,15 @@ input,
     font-size: 2rem;
   }
 
-  .project1-content-sec2,
-  .project2-content-sec2,
-  .project3-content-sec2,
-  .project4-content-sec2,
-  .project5-content-sec2,
-  .project6-content-sec2 {
+  .project1-content-sec2 {
     width: 55%;
   }
 
-  .project1-content-sec2 li,
-  .project2-content-sec2 li,
-  .project3-content-sec2 li,
-  .project4-content-sec2 li,
-  .project5-content-sec2 li,
-  .project6-content-sec2 li {
+  .project1-content-sec2 li {
     padding: 4%;
   }
 
-  .project1-content-sec1,
-  .project2-content-sec1,
-  .project3-content-sec1,
-  .project4-content-sec1,
-  .project5-content-sec1,
-  .project6-content-sec1 {
+  .project1-content-sec1 {
     font-size: 1.3rem;
   }
 
@@ -961,6 +1083,34 @@ input,
 }
 
 @media (min-width: 768px) and (max-width: 967px) {
+  /* popupSection */
+  .poppage-buttons li a {
+    font-size: 0.8rem;
+  }
+
+  .title-desktop {
+    font-size: 1.6rem;
+  }
+
+  .poppage-buttons {
+    width: 30%;
+    height: 90%;
+  }
+
+  .labels li {
+    font-size: 0.85rem;
+  }
+
+  .p-1 {
+    font-size: 1rem;
+  }
+
+  .popup {
+    left: 11%;
+    height: 109%;
+    width: 80%;
+  }
+
   .desktop-header {
     gap: 18px;
   }
@@ -997,31 +1147,16 @@ input,
     font-size: 1.5rem;
   }
 
-  .project1-content-sec2,
-  .project2-content-sec2,
-  .project3-content-sec2,
-  .project4-content-sec2,
-  .project5-content-sec2,
-  .project6-content-sec2 {
+  .project1-content-sec2 {
     width: 100%;
     flex-wrap: wrap;
   }
 
-  .project1-content-sec2 li,
-  .project2-content-sec2 li,
-  .project3-content-sec2 li,
-  .project4-content-sec2 li,
-  .project5-content-sec2 li,
-  .project6-content-sec2 li {
+  .project1-content-sec2 li {
     padding: 3%;
   }
 
-  .project1-content-sec1,
-  .project2-content-sec1,
-  .project3-content-sec1,
-  .project4-content-sec1,
-  .project5-content-sec1,
-  .project6-content-sec1 {
+  .project1-content-sec1 {
     font-size: 1rem;
   }
 

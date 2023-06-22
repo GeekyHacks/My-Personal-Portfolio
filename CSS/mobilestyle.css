@@ -1,7 +1,6 @@
 * {
   text-decoration: none;
   box-sizing: content-box;
-  color: #fff;
   outline: none;
   background: none repeat scroll 0 0 transparent;
   border: 0;
@@ -12,6 +11,10 @@
   text-align: center;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* to hide desktop and menu btn content */
 .header {
   display: flex;
@@ -19,6 +22,18 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.itemArray {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 75%;
+  font-weight: 700;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #172b4d;
+  opacity: 1;
 }
 
 .desktop-header {
@@ -66,7 +81,7 @@
   z-index: 1;
   background-color: #fff;
   width: 100%;
-  height: 2vh;
+  height: 6vh;
 }
 
 /* Modal Content  */
@@ -104,6 +119,7 @@
   opacity: 0.7;
   cursor: pointer;
   transition: all 0.3s;
+  transform: scale(1.15);
 }
 
 .menuPageList {
@@ -125,7 +141,7 @@
 .poppage-buttons li a {
   align-content: baseline;
   align-self: baseline;
-  background: #172b4d;
+  background: #36b37f;
   border: 2px solid transparent;
   border-radius: 4px;
   padding: 3%;
@@ -156,13 +172,14 @@
 
 .popupPage a:hover,
 .popupPage a:focus {
-  background: #172b4d;
+  background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.15);
 }
 
 .popupPage a:active {
   transition: all 0.15s;
-  background: #172b4d;
+  background: #36b37f;
   box-shadow: none;
 }
 
@@ -190,8 +207,8 @@
 
 /* headlines section */
 .headlines {
-  background-image: url(assests/images/header-illsutration-mobile.svg);
-  background-size: contain;
+  background-image: url(/My-Personal-Portfolio/assests/images/header-illsutration-mobile.svg);
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -270,6 +287,7 @@
 }
 
 .grow-up:hover {
+  transform: scale(1.3);
   animation: grow-up 1s ease-in-out;
 }
 
@@ -285,7 +303,19 @@
 
 /* popup page section */
 .popupPage {
+  height: 100vh;
+  width: 94vw;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
   display: none;
+  position: fixed;
+  background-color: rgba(0, 15, 24, 0.6);
+  backdrop-filter: blur(28px);
+
+  /* width: 100%; */
+  padding: 2%;
 }
 
 .popupPage > * {
@@ -295,7 +325,7 @@
 .showPage {
   display: block;
   height: 100vh;
-  width: 100%;
+  width: 94vw;
   position: fixed;
   background: #fff;
   z-index: 1;
@@ -310,24 +340,56 @@
   display: none;
 }
 
-.popuppage-header {
-  flex: 1;
-  background-image: url(assests/images/Snapshoot-Portfolio.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-  margin: 2% 2% 4% 2%;
-}
-
 .desktop-content {
   display: none;
 }
 
+/* popup page main section */
+
+/* popup page section */
+.popup {
+  top: 0;
+  left: 1%;
+  display: flex;
+  flex-direction: column;
+  margin: 1% 5%;
+  position: relative;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 1%;
+  border-radius: 4px;
+
+  /* justify-content: center;
+  align-items: center; */
+  align-self: center;
+  width: 92%;
+}
+
+.mobile-content > * {
+  margin: 3% 2%;
+}
+
+/* poppage Close Button  */
+.closeImgDiv {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  width: 100%;
+  background-image: url(../assests/images/Snapshoot-Portfolio.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .pageX {
   color: #67798e;
-  margin-left: 93%;
-  margin-bottom: 0;
-  margin-top: 3%;
+  margin-bottom: 65%;
+  margin-top: 2%;
+  margin-left: 90%;
+  height: 16px;
+  width: 30px;
 }
 
 /* popup page Close Button  */
@@ -338,26 +400,8 @@
   transition: all 0.3s;
 }
 
-/* popup page main section */
-
-.poppage {
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  border-radius: 16px;
-  padding: 1%;
-  display: flex;
-  flex-direction: column;
-}
-
-/* all elements in .poppage */
-.poppage > * {
-  margin: 2% 1%;
-  padding: 2% 1%;
-}
-
-.mobile-content {
-  flex: 1;
+.popupImgDiv {
+  display: none;
 }
 
 .poppage-buttons {
@@ -460,14 +504,13 @@
   align-self: center;
 }
 
-.projects {
+.projectsContainer {
   display: grid;
   justify-items: center;
   width: 100%;
 }
 
-.project,
-.last-project {
+.project {
   display: flex;
   background: #fff;
   flex-direction: column;
@@ -476,8 +519,15 @@
   border: 1px solid grey;
   border-radius: 16px;
   width: 80vw;
+  min-height: 50px;
+  height: 90%;
   padding: 2%;
   margin-top: 8%;
+}
+
+.project:hover,
+.last-project:hover {
+  transform: scale(1.02);
 }
 
 .project_img {
@@ -487,28 +537,18 @@
   align-self: center;
 }
 
-.project1-conetent,
-.project2-conetent,
-.project3-conetent,
-.project4-conetent,
-.project5-conetent,
-.project6-conetent {
+.projectContent {
   flex: 1.5;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 5px solid gainsboro;
+  border: 5px solid transparent;
   border-radius: 4px;
   align-items: center;
   width: auto;
 }
 
-.project1-content-sec1,
-.project2-content-sec1,
-.project3-content-sec1,
-.project4-content-sec1,
-.project5-content-sec1,
-.project6-content-sec1 {
+.project1-content-sec1 {
   color: #3a4a42;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -519,12 +559,7 @@
   flex: 1;
 }
 
-.project1-content-sec2,
-.project2-content-sec2,
-.project3-content-sec2,
-.project4-content-sec2,
-.project5-content-sec2,
-.project6-content-sec2 {
+.project1-content-sec2 {
   flex: 1;
   gap: 10px;
   margin: 7% 2% 5% 2%;
@@ -537,11 +572,6 @@
 }
 
 .project1-content-sec2 li,
-.project2-content-sec2 li,
-.project3-content-sec2 li,
-.project4-content-sec2 li,
-.project5-content-sec2 li,
-.project6-content-sec2 li,
 .about-me-2 li {
   color: #3a4a42;
   background: #ebf0ee;
@@ -587,6 +617,7 @@
 .projectBtn:hover {
   background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.05);
 }
 
 .green-btn:active,
@@ -604,6 +635,7 @@
   transition: all 0.15s;
   background: transparent;
   box-shadow: none;
+  transform: scale(1.05);
 }
 
 .downarrow-btn:active,
@@ -622,7 +654,7 @@
 }
 
 .aboutme1 {
-  background-image: url(assests/images/aboutme2.svg), url(assests/images/about-me22.svg);
+  background-image: url(/My-Personal-Portfolio/assests/images/aboutme2.svg), url(/My-Personal-Portfolio/assests/images/about-me22.svg);
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
@@ -686,10 +718,17 @@
   border: 1px solid grey;
   border-radius: 16px;
   width: 80vw;
-  height: 350px;
+  min-height: 50px;
+  height: 90%;
   padding: 2%;
   margin-top: 8%;
   background: #ebf0ee;
+}
+
+.skills:hover,
+.framworks:hover,
+.languages:hover {
+  transform: scale(1.02);
 }
 
 .languages-text,
@@ -741,7 +780,7 @@
 
 /* contact me section */
 .contact-me {
-  background-image: url(assests/images/contactbottom.svg);
+  background-image: url(/My-Personal-Portfolio/assests/images/contactbottom.svg);
   background-position: right bottom;
   background-repeat: no-repeat;
   display: flex;

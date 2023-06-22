@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:ital,wght@1,300&display=swap"
-      rel="stylesheet" />
-    <link href="mobilestyle.css" media="(min-width: 375px)" rel="stylesheet" />
-    <link href="desktopstyle.css" media="(min-width: 768px)" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:ital,wght@1,300&display=swap" rel="stylesheet" />
+    <link href="CSS/mobilestyle.css" media="(min-width: 375px)" rel="stylesheet" />
+    <link href="CSS/desktopstyle.css" media="(min-width: 768px)" rel="stylesheet" />
     <title>Personal Portfolio</title>
   </head>
 
@@ -37,14 +35,16 @@
         <li><a href="#about"> About </a></li>
         <li><a href="#contact"> Contact </a></li>
       </ul>
-      <h2 class="logo"><a href="index.html" class="mylogo">GeekyHacks</a></h2>
+      <h2 class="logo">
+        <a href="index.html" class="mylogo">GeekyHacks</a>
+      </h2>
       <nav class="menuNav">
         <button id="menuBtn" type="button" title="Menu" class="menu-button">
-          <img src="assests/images/menubutton.svg" alt="menu-button"
-            class="menuImg" />
+          <img src="assests/images/menubutton.svg" alt="menu-button" class="menuImg" />
         </button>
       </nav>
     </header>
+
     <main class="container">
       <section class="headlines">
         <div class="headlinesContent">
@@ -52,13 +52,7 @@
             Hey there. I’m Abdullah.
             <span class="primary-span"> I’m a software developer</span>
           </h1>
-          <p class="supporting-content">
-            I can help you build a product feature or website. Look through some
-            of my work and
-            experience! If you like what you see and have a project you need
-            coded, don’t hesitate
-            to contact me.
-          </p>
+          <p class="supporting-content">I can help you build a product feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
           <ul class="headlines-contact-icons">
             <li>
               <button type="button" title="icon-github" class="socialbtn">
@@ -88,253 +82,33 @@
               </button>
             </li>
           </ul>
-          <img src="assests/images/Disabled.svg" alt="downarrow button"
-            class="grow-up" />
+          <img src="assests/images/Disabled.svg" alt="downarrow button" class="grow-up" />
         </div>
       </section>
       <section class="my-work" id="portfolio">
         <div class="start">
           <h2 class="myworkHeader">My Recent Works<span>.</span></h2>
-          <!-- <h2 class="my-work-header-desktop">My Recent Works.</h2> -->
-          <img class="small-indcator" src="assests/images/Indicator.svg"
-            alt="Indicator" />
+          <img class="small-indcator" src="assests/images/Indicator.svg" alt="Indicator" />
         </div>
-        <ul id="popupPage" class="popupPage">
-          <li class="popuppage-header">
-            <img class="pageX" src="assests/images/x.svg" alt="close" />
-            <img
-              src="assests/images/Snapshoot-portfolio-desktop.svg"
-              alt="Medical Illustration Sets"
-              class="poppage-desktop-img" />
-          </li>
-          <li class="poppage">
-            <div class="desktop-content">
-              <div class="first-section">
-                <h1 class="title-desktop">
-                  Keeping track of hundreds of <br />
-                  components
-                </h1>
-                <ul class="poppage-buttons">
-                  <li>
-                    <a href="index.html" tabindex="0">
-                      See live<img src="assests/images/see live icon.svg"
-                        alt="see live" /></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/GeekyHacks/Personal-Portfolio-Microverse"
-                      tabindex="0">
-                      See Source<img src="assests/images/git.svg"
-                        alt="project source code" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <ul class="labels">
-                <li>Codekit</li>
-                <li>GitHub</li>
-                <li>JavaScript</li>
-                <li>Bootstrap</li>
-                <li>Terminal</li>
-                <li>Codepen</li>
-              </ul>
-              <p class="p-1">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the
-                1500s, when an
-                unknown printer took a galley of type and scrambled it 1960s.
-                Lorem Ipsum is simply
-                dummy text of the printing and typesetting industry. Lorem Ipsum
-                has been the
-                industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a
-                galley of type and scrambled it 1960s.
-              </p>
-            </div>
 
-            <div class="mobile-content">
-              <h1 class="title-mobile">
-                Keeping track of <br />
-                hundreds of <br />
-                components
-              </h1>
-              <ul class="labels">
-                <li>Ruby and Rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-              <p class="p-1">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the
-                1500s, when an
-                unknown printer took a galley of type and scrambled it 1960s.
-              </p>
-              <p class="p-2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the
-                1500s, when an
-                unknown printer took a galley of type and scrambled it 1960s.
-              </p>
-              <ul class="poppage-buttons">
-                <li>
-                  <a href="index.html">
-                    See live
-                    <img src="assests/images/see live icon.svg" alt="see live" /></a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/GeekyHacks/Personal-Portfolio-Microverse">
-                    See Source
-                    <img src="assests/images/git.svg" alt="project source code" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <ul class="projects">
-          <li class="project">
-            <img class="project_img" src="assests/images/project1-img.svg"
-              alt="project1-img" />
-            <div class="projectContent">
-              <h3 class="project1-content-sec1">
-                Multi-Post Stories <br />
-                Gain+Glory
-              </h3>
-              <ul class="project1-content-sec2">
-                <li class="small-li" for="html">HTML</li>
-                <li class="small-li" for="JS">JS</li>
-                <li class="small-li" for="CSS">CSS</li>
-                <li class="big-li" for="Ruby">Ruby & Rails</li>
-              </ul>
+        <!-- followig div will contain the dynamic projects list that is displayed with JS -->
+        <div class="projectsContainer"></div>
 
-              <button class="projectBtn" type="button" title="see-project">See
-                Project</button>
-            </div>
-          </li>
-
-          <li class="project">
-            <img class="project_img" src="assests/images/project2-img.svg"
-              alt="project2-img" />
-            <div class="projectContent">
-              <h3 class="project2-content-sec1">
-                Multi-Post Stories <br />
-                Gain+Glory
-              </h3>
-              <ul class="project2-content-sec2">
-                <li class="small-li" for="html">HTML</li>
-                <li class="small-li" for="JS">JS</li>
-                <li class="small-li" for="CSS">CSS</li>
-                <li class="big-li" for="Ruby">Ruby & Rails</li>
-              </ul>
-
-              <button class="projectBtn" type="button" title="see-project">See
-                Project</button>
-            </div>
-          </li>
-
-          <li class="project">
-            <img class="project_img" src="assests/images/project3-img.svg"
-              alt="project3-img" />
-            <div class="projectContent">
-              <h3 class="project3-content-sec1">
-                Multi-Post Stories <br />
-                Gain+Glory
-              </h3>
-              <ul class="project3-content-sec2">
-                <li class="small-li" for="html">HTML</li>
-                <li class="small-li" for="JS">JS</li>
-                <li class="small-li" for="CSS">CSS</li>
-                <li class="big-li" for="Ruby">Ruby & Rails</li>
-              </ul>
-
-              <button class="projectBtn" type="button" title="see-project">See
-                Project</button>
-            </div>
-          </li>
-
-          <li class="project">
-            <img class="project_img" src="assests/images/project3-img.svg"
-              alt="project4-img" />
-            <div class="projectContent">
-              <h3 class="project4-content-sec1">
-                Multi-Post Stories <br />
-                Gain+Glory
-              </h3>
-              <ul class="project3-content-sec2">
-                <li class="small-li" for="html">HTML</li>
-                <li class="small-li" for="JS">JS</li>
-                <li class="small-li" for="CSS">CSS</li>
-                <li class="big-li" for="Ruby">Ruby & Rails</li>
-              </ul>
-
-              <button class="projectBtn" type="button" title="see-project">See
-                Project</button>
-            </div>
-          </li>
-
-          <li class="project">
-            <img class="project_img" src="assests/images/project3-img.svg"
-              alt="project5-img" />
-            <div class="projectContent">
-              <h3 class="project5-content-sec1">
-                Multi-Post Stories <br />
-                Gain+Glory
-              </h3>
-              <ul class="project5-content-sec2">
-                <li class="small-li" for="html">HTML</li>
-                <li class="small-li" for="JS">JS</li>
-                <li class="small-li" for="CSS">CSS</li>
-                <li class="big-li" for="Ruby">Ruby & Rails</li>
-              </ul>
-
-              <button class="projectBtn" type="button" title="see-project">See
-                Project</button>
-            </div>
-          </li>
-
-          <li class="last-project">
-            <img class="project_img" src="assests/images/project4-img.svg"
-              alt="project6-img" />
-            <div class="projectContent">
-              <h3 class="project6-content-sec1">
-                Multi-Post Stories <br />
-                Gain+Glory
-              </h3>
-              <ul class="project6-content-sec2">
-                <li class="small-li" for="html">HTML</li>
-                <li class="small-li" for="JS">JS</li>
-                <li class="small-li" for="CSS">CSS</li>
-                <li class="big-li" for="Ruby">Ruby & Rails</li>
-              </ul>
-
-              <button class="projectBtn" type="button" title="see-project">See
-                Project</button>
-            </div>
-          </li>
-        </ul>
+        <!-- followig div will contain the dynamic popup page that is displayed with JS -->
+        <div class="popupPage"></div>
       </section>
+
       <section class="about-me" id="about">
         <div class="aboutme1">
           <h2 class="about-me-header">About me</h2>
-          <p class="aboutmeHeaderSupport">
-            I can help you build a product, feature or website Look through some
-            of my work and
-            experience! If you like what you see and have a project you need
-            coded, don’t hesitate
-            to contact me.
-          </p>
+          <p class="aboutmeHeaderSupport">I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
 
           <a class="green-btn" href="index.html"> Get my resume </a>
         </div>
 
         <ul class="aboutme2">
           <li class="languages">
-            <img class="languages-img" src="assests/images/icon-languages.svg"
-              alt="languages images" />
+            <img class="languages-img" src="assests/images/icon-languages.svg" alt="languages images" />
 
             <h3 class="languages-text">Languages</h3>
             <ul class="languages-lis">
@@ -345,8 +119,7 @@
             </ul>
           </li>
           <li class="framworks">
-            <img class="framworks-img" src="assests/images/framworks.svg"
-              alt="framworks images" />
+            <img class="framworks-img" src="assests/images/framworks.svg" alt="framworks images" />
 
             <h3 class="framworks-text">Framworks</h3>
             <ul class="framworks-lis">
@@ -358,8 +131,7 @@
             </ul>
           </li>
           <li class="skills">
-            <img class="skills-img" src="assests/images/skills.svg"
-              alt="skills images" />
+            <img class="skills-img" src="assests/images/skills.svg" alt="skills images" />
 
             <h3 class="skills-text">Skills</h3>
             <ul class="skills-lis">
@@ -374,78 +146,23 @@
       </section>
       <section class="contact-me" id="contact">
         <div class="contact-dev">
-          <h2 class="contactmeHeader">
-            I'm always interested in hearing about new projects, so if you'd
-            like to chat please get
-            in touch.
-          </h2>
-          <form
-            method="post"
-            autocomplete="off"
-            action="https://formspree.io/f/xdovwjar"
-            class="inputForm">
-            <input
-              id="firstname-input"
-              onchange="saveValue(this);"
-              class="full_Name"
-              type="text"
-              placeholder="Full Name"
-              maxlength="30"
-              name="First-name"
-              required />
+          <h2 class="contactmeHeader">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+          <form method="post" autocomplete="off" action="https://formspree.io/f/xdovwjar" class="inputForm">
+            <input id="firstname-input" onchange="saveValue(this);" class="full_Name" type="text" placeholder="Full Name" maxlength="30" name="First-name" required />
             <div class="fullName">
-              <input
-                id="firstname-input"
-                onchange="saveValue(this);"
-                class="name"
-                type="text"
-                placeholder="First Name"
-                maxlength="30"
-                name="First-name"
-                required />
-              <input
-                id="secondname-input"
-                onchange="saveValue(this);"
-                class="name"
-                type="text"
-                placeholder="Second name"
-                maxlength="30"
-                name="Second-name"
-                required />
+              <input id="firstname-input" onchange="saveValue(this);" class="name" type="text" placeholder="First Name" maxlength="30" name="First-name" required />
+              <input id="secondname-input" onchange="saveValue(this);" class="name" type="text" placeholder="Second name" maxlength="30" name="Second-name" required />
             </div>
-            <input
-              id="email-input"
-              onchange="saveValue(this);"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-              type="email"
-              placeholder="Email address"
-              name="email"
-              oninvalid="InvalidMsg(this);"
-              oninput="InvalidMsg(this);"
-              required="required" />
-            <textarea
-              id="textarea-input"
-              onchange="saveValue(this);"
-              class="details"
-              id="details"
-              cols="20"
-              rows="30"
-              placeholder="Hey I’d like to connect to..."
-              maxlength="500"
-              required
-              name="message"></textarea>
-            <button id="submitBtn" name="submit" class="green-btn" type="submit"
-              title="press">
-              Get in touch
-            </button>
+            <input id="email-input" onchange="saveValue(this);" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email" placeholder="Email address" name="email" oninvalid="InvalidMsg(this);" oninput="InvalidMsg(this);" required="required" />
+            <textarea id="textarea-input" onchange="saveValue(this);" class="details" id="details" cols="20" rows="30" placeholder="Hey I’d like to connect to..." maxlength="500" required name="message"></textarea>
+            <button id="submitBtn" name="submit" class="green-btn" type="submit" title="press">Get in touch</button>
           </form>
           <p class="contact-email">geekyhacks22@gmail.com</p>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <img src="assests/images/longendingline.svg" alt="longendingline icon"
-        class="longendingline" />
+      <img src="assests/images/longendingline.svg" alt="longendingline icon" class="longendingline" />
       <ul class="contact-me-contact-icons">
         <li>
           <button type="button" title="icon-twitter" class="socialbtn">
@@ -474,9 +191,12 @@
         </li>
       </ul>
 
-      <img class="longindicator" src="assests/images/longindicator.svg"
-        alt="Indicator" />
+      <img class="longindicator" src="assests/images/longindicator.svg" alt="Indicator" />
     </footer>
-    <script src="script.js"></script>
+    <script src="./JS/menu.js"></script>
+    <script type="module" src="./JS/popupPage.js"></script>
+    <script src="./JS/projects.js"></script>
+    <script src="./JS/contactForm.js"></script>
+
   </body>
 </html>
