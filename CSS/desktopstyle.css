@@ -185,6 +185,7 @@ a {
   background-color: rgba(0, 15, 24, 0.6);
   backdrop-filter: blur(28px);
   width: 100%;
+
   /* position: fixed; */
   height: auto;
   z-index: 1;
@@ -1027,19 +1028,14 @@ button:active {
     font-size: 1rem;
   }
 
-
   .poppageDesktopImg {
     flex: 1;
-
-    /* width: 95%; */
-
-    /* height: 100%; */
+  }
 
   .popup {
     left: 8%;
     height: 122%;
     width: 80%;
-
   }
 
   .primary,

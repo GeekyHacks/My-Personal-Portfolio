@@ -309,9 +309,7 @@ body {
   top: 0;
   bottom: 0;
   overflow-y: scroll;
-
   display: none;
-
   position: fixed;
   background-color: rgba(0, 15, 24, 0.6);
   backdrop-filter: blur(28px);
