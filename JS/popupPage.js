@@ -11,12 +11,10 @@ projectBtn.forEach((btn, btnIndex) => {
     const cardIndex = btnIndex;
     projectPopup.innerHTML = `
     <div class="popup">
-    <div class="closeImgDiv"><img class="pageX" src="assests/images/x.svg" alt="close" /></div>
-
-    <div class="popupImgDiv"><img src="${projectsarray[cardIndex].popImg}" alt="Medical Illustration Sets" class="poppageDesktopImg" /></div>
-
     <div class="desktop-content">
-      <div class="first-section">
+      <div class="popupImgDiv"><img src="${projectsarray[cardIndex].popImg}" alt="Medical Illustration Sets" class="poppageDesktopImg" /></div>
+
+      <div class="firstSectionDesk">
         <h1 class="title-desktop">${projectsarray[cardIndex].Name}</h1>
         <ul class="poppage-buttons">
           <li>
@@ -27,25 +25,31 @@ projectBtn.forEach((btn, btnIndex) => {
           </li>
         </ul>
       </div>
-      <ul class="labels">
-        <li>Codekit</li>
-        <li>GitHub</li>
-        <li>JavaScript</li>
-        <li>Bootstrap</li>
-        <li>Terminal</li>
-        <li>Codepen</li>
-      </ul>
-      <p class="p-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
+      <div class="secondSectionDesk">
+        <ul class="labels">
+          <li>Codekit</li>
+          <li>GitHub</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>Terminal</li>
+          <li>Codepen</li>
+        </ul>
+        <p class="p-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
+      </div>
     </div>
 
     <div class="mobile-content">
-      <h1 class="title-mobile">${projectsarray[cardIndex].Name}</h1>
-      <ul class="labels">
-        <li>Ruby and Rails</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-      <p class="p-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
+      <div class="closeImgDiv"><img class="pageX" src="assests/images/x.svg" alt="close" /></div>
+      <div class="firstSectionMob">
+        <h1 class="title-mobile">${projectsarray[cardIndex].Name}</h1>
+        <ul class="labels">
+          <li>Ruby and Rails</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <p class="p-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
+      </div>
       <ul class="poppage-buttons">
         <li>
           <a href="${projectsarray[cardIndex].liveVersion}">

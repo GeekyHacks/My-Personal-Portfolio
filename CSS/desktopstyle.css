@@ -201,19 +201,17 @@ a {
 .popup {
   display: flex;
   top: 3%;
-  bottom: -5%;
+  bottom: 0%;
   left: 8%;
   flex-direction: column;
-  margin: 0% 6%;
-  position: inherit;
+  margin: 0% 4%;
+  position: fixed;
   background-color: #fff;
-  /* z-index: 1; */
-  /* box-sizing: border-box; */
-  /* padding: 1%; */
+  z-index: 1;
+  padding: 1%;
   border-radius: 7px;
-  /* align-self: center; */
-  /* height: 100%; */
-  width: 80%;;
+  height: 100%;
+  width: 80%;
 }
 
 /* poppage Close Button  */
@@ -256,7 +254,7 @@ a {
 }
 
 .desktop-content {
-  padding: 0 0.7% 1% 1%;
+  padding: 0 0.7% 1.5% 1.5%;
   display: block;
   height: auto;
 }
@@ -324,12 +322,9 @@ a {
 .labels {
   display: flex;
   flex-direction: row;
-  justify-content: left;
   align-items: left;
   flex-wrap: wrap;
-  gap: 1%;
-  margin-bottom: 2%;
-  margin-top: 2%;
+  gap: 0.5%;
 }
 
 .labels li {
@@ -366,9 +361,13 @@ footer {
   padding: 2%;
 }
 
-.first-section {
+.firstSectionDesk {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-top: 1%;
 }
 
 .title-desktop {
@@ -378,7 +377,7 @@ footer {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 180%;
+  font-size: 1.4rem;
   letter-spacing: 0.03rem;
   line-height: 1.3;
   text-align: left;
@@ -832,6 +831,27 @@ input,
 }
 
 @media (min-width: 1280px) and (max-width: 1440px) {
+  /* popupSection */
+  .poppage-buttons li a {
+    font-size: 2.2rem;
+  }
+
+  .title-desktop {
+    font-size: 1.8rem;
+  }
+  .labels li {
+    font-size: 1rem;
+  }
+
+  .p-1 {
+    font-size: 0.8rem;
+  }
+
+  .poppageDesktopImg {
+    width: 100%;
+    height: max-content;
+  }
+
   .primary,
   .primary-span {
     font-size: 2.7rem;
@@ -859,6 +879,27 @@ input,
 }
 
 @media (min-width: 1080px) and (max-width: 1280px) {
+  /* popupSection */
+  .poppage-buttons li a {
+    font-size: 1.8rem;
+  }
+
+  .title-desktop {
+    font-size: 1.8rem;
+  }
+  .labels li {
+    font-size: 1rem;
+  }
+
+  .p-1 {
+    font-size: 0.8rem;
+  }
+
+  .poppageDesktopImg {
+    width: 100%;
+    height: max-content;
+  }
+
   .primary,
   .primary-span {
     font-size: 2.2rem;
@@ -905,6 +946,27 @@ input,
 }
 
 @media (min-width: 967px) and (max-width: 1080px) {
+  /* popupSection */
+  .poppage-buttons li a {
+    font-size: 1.7rem;
+  }
+
+  .title-desktop {
+    font-size: 1.5rem;
+  }
+  .labels li {
+    font-size: 0.8rem;
+  }
+
+  .p-1 {
+    font-size: 0.8rem;
+  }
+
+  .poppageDesktopImg {
+    flex: 1;
+    /* width: 95%; */
+    /* height: 100%; */
+  }
   .primary,
   .primary-span {
     font-size: 2rem;
@@ -959,6 +1021,32 @@ input,
 }
 
 @media (min-width: 768px) and (max-width: 967px) {
+  /* popupSection */
+  .poppage-buttons li a {
+    font-size: 0.8rem;
+  }
+
+  .title-desktop {
+    font-size: 1.4rem;
+  }
+  .poppage-buttons {
+    width: 30%;
+    height: 90%;
+  }
+
+  .labels li {
+    font-size: 0.7rem;
+  }
+
+  .p-1 {
+    font-size: 0.9rem;
+  }
+
+  .poppageDesktopImg {
+    width: 99%;
+    height: 100%;
+  }
+
   .desktop-header {
     gap: 18px;
   }
