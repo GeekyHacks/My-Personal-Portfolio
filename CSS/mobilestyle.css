@@ -356,16 +356,16 @@ body {
   position: fixed;
   background-color: rgba(0, 15, 24, 0.6);
   backdrop-filter: blur(28px);
-  width: 100%;
+  /* width: 100%; */
   padding: 2%;
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
-  
+   */
 }
 
 .popup {
-  top: 5%;
-  left: -1%;
+  top: 0;
+  left: 1%;
   display: flex;
   flex-direction: column;
   margin: 1% 5%;
@@ -374,12 +374,11 @@ body {
   box-sizing: border-box;
   padding: 1%;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   align-self: center;
   width: 92%;
-  height: initial;
-  bottom: 4%;
+
 }
 
 .mobile-content > * {
@@ -390,13 +389,12 @@ body {
   display: flex;
   flex-direction: row;
   height: auto;
-  flex: 1;
   align-items: center;
   justify-content: center;
   margin-left: 0;
-  height: 100vh;
+  height: auto;
   width: 100%;
-  background-image: url(/My-Personal-Portfolio/assests/images/Snapshoot-Portfolio.svg);
+  background-image: url(../assests/images/Snapshoot-Portfolio.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -406,8 +404,8 @@ body {
   margin-bottom: 65%;
   margin-top: 2%;
   margin-left: 90%;
-  height: 100%;
-  width: auto;
+  height: 16px;
+  width: 30px;
 }
 
 .popupImgDiv {

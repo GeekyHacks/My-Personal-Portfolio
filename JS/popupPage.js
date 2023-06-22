@@ -46,7 +46,6 @@ projectBtn.forEach((btn, btnIndex) => {
         <li>JavaScript</li>
       </ul>
       <p class="p-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
-      <p class="p-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
       <ul class="poppage-buttons">
         <li>
           <a href="${projectsarray[cardIndex].liveVersion}">
