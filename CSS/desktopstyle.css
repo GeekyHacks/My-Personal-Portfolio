@@ -808,6 +808,9 @@ button:active {
   padding: 10px;
   text-align: left;
 }
+  #textarea-input {
+    border: 1px solid #36b37f;
+  }
 
 .green-btn {
   transition: all 0.7s;
