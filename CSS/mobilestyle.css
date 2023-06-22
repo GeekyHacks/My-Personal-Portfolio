@@ -337,24 +337,18 @@ body {
   display: none;
 }
 
-.popuppage-header {
-  flex: 1;
-  background-image: url(/My-Personal-Portfolio/assests/images/Snapshoot-Portfolio.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-  margin: 2% 2% 4% 2%;
-}
-
 .desktop-content {
   display: none;
 }
 
 .pageX {
   color: #67798e;
-  margin-left: 93%;
   margin-bottom: 0;
   margin-top: 3%;
+  height: 85vh;
+  background-image: url(/My-Personal-Portfolio/assests/images/Snapshoot-Portfolio.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* popup page Close Button  */
