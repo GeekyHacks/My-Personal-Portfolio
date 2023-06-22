@@ -87,10 +87,10 @@ a {
   display: none;
 }
 
-.poppage a {
+/* .poppage a {
   cursor: pointer;
   transition: 0.6s;
-}
+} */
 
 .desktop-header li a {
   font-family: 'Inter', sans-serif;
@@ -214,15 +214,22 @@ a {
   width: 80%;
 }
 
+.desktop-content{
+  display: flex;
+  flex-direction: column;
+  
+}
+
 /* poppage Close Button  */
 .closeImgDiv {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   height: 24px;
   align-items: center;
   justify-content: center;
   margin-left: 47.6%;
-  width: 100%;
+  width: 100%; */
+  flex: 0.2;
   background-image: none;
 }
 
@@ -241,6 +248,7 @@ a {
 }
 
 .popupImgDiv {
+  flex: 1.2;
   padding: 0 1%;
   display: flex;
   justify-content: center;
@@ -253,18 +261,16 @@ a {
   height: auto;
 }
 
-.desktop-content {
-  padding: 0 0.7% 1.5% 1.5%;
-  display: block;
-  height: auto;
-}
-
 .pageX:hover,
 .pageX:focus {
   opacity: 0.7;
   cursor: pointer;
   transition: all 0.3s;
 }
+
+
+
+
 
 .poppage-buttons li a {
   text-align: center;
