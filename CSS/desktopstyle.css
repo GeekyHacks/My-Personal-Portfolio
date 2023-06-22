@@ -399,6 +399,7 @@ footer {
 .my-work {
   display: grid;
   justify-items: center;
+
   /* justify-content: center; */
   width: 100%;
   gap: 2%;
@@ -439,7 +440,9 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2% 1%;
+
   /* justify-content: center; */
+
   /* align-content: center; */
   align-items: center;
   padding: 2%;
@@ -771,7 +774,7 @@ button:active {
   gap: 2.5%;
 }
 
-/* 
+/*
 
 #firstname-input {
   grid-area: first;
@@ -793,8 +796,10 @@ button:active {
   grid-area: btn;
 } */
 
-
-#firstname-input, #secondname-input, #email-input, #textarea-input {
+#firstname-input,
+#secondname-input,
+#email-input,
+#textarea-input {
   font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 400;
@@ -808,9 +813,10 @@ button:active {
   padding: 10px;
   text-align: left;
 }
-  #textarea-input {
-    border: 1px solid #36b37f;
-  }
+
+#textarea-input {
+  border: 1px solid #36b37f;
+}
 
 .green-btn {
   transition: all 0.7s;
@@ -866,6 +872,7 @@ button:active {
   .title-desktop {
     font-size: 1.8rem;
   }
+
   .labels li {
     font-size: 1rem;
   }
@@ -914,6 +921,7 @@ button:active {
   .title-desktop {
     font-size: 1.8rem;
   }
+
   .labels li {
     font-size: 1rem;
   }
@@ -981,6 +989,7 @@ button:active {
   .title-desktop {
     font-size: 1.5rem;
   }
+
   .labels li {
     font-size: 0.8rem;
   }
@@ -991,9 +1000,12 @@ button:active {
 
   .poppageDesktopImg {
     flex: 1;
+
     /* width: 95%; */
+
     /* height: 100%; */
   }
+
   .primary,
   .primary-span {
     font-size: 2rem;
@@ -1056,6 +1068,7 @@ button:active {
   .title-desktop {
     font-size: 1.4rem;
   }
+
   .poppage-buttons {
     width: 30%;
     height: 90%;
