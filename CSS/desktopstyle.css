@@ -219,6 +219,38 @@ a {
   height: 100vh; */
 }
 
+.firstSectionDesk {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* justify-items: center; */
+  /* margin-top: 1%;*/
+}
+
+.secondSectionDesk {
+  flex: 0.1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 1%;
+}
+
+.thirdSectionDesk {
+  margin: 0 1%;
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* justify-items: center; */
+  /* margin-top: 1%; */
+  /* height: auto;*/
+}
+
 .closeImgDiv {
   background-image: none;
   margin-left: 95%;
@@ -252,7 +284,7 @@ a {
 }
 
 .popupImgDiv {
-  flex: 1.2;
+  flex: 1;
   padding: 0 1%;
   display: flex;
   justify-content: center;
@@ -332,6 +364,7 @@ a {
   flex-wrap: wrap;
   gap: 0.5%;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .labels li {
@@ -366,38 +399,6 @@ footer {
   text-align: left;
   margin-left: 1%;
   padding: 2%;
-}
-
-.firstSectionDesk {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* justify-items: center; */
-  /* margin-top: 1%;*/
-}
-
-.secondSectionDesk {
-  flex: 0.1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  margin: 1%;
-}
-
-.thirdSectionDesk {
-  margin: 1%;
-  flex: 0.5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  /* justify-items: center; */
-  /* margin-top: 1%; */
-  /* height: auto;*/
 }
 
 .title-desktop {
@@ -464,7 +465,7 @@ footer {
 .projectsContainer {
   display: grid;
   justify-items: center;
-  width: 88%;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2% 1%;
@@ -863,25 +864,32 @@ input,
 @media (min-width: 1280px) and (max-width: 1440px) {
   /* popupSection */
   .poppage-buttons li a {
-    font-size: 2.2rem;
+    font-size: 1.4rem;
   }
 
   .title-desktop {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
   .labels li {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .p-1 {
-    font-size: 0.8rem;
+    font-size: 1.25rem;
+  }
+
+  .popup {
+    left: 8%;
+    height: 142%;
+    width: 80%;
   }
 
   .poppageDesktopImg {
-    width: 100%;
-    height: max-content;
+    padding: 0.5% 1%;
+    width: 84vw;
+    height: 50vh;
   }
-
+  
   .primary,
   .primary-span {
     font-size: 2.7rem;
@@ -911,25 +919,31 @@ input,
 @media (min-width: 1080px) and (max-width: 1280px) {
   /* popupSection */
   .poppage-buttons li a {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .title-desktop {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
   .labels li {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   .p-1 {
-    font-size: 0.8rem;
+    font-size: 1.25rem;
+  }
+
+  .popup {
+    left: 8%;
+    height: 144%;
+    width: 80%;
   }
 
   .poppageDesktopImg {
-    width: 100%;
-    height: max-content;
+    padding: 0.5% 1%;
+    width: 84vw;
+    height: auto;
   }
-
   .primary,
   .primary-span {
     font-size: 2.2rem;
@@ -978,24 +992,23 @@ input,
 @media (min-width: 967px) and (max-width: 1080px) {
   /* popupSection */
   .poppage-buttons li a {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .title-desktop {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
   .labels li {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .p-1 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
-
-  .poppageDesktopImg {
-    flex: 1;
-    /* width: 95%; */
-    /* height: 100%; */
+  .popup {
+    left: 8%;
+    height: 122%;
+    width: 80%;
   }
   .primary,
   .primary-span {
@@ -1057,7 +1070,7 @@ input,
   }
 
   .title-desktop {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .poppage-buttons {
     width: 30%;
@@ -1065,16 +1078,17 @@ input,
   }
 
   .labels li {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
 
   .p-1 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
-  .poppageDesktopImg {
-    /* width: 99%;
-    height: 100%; */
+  .popup {
+    left: 11%;
+    height: 109%;
+    width: 80%;
   }
 
   .desktop-header {
