@@ -1,5 +1,10 @@
 // The form section
 
+// Declare the form inputs
+const UserName = document.querySelector('#fullName');
+const UserEmail = document.querySelector('#email-input');
+const UserMessage = document.querySelector('#textarea-input');
+
 // the input valdiation
 const contactForm = document.querySelector('.inputForm');
 
@@ -19,15 +24,10 @@ contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
   }
   if (vaild) {
-    form.submit();
-    event.preventDefault();
+    contactForm.submit();
+    return false;
   }
 });
-
-// Declare the form inputs
-const UserName = document.querySelector('#fullName');
-const UserEmail = document.querySelector('#email-input');
-const UserMessage = document.querySelector('#textarea-input');
 
 // Declare an data object to store userinput
 let formData = {
