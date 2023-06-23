@@ -8,6 +8,7 @@ const emailPattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+\.[a-z]{2,3}/;
 const UserName = document.getElementById('fullName');
 const UserEmail = document.getElementById('email-input');
 const UserMessage = document.getElementById('textarea-input');
+
 contactForm.addEventListener('submit', (event) => {
   const vaild = emailPattern.test(UserEmail.value);
   const errorMsg = document.getElementById('errorMessage');
@@ -20,29 +21,24 @@ contactForm.addEventListener('submit', (event) => {
     errorMsg.style.padding = '6px';
     errorMsg.innerHTML = '*Email must be in email format (abd@sdm.com) and in lowercase letters!';
     event.preventDefault();
-
-    let UserInput;
-    const formUserInput = new FormData(event.target);
-    UserInput = {};
-    formUserInput.forEach((value, key) => {
-      UserInput[key] = value;
-    });
-    const storedData = JSON.stringify(UserInput);
-    localStorage.setItem('UserData', storedData);
-    let savedDate = JSON.parse(localStorage.getItem('UserData'));
-    window.onload = () => {
-      UserName.value = savedDate.name;
-      UserEmail.value = savedDate.email;
-      UserMessage.value = savedDate.message;
-    };
   }
-
-  if (vaild) {
-    localStorage.removeItem('UserData');
-    window.onload = () => {
-      UserName.value = savedDate.name;
-      UserEmail.value = savedDate.email;
-      UserMessage.value = savedDate.message;
-    };
-  }
+  return true;
 });
+
+let UserInput;
+contactForm.addEventListener('submit', (event) => {
+  const formUserInput = new FormData(event.target);
+  UserInput = {};
+  formUserInput.forEach((value, key) => {
+    UserInput[key] = value;
+  });
+  const storedData = JSON.stringify(UserInput);
+  localStorage.setItem('UserData', storedData);
+});
+
+let savedDate = JSON.parse(localStorage.getItem('UserData'));
+window.onload = () => {
+  UserName.value = savedDate.name;
+  UserEmail.value = savedDate.email;
+  UserMessage.value = savedDate.message;
+};
