@@ -5,10 +5,6 @@ const contactForm = document.querySelector('.inputForm');
 
 const emailPattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+\.[a-z]{2,3}/;
 
-const UserName = document.getElementById('fullName');
-const UserEmail = document.getElementById('email-input');
-const UserMessage = document.getElementById('textarea-input');
-
 contactForm.addEventListener('submit', (event) => {
   const vaild = emailPattern.test(UserEmail.value);
   const errorMsg = document.getElementById('errorMessage');
@@ -22,22 +18,48 @@ contactForm.addEventListener('submit', (event) => {
     errorMsg.innerHTML = '*Email must be in email format (abd@sdm.com) and in lowercase letters!';
     event.preventDefault();
   }
-  return false;
+  if (vaild) {
+    form.submit();
+    event.preventDefault();
+  }
 });
 
-contactForm.addEventListener('submit', (event) => {
-  const formUserInput = new FormData(event.target);
-  const UserInput = {};
-  formUserInput.forEach((value, key) => {
-    UserInput[key] = value;
-  });
-  const storedData = JSON.stringify(UserInput);
-  localStorage.setItem('UserData', storedData);
-});
+// Declare the form inputs
+const UserName = document.querySelector('#fullName');
+const UserEmail = document.querySelector('#email-input');
+const UserMessage = document.querySelector('#textarea-input');
 
-const savedDate = JSON.parse(localStorage.getItem('UserData'));
-window.onload = () => {
-  UserName.value = savedDate.name;
-  UserEmail.value = savedDate.email;
-  UserMessage.value = savedDate.message;
+// Declare an data object to store userinput
+let formData = {
+  FullName: '',
+  Email: '',
+  Message: '',
 };
+
+// Declare the userinput as a data and match it with dataobject
+const formUserInput = (data) => {
+  UserName.value = data.FullName;
+  UserEmail.value = data.Email;
+  UserMessage.value = data.Message;
+};
+
+// Store all user input one by one
+if (localStorage.getItem('formData')) {
+  formData = JSON.parse(localStorage.getItem('formData'));
+  formUserInput(formData);
+}
+
+UserName.addEventListener('input', () => {
+  formData.FullName = UserName.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+UserEmail.addEventListener('input', () => {
+  formData.Email = UserEmail.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+UserMessage.addEventListener('input', () => {
+  formData.Message = UserMessage.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
