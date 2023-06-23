@@ -4,7 +4,7 @@
 const contactForm = document.querySelector('.inputForm');
 const emailPattern = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+\.[a-z]{2,3}/;
 
-contactForm.addEventListener('submit', function (event) {
+contactForm.addEventListener('submit', (event) => {
   const UserInput = document.getElementById('email-input');
   const vaild = emailPattern.test(UserInput.value);
   const errorMsg = document.getElementById('errorMessage');
@@ -19,6 +19,5 @@ contactForm.addEventListener('submit', function (event) {
     event.preventDefault();
     UserInput.value = '';
     UserInput.focus();
-    return;
   }
 });
