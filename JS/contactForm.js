@@ -22,13 +22,12 @@ contactForm.addEventListener('submit', (event) => {
     errorMsg.innerHTML = '*Email must be in email format (abd@sdm.com) and in lowercase letters!';
     event.preventDefault();
   }
-  return true;
+  return false;
 });
 
-let UserInput;
 contactForm.addEventListener('submit', (event) => {
   const formUserInput = new FormData(event.target);
-  UserInput = {};
+  let UserInput = {};
   formUserInput.forEach((value, key) => {
     UserInput[key] = value;
   });
