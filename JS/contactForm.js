@@ -27,7 +27,7 @@ contactForm.addEventListener('submit', (event) => {
 
 contactForm.addEventListener('submit', (event) => {
   const formUserInput = new FormData(event.target);
-  let UserInput = {};
+  const UserInput = {};
   formUserInput.forEach((value, key) => {
     UserInput[key] = value;
   });
@@ -35,7 +35,7 @@ contactForm.addEventListener('submit', (event) => {
   localStorage.setItem('UserData', storedData);
 });
 
-let savedDate = JSON.parse(localStorage.getItem('UserData'));
+const savedDate = JSON.parse(localStorage.getItem('UserData'));
 window.onload = () => {
   UserName.value = savedDate.name;
   UserEmail.value = savedDate.email;
