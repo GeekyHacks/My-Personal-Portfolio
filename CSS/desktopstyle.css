@@ -242,19 +242,6 @@ a {
   margin-left: 95%;
 }
 
-/* poppage Close Button
-.closeImgDiv {
-   display: flex;
-  flex-direction: row;
-  height: 24px;
-  align-items: center;
-  justify-content: center;
-  margin-left: 47.6%;
-  width: 100%;
-  flex: 0.2;
-  background-image: none;
-} */
-
 .pageX {
   background-color: #ebecf0;
   padding: 1% 0.5%;
@@ -767,18 +754,6 @@ button:active {
   margin-left: 1%;
 }
 
-/* .inputForm {
-  flex: 2;
-  display: grid;
-  grid-template-areas:
-  'first first first second second second'
-  'email email email email email email'
-  'text text text text text text'
-  'btn . . . . .';
-  align-items: start;
-  justify-content: left;
-} */
-
 .inputForm {
   flex: 2;
   display: flex;
@@ -788,28 +763,6 @@ button:active {
   width: 90%;
   gap: 2.5%;
 }
-
-/*
-
-#firstname-input {
-  grid-area: first;
-
-}
-
-#secondname-input {
-  grid-area: second;
-}
-
-#email-input{
-  grid-area: email;
-}
-#textarea-input {
-  grid-area: text;
-}
-
-#submitBtn{
-  grid-area: btn;
-} */
 
 #firstname-input,
 #secondname-input,
