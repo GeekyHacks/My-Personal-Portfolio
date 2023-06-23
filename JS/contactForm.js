@@ -23,10 +23,6 @@ contactForm.addEventListener('submit', (event) => {
     errorMsg.innerHTML = '*Email must be in email format (abd@sdm.com) and in lowercase letters!';
     event.preventDefault();
   }
-  if (vaild) {
-    contactForm.submit();
-    return false;
-  }
 });
 
 // Declare an data object to store userinput
