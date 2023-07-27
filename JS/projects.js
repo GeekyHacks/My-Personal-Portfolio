@@ -2,14 +2,14 @@
 
 export const projectsarray = [
   {
-    Name: 'Multi-Post Stories Gain+Glory',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s./",
-    img: './assests/images/project1-img.svg',
-    technologies: ['HTML', 'JS', 'CSS', 'Ruby&Rails'],
+    Name: 'JavaScript Unit Testing with Jest',
+    description: "In this repo I will be practicing Unit testing for JavaScript app using AAA pattern, and Test Driven Development TDD.",
+    img: './assests/images/jest.svg',
+    technologies: ['Jest', 'JS', 'HTMl','Testing'],
     popupBtn: 'See Project',
     popImg: './assests/images/Snapshoot Portfolio.svg',
-    liveVersion: 'https://geekyhacks.github.io/My-Personal-Portfolio/',
-    sourecLink: 'https://github.com/GeekyHacks/My-Personal-Portfolio',
+    liveVersion: 'https://github.com/GeekyHacks/TestingPractice/tree/main',
+    sourecLink: 'https://github.com/GeekyHacks/TestingPractice/tree/main',
   },
   {
     Name: 'Multi-Post Stories Gain+Glory',
