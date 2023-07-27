@@ -93,3 +93,4 @@ export function createProjects() {
 }
 
 createProjects();
+
