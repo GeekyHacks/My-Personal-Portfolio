@@ -32,14 +32,12 @@ projectBtn.forEach((btn, btnIndex) => {
         </div>
         <div class="thirdSectionDesk">
           <ul class="labels">
-            <li>Codekit</li>
-            <li>GitHub</li>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-            <li>Terminal</li>
-            <li>Codepen</li>
+          <li class="small-li" for="html">${projectsarray[cardIndex].technologies[0]}</li>
+          <li class="small-li" for="JS">${projectsarray[cardIndex].technologies[1]}</li>
+          <li class="small-li" for="CSS">${projectsarray[cardIndex].technologies[2]}</li>
+          <li class="big-li" for="Ruby">${projectsarray[cardIndex].technologies[3]}</li>
           </ul>
-          <p class="p-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
+          <p class="p-1">${projectsarray[cardIndex].description}</p>
         </div>
       </div>
 
