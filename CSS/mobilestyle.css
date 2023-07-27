@@ -207,7 +207,7 @@ body {
 
 /* headlines section */
 .headlines {
-  background-image: url(/My-Personal-Portfolio/assests/images/header-illsutration-mobile.svg);
+  background-image: url('../assests/images/header-illsutration-mobile.svg');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -391,7 +391,7 @@ body {
   justify-content: center;
   margin-left: 0;
   width: 100%;
-  background-image: url(../assests/images/Snapshoot-Portfolio.svg);
+  background-image: url('../assests/images/Snapshoot-Portfolio.svg');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -650,7 +650,7 @@ body {
 }
 
 .aboutme1 {
-  background-image: url(/My-Personal-Portfolio/assests/images/aboutme2.svg), url(/My-Personal-Portfolio/assests/images/about-me22.svg);
+  background-image: url('../assests/images/aboutme2.svg'), url('../assests/images/about-me22.svg');
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-position: revert;
@@ -684,7 +684,7 @@ body {
   font-weight: 400;
   font-size: 1.45rem;
   line-height: 120%;
-  width: 93%;
+  /* width: 93%; */
   margin-top: 0%;
   margin-bottom: 7%;
   letter-spacing: 0.04em;
@@ -776,13 +776,13 @@ body {
 
 /* contact me section */
 .contact-me {
-  background-image: url(/My-Personal-Portfolio/assests/images/contactbottom.svg);
+  background-image: url('../assests/images/contactbottom.svg');
   background-position: right bottom;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
   padding: 2%;
   margin-top: 8%;
 }
