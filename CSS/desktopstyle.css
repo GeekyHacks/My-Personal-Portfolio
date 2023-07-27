@@ -19,7 +19,7 @@
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  background-image: url(/My-Personal-Portfolio/assests/images/Header-llustration-desktop.svg);
+  background-image: url('../assests/images/Header-llustration-desktop.svg');
   background-repeat: no-repeat;
   background-size: 100vw;
 }
@@ -617,7 +617,7 @@ button:active {
   flex-direction: column;
   display: flex;
   align-items: center;
-  background-image: url(/My-Personal-Portfolio/assests/images/aboutbackground-desktop.svg);
+  background-image: url('../assests/images/aboutbackground-desktop.svg');
   background-repeat: no-repeat;
   box-sizing: content-box;
   background-size: 100% 109%;
@@ -713,7 +713,7 @@ button:active {
 
 /* contact me section */
 .contact-me {
-  background-image: url(/My-Personal-Portfolio/assests/images/contactbackground-desktop.svg);
+  background-image: url('../assests/images/contactbackground-desktop.svg');
   background-size: 100% 128%;
   background-repeat: no-repeat;
   background-position: unset;
